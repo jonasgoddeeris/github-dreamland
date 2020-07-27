@@ -2,7 +2,7 @@
 
 
 
-<script>
+<!-- <script>
 const productSpecifications = document.getElementById("Attributes_table").innerText;
 const regex = /\d{13}/g;
 const ean = productSpecifications.match(regex);
@@ -10,7 +10,8 @@ const ean0 = ean[0];
 const flix = document.getElementById("flix-script");
 flix.setAttribute("data-flix-ean", ean0);
 console.log("query ean var available on page?" + " " + query.ean);
-</script>
+</script> -->
+
 
 
 <!-- 
@@ -18,8 +19,8 @@ GLOBAL JS VARIABLE ALREADY ON PAGE AVAILABLE -->
 
 
 <script>
-console.log("query ean var available on page already?" + " " + query.ean);
 const ean0 = query.ean;
 const flix = document.getElementById("flix-script");
 flix.setAttribute("data-flix-ean", ean0);
 </script>
+
