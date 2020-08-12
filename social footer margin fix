@@ -1,0 +1,9 @@
+.socialmobile a {
+    margin-right: 10px;
+}
+
+
+element.style {
+    padding: 10px;
+    display: block;
+}

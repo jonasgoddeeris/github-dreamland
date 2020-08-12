@@ -1,0 +1,85 @@
+<!-- NL DL -->
+<html>
+<head>
+
+</head>
+
+<body>
+	
+<p>hello world</p>
+
+<div id="flix-minisite"></div>
+
+<div id="flix-inpage"></div>
+<script>
+	var mini = document.createElement('div');
+	mini.id = "flix-minisite";
+	var inpage = document.createElement('div');
+	inpage.id ="flix-inpage";
+	document.getElementById("specs").prepend(mini);
+	document.getElementById("specs").prepend(inpage);
+</script>
+
+
+<script id="flix-script" type="text/javascript" src="//media.flixfacts.com/js/loader.js" data-flix-distributor="13116" data-flix-language="be" data-flix-brand="lego" data-flix-mpn="" data-flix-ean="" data-flix-sku="" data-flix-inpage="flix-inpage" data-flix-button-image="" data-flix-price="" data-flix-fallback-language="nl" async></script>
+
+<script>
+const ean0 = query.ean;
+const flix = document.getElementById("flix-script");
+flix.setAttribute("data-flix-ean", ean0);
+</script>
+
+
+
+	var tag = document.createElement('script');
+	tag.type = "text/javascript";
+	tag.src = "//media.flixfacts.com/js/loader.js";
+	tag.setAttribute("data-flix-distributor", "13116");
+	tag.setAttribute("data-flix-language", "be");
+	tag.setAttribute("data-flix-brand", "lego");
+	const ean0 = query.ean;
+	tag.setAttribute("data-flix-ean", ean0);
+	tag.setAttribute("data-flix-inpage", "flix-inpage");
+	tag.setAttribute("data-flix-fallback-language", "nl");
+	document.head.appendChild(tag);
+
+	function(tag)
+	// var script = document.querySelector("#flix-inpage > script")
+	// eval(script)
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+<!-- FR DL HARDCODED EAN-->
+
+<!-- 
+<div id="flix-minisite"></div>
+
+<div id="flix-inpage"></div>
+
+<script type="text/javascript" src="//media.flixfacts.com/js/loader.js" data-flix-distributor="13116 " data-flix-language="fr" data-flix-brand="lego" data-flix-mpn="" data-flix-ean="5702015357197" data-flix-sku="" data-flix-inpage="flix-inpage" data-flix-button-image="" data-flix-price="" data-flix-fallback-language="fr" async></script>
+
+
+<!-- https://www.smythstoys.com/uk/en-gb/toys/lego-and-bricks/lego-star-wars/lego-75272-star-wars-sith-tie-fighter-building-set/p/183664#Mobilemenu -->
+
+<!-- <script type="text/javascript" src="//media.flixfacts.com/js/loader.js" data-flix-distributor="1764" data-flix-language="en" data-flix-brand="Star Wars" data-flix-mpn="" data-flix-ean="5702016617184" data-flix-sku="" data-flix-inpage="flix-inpage" data-flix-button-image="" data-flix-price="" data-flix-fallback-language="en" async="">
+</script> -->
+
+
+
+
+<!-- FNAC -->
+
+<!-- 
+
+<script type="text/javascript" src="https://media.flixcar.com/delivery/js/inpage/13116%20/fr/ean/5702016617184?&amp;=13116%20&amp;=fr&amp;ean=5702016617184&amp;brand=lego&amp;fl=fr&amp;ssl=1&amp;ext=.js" async="" crossorigin="true"></script>
+ -->
