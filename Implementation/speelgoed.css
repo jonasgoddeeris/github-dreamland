@@ -1,0 +1,20 @@
+/*speelgoed.css*/
+
+.DL_MC_category_title {
+    margin-bottom: 0!important;
+    font-family: Ubuntu,sans-serif;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.2em!important;
+    min-height: 46px;
+    color: #005aa6!important;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: .9em!important;
+}
+
+
+/*new class 8% of mainblue #005aa6 - translated to full hue color #005aa6*/
+.DL_bg-mainblue-8procent {
+    background-color: c!important;
+}
