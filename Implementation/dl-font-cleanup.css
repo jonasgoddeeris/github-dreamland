@@ -2,10 +2,8 @@
 
 
 
-
-/*CATEGORY NAV / FACET NAV*/
-
-/*https://www.dreamland.be/e/nl/dl/solden-kortingen.  categoryNavWidget-Facetwidget*/
+/*CATEGORY NAV & FACET NAV*/
+/* tested on solden-kortingen / zwembaden - lego city -  categoryNavWidget-Facetwidget*/
 
 	#page #content .categoryNavWidget.collapsible>h3.notoggle {
 	    color: #005BA9;
@@ -24,37 +22,15 @@
 	}
 
 
-/*zwembaden - lego city : sub category*/
 
 
-	#page #content .categoryNavWidget.collapsible>h3.notoggle {
-		color: #005BA9;
-	    font-size: 16px;
-	    font-family: Ubuntu,sans-serif;
-	    text-transform: none;
-	    letter-spacing: normal;
-	    font-weight: 600;
-	}
-
-
-
-	#page #content .facetWidget h3.toggle {
-	    font-family: Ubuntu,sans-serif;
-	    text-transform: none;
-	    color: #005ba9;
-	    font-weight: 500;
-	}
-
-
-/*NAVIGATION 'KIES EEN CATEGORIE'*/
+/*NAVIGATION 'KIES EEN CATEGORIE & 'SEC NAVIGATION'*/
 
 
 	#page #headerWrapper #headerRow2 nav.topNav .topNav__title {
 	    font-family: Ubuntu,sans-serif;
 	}
 
-
-/*NAVIGATION 'SEC NAVIGATION'*/
 
 	#page #headerWrapper #headerRow2 nav.secondaryNav .secondaryNav__wrap>ul>li a {
 	    font-family: Ubuntu,sans-serif;
