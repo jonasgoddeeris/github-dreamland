@@ -1,9 +1,5 @@
 /*dl-font-cleanup.css*/
 
-line-height: 1.25em;
-color: #005BA9;
-text-transform: uppercase;
-letter-spacing: .75px;
 
 
 
@@ -11,18 +7,43 @@ letter-spacing: .75px;
 
 /*https://www.dreamland.be/e/nl/dl/solden-kortingen.  categoryNavWidget-Facetwidget*/
 
-	#page #content .categoryNavWidget.collapsible>h3 {
-	    background-color: #f2f2f2;
+	#page #content .categoryNavWidget.collapsible>h3.notoggle {
 	    color: #005BA9;
 	    font-size: 16px;
 	    font-family: Ubuntu,sans-serif;
-	    text-transform: capitalize;
+	    text-transform: none;
+	    letter-spacing: normal;
+	    font-weight: 600;
+	}
+
+	#page #content .facetWidget h3.toggle {
+	    font-family: Ubuntu,sans-serif;
+	    text-transform: none;
+	    color: #005ba9;
+	    font-weight: 500;
+	}
+
+
+/*zwembaden - lego city : sub category*/
+
+
+	#page #content .categoryNavWidget.collapsible>h3.notoggle {
+		color: #005BA9;
+	    font-size: 16px;
+	    font-family: Ubuntu,sans-serif;
+	    text-transform: none;
 	    letter-spacing: normal;
 	    font-weight: 600;
 	}
 
 
 
+	#page #content .facetWidget h3.toggle {
+	    font-family: Ubuntu,sans-serif;
+	    text-transform: none;
+	    color: #005ba9;
+	    font-weight: 500;
+	}
 
 
 /*NAVIGATION 'KIES EEN CATEGORIE'*/
