@@ -38,6 +38,21 @@
 
 
 
+/*CATEGORY PAGE H1 */
+
+	#page .actie_content h1, #page h1 {
+	    font-weight: 500;
+	    font-size: 28px;
+	}
+	
+
+	#page .widget_title_container h1, .content_wrapper h1, .headingText, .title h1, .titleItems {
+	    color: #005ba9;
+	    font-size: 18px;
+	    line-height: 22px;
+	    font-family: Ubuntu,sans-serif;
+	    font-weight: 400;
+	}
 
 
 

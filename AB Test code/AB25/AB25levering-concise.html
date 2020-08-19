@@ -13,19 +13,16 @@ https://www.dreamland.be/e/nl/dl/salta-inbouwtrampoline-met-veiligheidsnet-groun
 
 
 <style>
-
-#delivery ul {
+.deliveryb25 ul {
 	margin-top: 2px;
 	padding-inline-start: 5px !important;
-
 }
 
-#delivery ul li {
+.deliveryb25 ul li {
 	list-style: none;
 }
 
-
-#delivery ul li:before {
+.deliveryb25 ul li:before {
 	content: "\f00c  ";
 	color: #468c00;
     font-family: 'Font Awesome 5 Pro';
@@ -39,9 +36,7 @@ https://www.dreamland.be/e/nl/dl/salta-inbouwtrampoline-met-veiligheidsnet-groun
 #delivery250 {
 	display: none
 }
-
 </style>
-
 
 
 <!-- depending on layout this element has different ID's
@@ -51,35 +46,38 @@ PDP LAYOUT - SINGLE COLR - ci_espot_4099276460824409666_DeliveryInfo_Colruyt
 -->
 
 <script>
-
 var poller = setInterval(function(){
-  if(document.querySelector('#delivery') !== null) {
+  if(document.querySelector('#delivery60') !== null) {
     clearInterval(poller);
+    console.log(+1)
     const levInfo = document.getElementById("ci_espot_4099276460824409666_DeliveryInfo_HomeAndCollection_Third");
     const colInfoBundle = document.getElementById("ci_espot_4099276460824410620_DeliveryInfo_Colruyt")
     const colInfoSingle = document.getElementById("ci_espot_4099276460824409666_DeliveryInfo_Colruyt")
     const dev60 = document.getElementById("delivery60");
     const dev250 = document.getElementById("delivery250");
+    const dev = document.getElementById("delivery");
 
     if (levInfo){
+    dev.style.display = "none";
     dev60.style.display = "block";
     };
     if (colInfoBundle){
+    dev.style.display = "none";
     delivery250.style.display = "block";
     };
     if (colInfoSingle ){
+    dev.style.display = "none";
     delivery250.style.display = "block";
     };
   }
 }, 50);
-
 </script>
 
 
 
 <!-- HTML IS INSERTED VIA TARGET replace editor but display none untill specific lev option is determined by our JS function -->
 
-<div id="delivery60" class="productDetail__title">
+<div id="delivery60" class="productDetail__title deliveryb25">
     <h2 style="margin-bottom: 10px;">Afhalen &amp; levering</h2>
     <strong>Gratis afhalen</strong>
     <ul>
@@ -99,9 +97,7 @@ var poller = setInterval(function(){
 </div>
 
 
-
-
-<div id="delivery250" class="productDetail__title">
+<div id="delivery250" class="productDetail__title deliveryb25">
     <h2 style="margin-bottom: 10px;">Levering</h2>
     <strong>Gratis thuislevering vanaf €250</strong>
     <ul>
