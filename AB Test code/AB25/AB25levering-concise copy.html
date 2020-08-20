@@ -1,0 +1,119 @@
+
+<!-- BPOST LEVERING 
+https://www.dreamland.be/e/nl/dl/lego-star-wars-75276-stormtroper-helm-188102 
+
+LEV 250 DOOR TRANSPORT Colruyt
+document.querySelector("#ci_espot_4099276460824410620_DeliveryInfo_Colruyt")
+https://www.dreamland.be/e/nl/dl/bnb-wod-schommel-madagascar-commando-monkey-bar-met-blauwe-glijban-201009
+
+LEV DOOR LEV - PDF MET DETAILS :S
+GEEN ID ENKEL EEN PDF met levervoorwaarden ?? (salta trampolines)
+https://www.dreamland.be/e/nl/dl/salta-inbouwtrampoline-met-veiligheidsnet-groundlevel-royal-baseground-%C3%B8-2-51-m-873096 -->
+
+
+
+<style>
+
+#delivery ul {
+	margin-top: 2px;
+	padding-inline-start: 5px !important;
+
+}
+
+#delivery ul li {
+	list-style: none;
+}
+
+
+#delivery ul li:before {
+	content: "\f00c  ";
+	color: #468c00;
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 14px;
+}
+
+#delivery60 {
+	display: none
+}
+
+#delivery250 {
+	display: none
+}
+
+</style>
+
+
+
+<!-- depending on layout this element has different ID's
+PDP LAYOUT - SINGLE HOME - ci_espot_4099276460824409666_DeliveryInfo_HomeAndCollection_Third 
+PDP LAYOUT - BUNDLE COLR - ci_espot_4099276460824410620_DeliveryInfo_Colruyt
+PDP LAYOUT - SINGLE COLR - ci_espot_4099276460824409666_DeliveryInfo_Colruyt
+-->
+
+<script>
+
+var poller = setInterval(function(){
+  if(document.querySelector('#delivery') !== null) {
+    clearInterval(poller);
+    const levInfo = document.getElementById("ci_espot_4099276460824409666_DeliveryInfo_HomeAndCollection_Third");
+    const colInfoBundle = document.getElementById("ci_espot_4099276460824410620_DeliveryInfo_Colruyt")
+    const colInfoSingle = document.getElementById("ci_espot_4099276460824409666_DeliveryInfo_Colruyt")
+    const dev60 = document.getElementById("delivery60");
+    const dev250 = document.getElementById("delivery250");
+
+    if (levInfo){
+    dev60.style.display = "block";
+    };
+    if (colInfoBundle){
+    delivery250.style.display = "block";
+    };
+    if (colInfoSingle ){
+    delivery250.style.display = "block";
+    };
+  }
+}, 50);
+
+</script>
+
+
+
+<!-- HTML IS INSERTED VIA TARGET replace editor but display none untill specific lev option is determined by our JS function -->
+
+<div id="delivery60" class="productDetail__title">
+    <h2 style="margin-bottom: 10px;">Afhalen &amp; levering</h2>
+    <strong>Gratis afhalen</strong>
+    <ul>
+    <li>+400 afhaalpunten (Colruyt, DreamLand, Okay)</li>
+    <li>Je betaalt pas bij afhaling</li>
+    <li>Blijft 14 dagen beschikbaar in het afhaalpunt</li>
+    </ul>
+    <br>
+    <strong>Gratis levering vanaf €60</strong>
+    <ul>
+    <li>Via Bpost naar een adres in België</li>
+    <li>Onder €60 verzendkost van €3,99</li>
+    <li>Kies zelf de gewenste leverdatum</li>
+    <li>Levering op weekdag of zaterdag</li>
+    <li>Gratis retourneren in +400 afhaalpunten</li>
+    </ul>
+</div>
+
+
+
+
+<div id="delivery250" class="productDetail__title">
+    <h2 style="margin-bottom: 10px;">Levering</h2>
+    <strong>Gratis thuislevering vanaf €250</strong>
+    <ul>
+    <li>Via onze transportdienst naar een adres in België</li>
+    <li>Onder €250 verzendkost van €30</li>
+    <li>Kies zelf de gewenste leverdatum</li>
+    <li>Levering op weekdag of zaterdag</li>
+    </ul>
+</div>
+
+
+
+
+
+

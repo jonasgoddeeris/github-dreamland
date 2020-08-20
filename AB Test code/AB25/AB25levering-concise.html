@@ -1,4 +1,3 @@
-
 <!-- BPOST LEVERING 
 https://www.dreamland.be/e/nl/dl/lego-star-wars-75276-stormtroper-helm-188102 
 
@@ -14,37 +13,25 @@ https://www.dreamland.be/e/nl/dl/salta-inbouwtrampoline-met-veiligheidsnet-groun
 
 <style>
 .deliveryb25 ul {
-	margin-top: 2px;
-	padding-inline-start: 5px !important;
+    margin-top: 2px;
+    padding-inline-start: 5px !important;
 }
-
 .deliveryb25 ul li {
-	list-style: none;
+    list-style: none;
 }
-
 .deliveryb25 ul li:before {
-	content: "\f00c  ";
-	color: #468c00;
+    content: "\f00c  ";
+    color: #468c00;
     font-family: 'Font Awesome 5 Pro';
     font-size: 14px;
 }
-
 #delivery60 {
-	display: none
+    display: none
 }
-
 #delivery250 {
-	display: none
+    display: none
 }
 </style>
-
-
-<!-- depending on layout this element has different ID's
-PDP LAYOUT - SINGLE HOME - ci_espot_4099276460824409666_DeliveryInfo_HomeAndCollection_Third 
-PDP LAYOUT - BUNDLE COLR - ci_espot_4099276460824410620_DeliveryInfo_Colruyt
-PDP LAYOUT - SINGLE COLR - ci_espot_4099276460824409666_DeliveryInfo_Colruyt
--->
-
 <script>
 var poller = setInterval(function(){
   if(document.querySelector('#delivery60') !== null) {
@@ -72,12 +59,19 @@ var poller = setInterval(function(){
   }
 }, 50);
 </script>
+  
 
+<!-- depending on layout this element has different ID's
+PDP LAYOUT - SINGLE HOME - ci_espot_4099276460824409666_DeliveryInfo_HomeAndCollection_Third 
+PDP LAYOUT - BUNDLE COLR - ci_espot_4099276460824410620_DeliveryInfo_Colruyt
+PDP LAYOUT - SINGLE COLR - ci_espot_4099276460824409666_DeliveryInfo_Colruyt
+-->
 
 
 <!-- HTML IS INSERTED VIA TARGET replace editor but display none untill specific lev option is determined by our JS function -->
 
-<div id="delivery60" class="productDetail__title deliveryb25">
+
+  <div id="delivery60" class="productDetail__title deliveryb25">
     <h2 style="margin-bottom: 10px;">Afhalen &amp; levering</h2>
     <strong>Gratis afhalen</strong>
     <ul>
@@ -95,8 +89,6 @@ var poller = setInterval(function(){
     <li>Gratis retourneren in +400 afhaalpunten</li>
     </ul>
 </div>
-
-
 <div id="delivery250" class="productDetail__title deliveryb25">
     <h2 style="margin-bottom: 10px;">Levering</h2>
     <strong>Gratis thuislevering vanaf €250</strong>
@@ -107,9 +99,5 @@ var poller = setInterval(function(){
     <li>Levering op weekdag of zaterdag</li>
     </ul>
 </div>
-
-
-
-
 
 
