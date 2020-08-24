@@ -1,14 +1,3 @@
-<script>
-const xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
-const firstName = xtraUser.user.firstName;
-var winkelmandje = document.querySelector("#content > section > h2");
-
-if(firstName){
-document.querySelector("#content > section > h2").innerText = "Winkelmandje van " + firstName;
-} else {
-document.querySelector("#content > section > h2").innerText = "Je winkelmandje";
-};
-</script>
 <style>
 @media (max-width: 600px){
 #page .checkoutSection.shoppingCartPage>.priceInfo_submit .btnSubmit a {
@@ -28,3 +17,12 @@ document.querySelector("#content > section > h2").innerText = "Je winkelmandje";
 }
 }
 </style>
+<script>
+const xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
+const firstName = xtraUser.user.firstName;
+if(firstName){
+document.querySelector("#content > section > h2").innerText = "Winkelmandje van " + firstName;
+} else {
+document.querySelector("#content > section > h2").innerText = "Je winkelmandje";
+};
+</script>
