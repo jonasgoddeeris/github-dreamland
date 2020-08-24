@@ -1,0 +1,31 @@
+A/B 27 - Promo nog X dagen geldig.html
+
+
+
+<script>
+
+
+const deadline = '2020-08-31 23:59:59 GMT+0200';
+
+function getTimeRemaining(endtime){
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const days = Math.floor( total/(1000*60*60*24) );
+  return {
+    days,
+  };
+};
+
+var days = getTimeRemaining(deadline).days;
+
+
+if (days == 0){
+	var promo = "Solden alleen vandaag nog geldig";
+} else {
+	var promo = "Solden nog " + days + " dagen geldig";
+};
+
+
+document.querySelector("#output_titel").innerText = promo;
+
+
+</script>
