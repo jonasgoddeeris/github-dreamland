@@ -1,0 +1,98 @@
+<!-- NL -->
+<script>
+const deadline = '2020-08-31 23:59:59 GMT+0200';
+
+function convertDateForIos(date) {
+    var arr = date.split(/[- :]/);
+    date = new Date(arr[0], arr[1]-1, arr[2], arr[3], arr[4], arr[5]);
+    return date;
+};
+
+function getTimeRemaining(endtime){
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const days = Math.floor( total/(1000*60*60*24) );
+  return {
+    days,
+  };
+};
+
+var iOSdate = convertDateForIos(deadline);
+var days = getTimeRemaining(iOSdate).days;
+
+if (days == 0){
+	var promo = "Solden alleen vandaag nog geldig";
+} else {
+	var promo = "Solden nog " + days + " dagen geldig";
+};
+var poller = setInterval(function(){
+  if(document.querySelector('#output_titel') !== null) {
+    clearInterval(poller);
+    console.log(+1);
+    document.querySelector("#output_titel").innerText = promo;
+  }
+}, 50);
+</script>
+
+
+
+<!-- FR -->
+<script>
+const deadline = '2020-08-31 23:59:59 GMT+0200';
+
+function convertDateForIos(date) {
+    var arr = date.split(/[- :]/);
+    date = new Date(arr[0], arr[1]-1, arr[2], arr[3], arr[4], arr[5]);
+    return date;
+};
+
+function getTimeRemaining(endtime){
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const days = Math.floor( total/(1000*60*60*24) );
+  return {
+    days,
+  };
+};
+var iOSdate = convertDateForIos(deadline);
+var days = getTimeRemaining(iOSdate).days;
+if (days == 0){
+	var promo = "Dernier jour pour profiter des soldes";
+} else {
+	var promo = "Plus que " + days + " jours pour profiter des soldes";
+};
+var poller = setInterval(function(){
+  if(document.querySelector('#output_titel') !== null) {
+    clearInterval(poller);
+    console.log(+1);
+    document.querySelector("#output_titel").innerText = promo;
+  }
+}, 50);
+</script>
+
+
+
+
+<!-- FR OLD BACKUP -->
+<!-- <script>
+const deadline = '2020-08-31 23:59:59 GMT+0200';
+function getTimeRemaining(endtime){
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const days = Math.floor( total/(1000*60*60*24) );
+  return {
+    days,
+  };
+};
+var days = getTimeRemaining(deadline).days;
+if (days == 0){
+  var promo = "Dernier jour pour profiter des soldes";
+} else {
+  var promo = "Plus que " + days + " jours pour profiter des soldes";
+};
+document.querySelector("#output_titel").innerText = promo;
+</script> -->
+
+<script>
+
+    
+
+</script>
+
