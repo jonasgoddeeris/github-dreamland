@@ -1,0 +1,7 @@
+Webfont on live site preview
+
+<style>
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+</style>
+
+font-family: 'Open Sans', sans-serif;
