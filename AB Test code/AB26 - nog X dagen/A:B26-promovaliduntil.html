@@ -21,8 +21,11 @@ var days = getTimeRemaining(iOSdate).days;
 
 if (days == 0){
 	var promo = "Solden alleen vandaag nog geldig";
-} else {
+} else if (days =< 5){
 	var promo = "Solden nog " + days + " dagen geldig";
+}
+  else {
+	var promo ="Solden tot 30%" //default promo text
 };
 var poller = setInterval(function(){
   if(document.querySelector('#output_titel') !== null) {
@@ -69,30 +72,4 @@ var poller = setInterval(function(){
 </script>
 
 
-
-
-<!-- FR OLD BACKUP -->
-<!-- <script>
-const deadline = '2020-08-31 23:59:59 GMT+0200';
-function getTimeRemaining(endtime){
-  const total = Date.parse(endtime) - Date.parse(new Date());
-  const days = Math.floor( total/(1000*60*60*24) );
-  return {
-    days,
-  };
-};
-var days = getTimeRemaining(deadline).days;
-if (days == 0){
-  var promo = "Dernier jour pour profiter des soldes";
-} else {
-  var promo = "Plus que " + days + " jours pour profiter des soldes";
-};
-document.querySelector("#output_titel").innerText = promo;
-</script> -->
-
-<script>
-
-    
-
-</script>
 
