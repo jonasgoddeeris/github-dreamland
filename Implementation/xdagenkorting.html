@@ -1,13 +1,9 @@
-
-
 <!-- NL -->
 <script>
 
 const actieNaam =  "Oktoberdeals -15 % op Rubik's van Jumbo";
 
-const korting = "-15%"
-
-const deadline = '2020-10-05 23:59:59 GMT+0200'; // DEADLINE
+const deadline = '2020-10-08 23:59:59 GMT+0200'; // DEADLINE
 
 
 
@@ -29,9 +25,9 @@ var iOSdate = convertDateForIos(deadline);
 var days = getTimeRemaining(iOSdate).days;
 
 if (days == 1){
-	var promo = "Actie " + korting + " alleen vandaag nog geldig";    // laatste dag
+	var promo = "Actie alleen vandaag nog geldig";    // laatste dag
 } else if (days <= 5){
-	var promo = "Actie " + korting + " nog " + days + " dagen geldig";  // actienaam aftel
+	var promo = "Actie nog " + days + " dagen geldig";  // actienaam aftel
 }
   else {
 	var promo = actieNaam                                    // default promo text
@@ -49,15 +45,11 @@ var poller = setInterval(function(){
 
 
 
-
 <!-- FR -->
-
 
 <script>
 
 const actieNaam =  "Oktoberdeals -15 % op Rubik's van Jumbo";
-
-const korting = "-15%"
 
 const deadline = '2020-10-06 23:59:59 GMT+0200'; // DEADLINE
 
@@ -81,9 +73,9 @@ var iOSdate = convertDateForIos(deadline);
 var days = getTimeRemaining(iOSdate).days;
 
 if (days == 1){
-	var promo = "Dernier jour pour profiter de notre action " + korting;    // laatste dag
+	var promo = "Dernier jour pour profiter de cette action";    // laatste dag
 } else if (days <= 5){
-	var promo = "Plus que " + days + " jours pour profiter de notre action " + korting;  // actienaam aftel
+	var promo = "Plus que " + days + " jours pour profiter de notre action ";  // actienaam aftel
 }
   else {
 	var promo = actieNaam  // default promo text
@@ -96,44 +88,3 @@ var poller = setInterval(function(){
   }
 }, 50);
 </script>
-
-
-
-
-
-<!-- FR OLD - DO NOT USE-->
-<script>
-// const deadline = '2020-08-31 23:59:59 GMT+0200';
-
-// function convertDateForIos(date) {
-//     var arr = date.split(/[- :]/);
-//     date = new Date(arr[0], arr[1]-1, arr[2], arr[3], arr[4], arr[5]);
-//     return date;
-// };
-
-// function getTimeRemaining(endtime){
-//   const total = Date.parse(endtime) - Date.parse(new Date());
-//   const days = Math.floor( total/(1000*60*60*24) );
-//   return {
-//     days,
-//   };
-// };
-// var iOSdate = convertDateForIos(deadline);
-// var days = getTimeRemaining(iOSdate).days;
-// if (days == 0){
-// 	var promo = "Dernier jour pour profiter de notre action " + korting;
-// } else {
-// 	var promo = "Plus que " + days + " jours pour profiter de notre action " + korting;
-// 	//Plus que 9 jours pour profiter de cette promo
-// };
-// var poller = setInterval(function(){
-//   if(document.querySelector('#output_titel') !== null) {
-//     clearInterval(poller);
-//     console.log(+1);
-//     document.querySelector("#output_titel").innerText = promo;
-//   }
-// }, 50);
-</script>
-
-
-
