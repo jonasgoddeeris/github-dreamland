@@ -1,0 +1,39 @@
+<style>
+    .DeliveryInfoShortText {
+        padding: 0;
+        list-style: none;
+    }
+
+    .DeliveryInfoShortText li {
+        padding-bottom: 10px;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .DeliveryInfoShortText li:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        background-image: url('/ecomwcs/static/StaticWeb/DL/pdp/assets/check-circle-blue.svg');
+        background-size: cover;
+        background-position: center;
+        left: 0;
+        top: 11px;
+        transform: translateY(-50%);
+    }
+
+    .DeliveryInfoShortText li span {
+        color: rgba(0, 91, 169, 0.99);
+        font-weight: 800;
+        font-family: Arial,Helvetica,sans-serif;
+    }
+</style>
+
+<a href="#delivery">
+<ul class="DeliveryInfoShortText">
+    <li><span>Gratis</span> afhalen bij DreamLand, OKay, Colruyt</li>
+    <li><span>Gratis</span> thuislevering vanaf €250</li>
+    <li><span>Kies zelf</span> het bezorgmoment (ook op zat.)</li>
+</ul>
+</a>
