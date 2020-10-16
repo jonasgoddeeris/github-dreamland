@@ -1,3 +1,8 @@
+
+<!-- delete facetCountforMobilePopup  : ID facet for mobile from original filter button
+ -->
+
+
 <style>
 
 #container_ > div.row.grdTwoLeft > div.col4.acol12.ccol3.left {
@@ -5,9 +10,10 @@ display: none;
 }
 
 
-#facetnavHeaderForMobile {
+/*#facetnavHeaderForMobile {
 	display:none;
-}
+}*/
+
 
 div.scrollmenu {
     overflow: auto;
@@ -46,16 +52,33 @@ div.scrollmenu a {
     background: #005ba9;
     color: white;
 }
+
+.campaign-espot .show {
+    padding: 3p;
+    padding-left: 5px;
+    padding-right: 6px;
+    margin-left: 4px;
+    background: white;
+    color: #005ba9;
+    border-radius: 10px;
+}
+
+#ab31-filter > div > div {
+	display: inline-block!important;
+}
+
+
+
 </style>
 
 <div class="campaign-espot" id="espot-grid">
 	<div class="scrollmenu">
         <!-- <a id="facetnavHeaderForMobile" href="javascript:void(0);" onclick="shoppingActionsJS.showWCDialogPopup('facetNavNF');" class=""><h3 class="toggle" role="button" tabindex="0" aria-controls="facet_nav_collapsible_4_-1004_4099276460824417157" aria-label="Filteren" aria-describedby="facet_widget_acce_desc">Filteren<div id="facetCountforMobilePopup"></div></h3></a> -->
-        <a id="ab31-filter" href="javascript:void(0);" onclick="shoppingActionsJS.showWCDialogPopup('facetNavNF');" class=""><div class="toggle" role="button" tabindex="0" aria-controls="facet_nav_collapsible_4_-1004_4099276460824417157" aria-label="Filteren" aria-describedby="facet_widget_acce_desc">Filteren</div></a>
-        <a href="/e/nl/dl/speelgoed-2-tot-3-jaar">2-3 jaar</a>
-        <a href="/e/nl/dl/speelgoed-4-tot-5-jaar">4-5 jaar</a>
-        <a href="/e/nl/dl/speelgoed-6-tot-7-jaar">6-7 jaar</a>
-        <a href="/e/nl/dl/speelgoed-8-tot-9-jaar">8-9 jaar</a>
+        <a id="ab31-filter" href="javascript:void(0);" onclick="shoppingActionsJS.showWCDialogPopup('facetNavNF');" class=""><div class="toggle" role="button" tabindex="0" aria-controls="facet_nav_collapsible_4_-1004_4099276460824417157" aria-label="Filteren" aria-describedby="facet_widget_acce_desc">Filteren <div id="facetCountforMobilePopup" class="ab31-show"></div></div></a>
+        <a href="/e/nl/dl/gezelschapsspellen?#facet:4099276460822236727523245323253321069797114&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&ab31-grid">4-5 jaar</a>
+        <a href="/e/nl/dl/speelgoed-2-tot-3-jaar">4-6 jaar</a>
+        <a href="/e/nl/dl/alle-familiespellen">Familiespellen</a>
+        <a href="#ab31-grid" aria-labelledby="4099276460822236727543245323255321069797114_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_292_6_-__7_jaar" class="facetbutton" href="#" data-for="4099276460822236727543245323255321069797114" onclick="javascript:setCurrentId('4099276460822236727543245323255321069797114');">6-7 jaar</a>
         <a href="/e/nl/dl/speelgoed-10-tot-11-jaar">10-11 jaar</a>
         <a href="/e/nl/dl/speelgoed-12-tot-13-jaar">12-13 jaar</a>  
         <a href="/e/nl/dl/speelgoed-14-tot-15-jaar">14-15 jaar</a>
@@ -63,6 +86,9 @@ div.scrollmenu a {
         <a href="/e/nl/dl/speelgoed-18-jaar">18+ jaar</a>
     </div>
 </div>
+<div id="ab31-grid"></div>
+
+
 
 
 
