@@ -1,4 +1,14 @@
 
+<!-- paginas die al facet buttons gebruiken
+
+https://www.dreamland.be/e/nl/dl/kinder-en-jeugdboeken#facet:-70000000000000645025532453257321069797114&facetLimit:&productBeginIndex:0&orderBy:5&pageView:grid&minPrice:&maxPrice:&pageSize:&
+
+
+
+
+
+ -->
+
 <!-- delete facetCountforMobilePopup  : ID facet for mobile from original filter button
  -->
 
@@ -67,23 +77,36 @@ div.scrollmenu a {
 	display: inline-block!important;
 }
 
+.ab31-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ab31-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.ab31-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 
 </style>
 
-<div class="campaign-espot" id="espot-grid">
-	<div class="scrollmenu">
+<div class="campaign-espot ab31-sticky" id="espot-grid">
+	<div class="scrollmenu ab31-scroll">
         <!-- <a id="facetnavHeaderForMobile" href="javascript:void(0);" onclick="shoppingActionsJS.showWCDialogPopup('facetNavNF');" class=""><h3 class="toggle" role="button" tabindex="0" aria-controls="facet_nav_collapsible_4_-1004_4099276460824417157" aria-label="Filteren" aria-describedby="facet_widget_acce_desc">Filteren<div id="facetCountforMobilePopup"></div></h3></a> -->
         <a id="ab31-filter" href="javascript:void(0);" onclick="shoppingActionsJS.showWCDialogPopup('facetNavNF');" class=""><div class="toggle" role="button" tabindex="0" aria-controls="facet_nav_collapsible_4_-1004_4099276460824417157" aria-label="Filteren" aria-describedby="facet_widget_acce_desc">Filteren <div id="facetCountforMobilePopup" class="ab31-show"></div></div></a>
-        <a href="/e/nl/dl/gezelschapsspellen?#facet:4099276460822236727523245323253321069797114&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&ab31-grid">4-5 jaar</a>
-        <a href="/e/nl/dl/speelgoed-2-tot-3-jaar">4-6 jaar</a>
+        <a href="#ab31-grid" aria-labelledby="4099276460822236727523245323253321069797114_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_181_4_-__5_jaar" class="facetbutton" data-for="4099276460822236727523245323253321069797114" onclick="javascript:setCurrentId('4099276460822236727523245323253321069797114');">4-5 jaar</a>
+        <a href="#ab31-grid" aria-labelledby="4099276460822236727543245323255321069797114_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_292_6_-__7_jaar" class="facetbutton" data-for="4099276460822236727543245323255321069797114" onclick="javascript:setCurrentId('4099276460822236727543245323255321069797114');">6-7 jaar</a>
+        <a href="#ab31-grid" aria-labelledby="4099276460822236727563245323257321069797114_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_424_8_-__9_jaar" class="facetbutton" data-for="4099276460822236727563245323257321069797114" onclick="javascript:setCurrentId('4099276460822236727563245323257321069797114');";>8-9 jaar</a>
+        <a href="#ab31-grid" aria-labelledby="409927646082223672749523245324953321069797114_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_394_14_-_15_jaar" class="facetbutton" data-for="409927646082223672749523245324953321069797114" onclick="javascript:setCurrentId('409927646082223672749523245324953321069797114');">14-15 jaar</a>  
+        <a href="#ab31-grid" aria-labelledby="4099276460822236727495643_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_413_18+" class="facetbutton" data-for="4099276460822236727495643" onclick="javascript:setCurrentId('4099276460822236727495643');">Volwassenen</a>
         <a href="/e/nl/dl/alle-familiespellen">Familiespellen</a>
-        <a href="#ab31-grid" aria-labelledby="4099276460822236727543245323255321069797114_ACCE_Label" id="facetButton_4_-1004_4099276460824417157_292_6_-__7_jaar" class="facetbutton" href="#" data-for="4099276460822236727543245323255321069797114" onclick="javascript:setCurrentId('4099276460822236727543245323255321069797114');">6-7 jaar</a>
-        <a href="/e/nl/dl/speelgoed-10-tot-11-jaar">10-11 jaar</a>
-        <a href="/e/nl/dl/speelgoed-12-tot-13-jaar">12-13 jaar</a>  
-        <a href="/e/nl/dl/speelgoed-14-tot-15-jaar">14-15 jaar</a>
-        <a href="/e/nl/dl/speelgoed-16-tot-17-jaar">16-17 jaar</a>
-        <a href="/e/nl/dl/speelgoed-18-jaar">18+ jaar</a>
     </div>
 </div>
 <div id="ab31-grid"></div>
