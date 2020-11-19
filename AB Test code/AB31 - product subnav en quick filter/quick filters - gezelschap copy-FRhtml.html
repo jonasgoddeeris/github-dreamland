@@ -9,6 +9,7 @@ https://www.dreamland.be/e/nl/dl?onetrust-dontload&at_preview_token=lofDWNxZtt-R
 
  -->
 
+
 <!-- delete facetCountforMobilePopup  : ID facet for mobile from original filter button
  -->
 <script>
@@ -17,13 +18,20 @@ hj('tagRecording', ['ab_31_B']);
 </script>
 
 <style>
-#container_ > div.row.grdTwoLeft > div.col4.acol12.ccol3.left {
+/*#container_ > div.row.grdTwoLeft > div.col4.acol12.ccol3.left {
 display: none;
 }
+*/
 
-/*#facetnavHeaderForMobile {
-	display:none;
-}*/
+@media screen and (max-width: 767px){
+body #page #contentWrapper #content .filter {
+    margin-bottom: 0px !important;
+}
+}
+
+#facetnavHeaderForMobile {
+	display:none !important;
+}
 
 div.scrollmenu {
     overflow: auto;
@@ -105,9 +113,11 @@ div.scrollmenu a.ab31-subnav {
   scrollbar-width: none;  /* Firefox */
 }
 
-#container_ > div.row.grdTwoLeft > div.col8.acol12.ccol9.right.rightCol > div:nth-child(2) > div:nth-child(2) {
+/*#container_ > div.row.grdTwoLeft > div.col8.acol12.ccol9.right.rightCol > div:nth-child(2) > div:nth-child(2) {
 	display: none;
-}
+}*/
+
+
 
 </style>
 
@@ -128,7 +138,7 @@ div.scrollmenu a.ab31-subnav {
 ---------
 
 
-
+<!-- 
 	<div class="scrollmenu ab31-scroll">
         <a class="ab31-subnav" href="/e/fr/dl/tous-les-jeux-en-famille?#facet:&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">Jeux en famille</a>
         <a class="ab31-subnav" href="/e/fr/dl/jeux-de-reflexion?#facet:&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">Jeux de réflexion</a>
@@ -138,7 +148,7 @@ div.scrollmenu a.ab31-subnav {
         <a class="ab31-subnav" href="/e/fr/dl/quiz-et-jeux-enigme?#facet:&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">Quiz et jeux d'énigme</a>
         <a class="ab31-subnav" href="/e/fr/dl/jeux-pour-fous-de-sciences?#facet:&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">Pour les explorateurs</a>
     </div>
-
+ -->
 
 
 
