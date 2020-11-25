@@ -1,0 +1,56 @@
+<script>
+var offers = document.querySelectorAll("#productOffer");
+for (var i = 1; i < offers.length; i++) {
+	var price = offers[i];
+	var priceText = price.innerHTML;
+	var decimals = priceText.split(',')[1];
+	var main = priceText.split(',')[0];
+	var mainNOeuro = main.replace("€","");
+	var cent = '<span id="abTest32-cent-' +i +'">' + decimals + '</span>';
+	var noEuro = '<span id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
+	price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
+	// price.innerHTML = priceText.replace(main, noEuro);
+	document.getElementById('abTest32-cent-'+i).setAttribute('style', 'vertical-align: 9px; font-size:60%;');
+}
+
+
+
+</script>
+
+
+
+	s = price.innerHTML;
+	for r in ((decimals, cent), (main, noEuro));
+    s = s.replace(*r);
+
+
+
+
+document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price")
+
+document.querySelector("#productOffer")
+//*[@id="productOffer"]
+
+
+
+
+var offers = document.querySelectorAll('[itemprop="offers"]');
+for (var i = 0; i < offers.length; i++) {
+	var price = offers[i].querySelector('div:nth-child(5) > span');
+	var priceText = price.innerHTML;
+	var decimals = priceText.split(',')[1];
+	var repl = '<span id="abTest3-' +i +'">' + decimals + '</span>';
+	price.innerHTML = priceText.replace(decimals, repl);
+	document.getElementById('abTest3-'+i).setAttribute('style', 'color: red; vertical-align: text-top; font-size:70%;');
+}
+
+
+
+
+css
+#page .namePartPriceContainer>div .price {
+    font-size: 30px;
+    color: #666;
+    line-height: 1.1em;
+    font-weight: 700;
+}
