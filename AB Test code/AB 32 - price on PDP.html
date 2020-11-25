@@ -5,7 +5,7 @@ for (var i = 1; i < offers.length; i++) {
 	var priceText = price.innerHTML;
 	var decimals = priceText.split(',')[1];
 	var main = priceText.split(',')[0];
-	var mainNOeuro = main.replace("€","");
+	var mainNOeuro = main.replace("€&nbsp;","");
 	var cent = '<span id="abTest32-cent-' +i +'">' + decimals + '</span>';
 	var noEuro = '<span id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
 	price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
@@ -16,12 +16,6 @@ for (var i = 1; i < offers.length; i++) {
 
 
 </script>
-
-
-
-	s = price.innerHTML;
-	for r in ((decimals, cent), (main, noEuro));
-    s = s.replace(*r);
 
 
 
