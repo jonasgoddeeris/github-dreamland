@@ -6,16 +6,65 @@ for (var i = 1; i < offers.length; i++) {
 	var decimals = priceText.split(',')[1];
 	var main = priceText.split(',')[0];
 	var mainNOeuro = main.replace("€&nbsp;","");
-	var cent = '<span id="abTest32-cent-' +i +'">' + decimals + '</span>';
-	var noEuro = '<span id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
+	var cent = '<span class="abTest32-cent" id="abTest32-cent-' +i +'">' + decimals + '</span>';
+	var noEuro = '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
 	price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
-	document.getElementById('abTest32-cent-'+i).setAttribute('style', 'vertical-align: 9px; font-size:18px;');
 }
 </script>
 
 <style>
 #page .namePartPriceContainer>div .price {
     font-size: 30px;
+}
+#page .product_price .price {
+    margin-top: 2px;
+}
+.abTest32-cent{
+	vertical-align: 9px; 
+	font-size:18px;
+}
+#page .namePartPriceContainer>div .old_price {
+    font-size: 16px;
+    font-weight: 400;
+}
+#page .repeatPrice .namePartPriceContainer .widget_Recupel {
+    padding-left: 10px;
+}
+</style>
+
+
+
+
+<!-- CCCCCCCCCCCCCCCCCCCCCCCCCCC -->
+
+
+<script>
+var offers = document.querySelectorAll("#productOffer");
+for (var i = 1; i < offers.length; i++) {
+	var price = offers[i];
+	var priceText = price.innerHTML;
+	var decimals = priceText.split(',')[1];
+	var main = priceText.split(',')[0];
+	var mainNOeuro = main.replace("€&nbsp;","");
+	var cent = '<span class="abTest32-cent" id="abTest32-cent-' +i +'">' + decimals + '</span>';
+	var noEuro = '€&nbsp;' + '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
+	price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
+}
+</script>
+
+<style>
+#page .namePartPriceContainer>div .price {
+    font-size: 16px;
+    font-weight: 400;
+}
+.abTest32-euro {
+    font-size: 30px;
+    font-weight: 700;
+}
+.abTest32-cent{
+	vertical-align: 9px; 
+	font-size:18px;
+	font-weight: 700;
 }
 #page .product_price .price {
     margin-top: 2px;
