@@ -20,11 +20,7 @@
 </style>
 <script>
 var poller = setInterval(function(){
-  if(document.querySelector("#abTest32-euro-1") == null) {
-    clearInterval(poller);
-    var ab32i = 0;
-    ab32i = ab32i + 1
-    console.log("ab32i =" + ab32i);
+	console.log("ab32i");
 	var offers = document.querySelectorAll("#productOffer");
 	for (var i = 1; i < offers.length; i++) {
 		var price = offers[i];
@@ -36,8 +32,10 @@ var poller = setInterval(function(){
 		var noEuro = '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
 		price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
 	}
+	if(document.querySelector("#abTest32-euro-1") !== null) {
+    clearInterval(poller);
   }
-}, 150);
+}, 50);
 </script>
 
 
@@ -67,11 +65,7 @@ var poller = setInterval(function(){
 </style>
 <script>
 var poller = setInterval(function(){
-  if(document.querySelector('#abTest32-cent-1') == null) {
-    clearInterval(poller);
-    var ab32i = 0;
-    ab32i = ab32i + 1
-    console.log("ab32i =" + ab32i);
+	console.log("ab32i");
 	var offers = document.querySelectorAll("#productOffer");
 	for (var i = 1; i < offers.length; i++) {
 		var price = offers[i];
@@ -83,6 +77,8 @@ var poller = setInterval(function(){
 		var noEuro = '€&nbsp;' + '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
 		price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
 	}
+	if(document.querySelector('#abTest32-euro-1') !== null) {
+    clearInterval(poller);
   }
-}, 150);
+}, 50);
 </script>
