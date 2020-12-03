@@ -1,0 +1,123 @@
+<!-- B Variant NO eurosign -->
+<style>
+#page .namePartPriceContainer>div .price {
+    font-size: 30px;
+}
+#page .product_price .price {
+    margin-top: 2px;
+}
+.abTest32-cent{
+	vertical-align: 9px; 
+	font-size:18px;
+}
+#page .namePartPriceContainer>div .old_price {
+    font-size: 16px;
+    font-weight: 400;
+}
+#page .repeatPrice .namePartPriceContainer .widget_Recupel {
+    padding-left: 10px;
+}
+</style>
+<script>
+var repeat = setInterval(function(){
+	console.log("ab32i");
+	if(document.querySelectorAll("span#productOffer.price")[1] !== null) {
+		clearInterval(repeat);
+	    var offers = document.querySelectorAll("#productOffer");
+			for (var i = 1; i < offers.length; i++) {
+				var price = offers[i];
+				var priceText = price.innerHTML;
+				var decimals = priceText.split(',')[1];
+				var main = priceText.split(',')[0];
+				var mainNOeuro = main.replace("€&nbsp;","");
+				var cent = '<span class="abTest32-cent" id="abTest32-cent-' +i +'">' + decimals + '</span>';
+				var noEuro = '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
+				price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
+				console.log("ab32i-executed");
+		}
+	} 
+}, 100);
+</script>
+
+
+
+<!-- C Variant small eurosign -->
+<style>
+#page .namePartPriceContainer>div .price {
+    font-size: 16px;
+}
+.abTest32-euro {
+    font-size: 30px !important;
+}
+.abTest32-cent{
+	vertical-align: 9px; 
+	font-size:18px !important;
+}
+#page .product_price .price {
+    margin-top: 2px;
+}
+#page .namePartPriceContainer>div .old_price {
+    font-size: 16px;
+    font-weight: 400;
+}
+#page .repeatPrice .namePartPriceContainer .widget_Recupel {
+    padding-left: 10px;
+}
+</style>
+<script>
+var repeat = setInterval(function(){
+	console.log("ab32i");
+	if(document.querySelectorAll("span#productOffer.price")[1] !== null) {
+		clearInterval(repeat);
+    	var offers = document.querySelectorAll("#productOffer");
+		for (var i = 1; i < offers.length; i++) {
+			var price = offers[i];
+			var priceText = price.innerHTML;
+			var decimals = priceText.split(',')[1];
+			var main = priceText.split(',')[0];
+			var mainNOeuro = main.replace("€&nbsp;","");
+			var cent = '<span class="abTest32-cent" id="abTest32-cent-' +i +'">' + decimals + '</span>';
+			var noEuro = '€&nbsp;' + '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
+			price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
+			console.log("ab32i-executed");
+		}
+	} 	
+}, 100);
+</script>
+
+
+
+<!-- POGING 2 
+<script>
+var repeat = setInterval(function(){
+	if(document.querySelectorAll("span#productOffer.price")[1]; !== null) {
+	clearInterval(repeat);
+	console.log("ab32i");
+	var price1 = document.querySelectorAll("span#productOffer.price")[0];
+	var price2 = document.querySelectorAll("span#productOffer.price")[1];
+	function updatePrice(tochange) {
+	var price = tochange;
+	var priceText = price.innerHTML;
+	var decimals = priceText.split(',')[1];
+	var main = priceText.split(',')[0];
+	var mainNOeuro = main.replace("€&nbsp;","");
+	var cent = '<span class="abTest32-cent" id="abTest32-cent-' +i +'">' + decimals + '</span>';
+	var noEuro = '€&nbsp;' + '<span class="abTest32-euro" id="abTest32-euro-' +i +'">' + mainNOeuro + '</span>';
+	price.innerHTML = priceText.replace(decimals, cent).replace(main, noEuro);
+	
+	}
+	updatePrice(price1);
+	updatePrice(price2);
+	}	
+}, 50);
+</script>
+
+
+
+document.querySelector("#productOffer > span.abTest32-euro")
+
+
+ document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price > span.price")
+
+document.querySelectorAll("span#productOffer.price.red")[0]
+document.querySelectorAll("span#productOffer.price.red")[1] -->

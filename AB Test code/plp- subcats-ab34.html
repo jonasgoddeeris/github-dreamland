@@ -1,0 +1,40 @@
+<style>
+ul.facetSelect {
+    overflow: auto;
+    white-space: nowrap;
+  /*  display: flex;*/
+    justify-content: space-between;
+  /*  margin-top: 8px;*/
+    -ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+ul.facetSelect::-webkit-scrollbar {
+  display: none;
+}
+.facetSelect li {
+	font-size: 13px;
+	display: inline-block;
+    color: #005ba9;
+    text-align: center;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: 1.5px solid #005ba9;
+    font-family:"Lato";
+}
+span.facetValue {
+	display: flow-root;
+    font-size: 12px;
+    color: #656565;
+    font-family: Ubuntu;
+}
+@media screen and (max-width: 767px) {
+#page #content .categoryNavWidget.collapsible:not(.short) div.widget_left_nav>div.content_left_border>div.content_right_border>div.content div.content_section div.section_list {
+    background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+#page #content .categoryNavWidget.collapsible:not(.short) div.widget_left_nav>div.content_left_border>div.content_right_border>div.content div.content_section div.section_list ul.facetSelect li {
+    border-bottom: 1.5px solid #005ba9 !important;
+}
+}
+</style>
