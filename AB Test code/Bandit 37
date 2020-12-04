@@ -4,9 +4,16 @@
 https://www.dreamland.be/e/nl/ShopCartOverviewCmd?onetrust-dontload&calculationUsageId=-1&catalogId=15501&doConfigurationValidation=Y&updatePrices=1&orderId=.&langId=-11&storeId=13102&errorViewName=ShopCartOverviewCmd&URL=ShopCartOverviewCmd
 
 <script>
-document.getElementsByClassName("btnSubmit")[0].innerHTML='<a onclick="javascript:return shopCartDisplayExtJS.fnCheckOut("G","https://www.dreamland.be/e/nl/dl/checkout-customer-overview", "Promotiecode");" href="#">Ik ga bestellen</a>';
+if(getElementsByClassName("btnSubmit")[0] == null) {
+	console.log("target is weer te traag")
+};
 
-document.getElementsByClassName("btnSubmit")[3].innerHTML='<a onclick="javascript:return shopCartDisplayExtJS.fnCheckOut("G","https://www.dreamland.be/e/nl/dl/checkout-customer-overview", "Promotiecode");" href="#">Ik ga bestellen</a>';
+
+setTimeout(function(){ document.getElementsByClassName("btnSubmit")[0].innerHTML='<a onclick="javascript:return shopCartDisplayExtJS.fnCheckOut("G","https://www.dreamland.be/e/nl/dl/checkout-customer-overview", "Promotiecode");" href="#">Ik ga bestellen</a>';
+
+document.getElementsByClassName("btnSubmit")[3].innerHTML='<a onclick="javascript:return shopCartDisplayExtJS.fnCheckOut("G","https://www.dreamland.be/e/nl/dl/checkout-customer-overview", "Promotiecode");" href="#">Ik ga bestellen</a>'; }, 50);
+
+
 </script>
 
 
