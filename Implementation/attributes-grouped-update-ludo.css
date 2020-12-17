@@ -1,0 +1,44 @@
+<style>
+
+#page .productDetailPage .widget_Attributes_table .attributeWidget__header {
+    background-color: #fff;
+}
+
+#page .productDetailPage .widget_Attributes_table .attributeWidget__header>h2 {
+    font-family: sans-serif!important;
+    font-weight: 700;
+    font-size: 15px;
+    color: #666;
+    padding: 6px 10px;
+    padding-right: 40px;
+}
+
+#page .productDetailPage .widget_Attributes_table .attributeWidget__header.collapsed:after {
+    font-weight: bold;
+    color: #666;
+}
+
+
+#page .productDetailPage .widget_Attributes_table .attributeWidget__header:after {
+    font-weight: bold;
+    color: #666;
+}
+
+#page .productDetailPage .widget_Attributes_table .attribute.jOdd {
+    background: #fff;
+    padding-left: 40px;
+}
+
+
+#page .productDetailPage .widget_Attributes_table .attribute.jEven {
+    background: #f6f6f6;
+    padding-left: 40px;
+}
+
+#page .productDetailPage .widget_Attributes_table .attribute>.label {
+    float: left;
+    width: 55%;
+    font-weight: normal;
+}
+
+</style>
