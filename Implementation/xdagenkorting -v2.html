@@ -24,9 +24,9 @@ var iOSdate = convertDateForIos(deadline);
 var days = getTimeRemaining(iOSdate).days;
 
 if (days == 1){
-	var promo = actieNaam + " <span>(Actie alleen vandaag nog geldig)</span>";    // laatste dag
+	var promo = actieNaam + " <span>(alleen vandaag nog geldig)</span>";    // laatste dag
 } else if (days <= 5){
-	var promo = actieNaam + " <span>(Actie nog " + days + " dagen geldig)</span>";  // actienaam aftel
+	var promo = actieNaam + " <span>(actie nog " + days + " dagen geldig)</span>";  // actienaam aftel
 }
   else {
 	var promo = actieNaam                                    // default promo text
