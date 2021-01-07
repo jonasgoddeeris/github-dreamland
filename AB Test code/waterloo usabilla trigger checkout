@@ -1,0 +1,4 @@
+var pickupstore = document.querySelector("#stSearchTerm").value;
+
+
+if 
