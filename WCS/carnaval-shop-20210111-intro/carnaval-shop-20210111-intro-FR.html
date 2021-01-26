@@ -1,0 +1,1242 @@
+<!--GEBRUIK NFContentPageTypeAlgemeen als layout in WCS-->
+<link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/css/bootstrap.css">
+<!-- <link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/css/general.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/css/template2020.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/js/splide/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/slick/slick-theme.css"/> -->
+<style>
+#PageHeading_5_-1001_4099276460824417268 {
+/* display:none; */
+text-transform:uppercase;
+}
+#page .title #PageHeading_5_-1001_4099276460824417268 h1 {
+    font-family:'lilita one',sans-serif!important;
+}
+/*#page {
+background-position-x: center;
+background-position-y: 140px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url('/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/hero_carnaval.jpg');
+}*/
+#page .attributeWidget h2 .titleItems, #page .carousel > h2 .titleItems {
+    font-family: 'Lilita one', sans-serif;
+}
+#catalogEntryRecommendationWidget325556978 {
+display:none!important;
+}
+.categoryPage .grdTwoLeft .left {
+display: none;
+}
+.categoryPage .grdTwoLeft .right {
+float: left;
+width: 100%;
+}
+#page .carousel.catalogEntryRecommendationWidget.horizontal>.content>ul>li .product {
+max-width:250px
+}
+/* #page #contentWrapper {
+max-width: 1280px;
+margin: 0 auto;
+} */
+#page #contentWrapper .DL_contentpage div.spacer {
+display:block;
+height:25px;
+width:100%;
+margin:0%
+}
+#page #contentWrapper .DL_contentpage h2 {
+white-space: nowrap;
+}
+#page #contentWrapper .DL_contentpage p {
+margin-bottom: 0px!important;
+}
+/* ====== THEMAS ====== */
+#page #contentWrapper .DL_contentpage .verkleden img{
+border-radius: 8px 8px 0 0;
+width: 100%;
+}
+.slick-prev:before, .slick-next:before {
+color: hsl(195, 97%, 46%)!important;
+}
+#page #contentWrapper .DL_contentpage div.spacer-sm{
+height: 25px;
+display: block;
+}
+#page #contentWrapper .DL_contentpage a {
+font-weight: 700;
+color: hsla(250, 100%, 100%, 1)!important;
+text-decoration: none;
+}
+#page #contentWrapper .DL_contentpage .button {
+display: inherit;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-transform: unset;
+padding: 8px 16px;
+transition: background-color 200ms cubic-bezier(.69,.04,.18,.97) border 200ms cubic-bezier(.69,.04,.18,.97);
+text-decoration: none;
+border: 2px solid;
+border-top-color: currentcolor;
+border-right-color: currentcolor;
+border-bottom-color: currentcolor;
+border-left-color: currentcolor;
+border-radius: 7px;
+margin: 1em auto;
+margin-left: 0;
+width: auto;
+-spacing: .75px;
+text-align: center;
+}
+/* CATEGORY BUTTONS flexbox */
+.container-carnaval {
+display: flex;
+flex-flow: row wrap;
+position: relative;
+align-items: stretch;
+}
+.container-carnaval > div {
+flex: 1 0 33%;
+padding: 5px;
+box-sizing: border-box;
+}
+input[type=button] {
+background: red;
+}
+#page #contentWrapper .DL_contentpage .cat-nav .button.orange {
+border-color: hsl(0, 0%, 100%);
+background-color: hsla(40, 100%, 50%, 1);
+color: hsla(0, 100%, 100%, 1);
+}
+#page #contentWrapper .DL_contentpage .cat-nav .button.orange:hover {
+border-color: hsla(40, 100%, 45%, 1);
+background-color: hsla(40, 100%, 45%, 1);
+color: hsla(0, 100%, 100%, 1);
+}
+#page #contentWrapper .DL_contentpage img.ie-ico{
+padding-bottom: 5px;
+display: block;
+max-width: 30px;
+margin: 0 auto;
+}
+/* ====== POPULAIRE HELDEN ====== */
+.splide__arrow--prev {
+    left: -1em!important;
+}
+.splide__arrow--next {
+    right: 0em!important;
+}
+.splide__arrow {
+    opacity: 1;
+    background-color: #005ba9;
+}
+.splide__arrow svg {
+    fill: white;
+}
+ul#secondary-slider-list li{
+    padding: 0 20px;
+}
+#secondary-slider {
+    max-width: 95%;
+    margin: auto;
+}
+@media screen and (min-width:768px){
+    #secondary-slider {
+    max-width: 100%;
+    margin: auto;
+}
+}
+@media (max-width: 560px){
+    #secondary-slider .splide__arrow--prev {
+    left: -1em!important;
+}
+#secondary-slider .splide__arrow--next { 
+    right: -1em!important;
+}
+}
+
+/* ====== KNUTSEL TIPS ====== */
+.bg-blue{
+background-color: #049bce!important;
+}
+p.bg-blue{
+    color: #fff!important;
+}
+.bg-light-blue{
+background-color: #ecf2f8!important;
+}
+p.bg-light-blue{
+    color: #005BA9!important;
+}
+.card-animate:hover{
+transform:translateY(-5px);
+}
+.card-animate{
+transition:transform .2s ease;
+}
+.tips{
+margin: 10px 0 10px 0;
+}
+.tips p{
+-webkit-box-flex: 1;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 9px 9px;
+    max-height: 120px;
+    font-size: 1em!important;
+    line-height: 1.3em!important;
+}
+#page #contentWrapper .DL_contentpage .tips img{
+border-radius: 9px 9px 0 0;
+width: 100%;
+}
+.tips-titel{
+font-family: 'Arial', sans-serif;
+font-size: 1.1rem;
+color: hsla(250, 100%, 100%, 1);
+}
+.tips iframe{
+border-radius: 9px 9px 0 0;
+height: 288px;
+}
+/* ====== POP-UP ====== */
+.tips_popup {
+background: #ffffff;
+padding: 2rem;
+border-radius: 5px;
+display: none;
+max-width: 100%;
+box-sizing: border-box;
+left: 500px!important;
+width: 50%;
+}
+.tips_popup_close {
+position: absolute;
+top: 15px;
+right: 15px;
+transition: color .3s ease;
+}
+.tips_popup_close:hover {
+cursor: pointer;
+color: #00aae4;
+}
+.tips_popup h2 {
+font-family: 'Lilita one', sans-serif;
+color: #005AA6;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+line-height: 1.25em;
+}
+.tips_popup h2 span {
+color: #00aae4;
+display: block;
+}
+.tips_popup p {
+margin-bottom: 1rem;
+}
+.tips_popup ul {
+line-height: 1.5em;
+/*max-height: 15em;*/
+/*overflow-y: auto;*/
+margin-bottom: 1rem;/*
+padding-bottom: 15px;*/
+}
+.tips_popup ul li span {
+color: #00aae4;
+}
+.tips_popup ul li span:before {
+content: ' - '
+}
+.tips_popup ul li .lego {
+color: #999;
+font-size: 13px;
+}
+.tips_popup ul li .lego:before {
+content: '  '
+}
+.inspiratie-card {
+width:100%;
+border-radius:10px;
+display:flex;
+flex-direction:row;
+margin-top:1em!important;
+}
+.unicorn{
+background:#fed1cd;
+}
+.superhelden{
+background:#e3eceb;
+}
+.sheriff{
+background:#fae1c2;
+}
+.inspiratie-card .image, .inspiratie-card .copy {
+flex-grow:0;
+flex-shrink:0;
+width:40%;
+}
+.copy-no-image {
+flex-grow:0;
+flex-shrink:0;
+width:80%;
+}
+.inspiratie-card .image img {
+display:block;
+border-radius:50%;
+width:100%;
+}
+.inspiratie-card .copy {
+padding:1em;
+}
+.inspiratie-card .copy p {
+margin-bottom:0!important;
+}
+.copy-no-image {
+padding:1em;
+}
+.copy-no-image p {
+margin-bottom:0!important;
+}
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+@media screen and (min-width: 1024px){
+header h1 span.big {
+display: block;
+text-transform: uppercase;
+font-size: 3em;
+color: #ffd200!important;
+line-height: 0.9em;
+}
+header{
+margin-bottom: 35px;
+text-align: center;
+}
+.inspiratie-card {
+max-width:100%;
+}
+.inspiratie-card .image {
+width:25%;
+}
+.themas{
+overflow-x: hidden;
+display: flex;
+justify-content: space-between;
+}
+.banner--small {
+width: 30%;
+}
+}
+@media (max-width: 960px){
+#page #contentWrapper .DL_contentpage h1 {
+text-align: center;
+}
+#page #contentWrapper .DL_contentpage .cat-nav .button {
+display: block;
+text-align: center;
+}
+.container-carnaval > div {
+flex: 1 0 90%;
+box-sizing: border-box;
+}
+.container-carnaval > .button-orange {
+    flex: 1 0 50%;  
+}
+#page #contentWrapper .DL_contentpage .cat-nav .button {
+margin: 3px auto;
+}
+.btn {
+font-size: 0.8rem;
+white-space: wrap;
+}
+.helden{
+width: 85%;
+margin: 0 auto;
+}
+header h1 span.big {
+display: block;
+text-transform: uppercase;
+font-size: 1.6em;
+color: #ffd200!important;
+line-height: 0.9em;
+}
+#page #contentWrapper .DL_contentpage h2 {
+font-size: 1.2rem;
+}
+.video iframe{
+margin-top: 25px;
+}
+.container--banners--small {
+overflow-x: scroll;
+overflow-y: hidden;
+color: #ffffff;
+white-space: nowrap;
+display: block;
+-webkit-overflow-scrolling: touch;
+margin-top: 2px;
+}
+.banner--small {
+display: inline-block;
+width: 50%;
+max-width: 85%;
+margin-right: 10px;
+margin-top: 5px;
+position: relative;
+}
+.tips p{
+font-size: 0.8em !important;
+}
+}
+@media (max-width: 560px){
+/* ====== THEMAS ====== */
+ul#secondary-slider-list li {
+    padding: 0px;
+}
+.splide__arrow--prev {
+    left: 0em!important;
+}
+.splide__arrow--prev {
+    left: 0em!important;
+}
+.splide__arrow {
+    width: 0.8em;
+    height: 0.8em;
+}
+.splide__arrow svg {
+    width: 0.5em;
+    height: 1em;
+}
+/* ====== KNUTSEL TIPS ====== */
+.tips_popup {
+left:0px!important;
+}
+.tips_popup {
+width: 100%;
+}
+.tips{
+margin:0px;
+}
+.banner--small {
+display: inline-block;
+width: 60%;
+max-width: 85%;
+margin-right: 10px;
+margin-top: 5px;
+position: relative;
+}
+.tips iframe{
+border-radius: 9px 9px 0 0;
+height: auto;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+}
+
+
+/* BANNER LARGE START */
+.header .container--banner--large .banner--large * {
+        box-sizing: border-box;
+    }
+
+    .header .container--banner--large .banner--large a{
+        width: 100%;
+    }
+
+    .header .container--banner--large .banner--large a picture img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .header .container--banner--large .banner--large {
+        position: relative;
+    }
+
+    .header .container--banner--large .banner--large {
+        font-size: 65%;
+    }
+
+    .header .container--banner--large .banner--large .banner--buttons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 33.5%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header .container--banner--large .banner--large .banner--cta {
+        font-family: 'Chelsea Market', sans-serif;
+        font-size: 1em;
+        background-color: #ffffff;
+        color: #00ADE8;
+        border-radius: 5px;
+        padding: .4em .7em;
+        transition: all .2s ease-out;
+        line-height: 1em;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .header .container--banner--large .banner--large.banner--sfeer .banner--cta {
+        margin-bottom: -1em;
+    }
+
+    @media screen and (min-width:450px) {
+
+        .header .container--banner--large .banner--large {
+            font-size: 75%;
+        }
+
+    }
+
+    @media screen and (min-width:550px) {
+
+        .header .container--banner--large .banner--large {
+            font-size: 85%;
+        }
+    }
+
+    @media screen and (min-width:600px) {
+
+        .header  .container--banner--large .banner--large {
+            font-size: 95%;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+
+
+        .header .container--banner--large .banner--large {
+            font-size: 100%;
+        }
+
+        .header .container--banner--large .banner--large .banner--buttons {
+            width: 33.5%;
+        }
+
+        .header .container--banner--large .banner--large .banner--cta {
+            padding: .5em .8em;
+        }
+
+        .header  .container--banner--large .banner--large:hover .banner--cta {
+            -webkit-transform: scale(1.1, 1.1);
+            -ms-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+        }
+
+        .header .container--banner--large .banner--large .banner--legal {
+            font-size: .65em;
+            padding: 1em;
+            padding-bottom: 1.5em;
+        }
+
+        /* NEW STUFF START*/
+        .header .container--banner--large .banner--large {
+            margin-bottom: 0px;
+        }
+
+        .header .container--banner--large .banner--large .banner--buttons {
+            width: 33.5%;
+            align-items: center;
+        }
+
+        .header .container--banner--large .banner--large .banner--cta {
+            max-width: 80%;
+            margin-bottom: 0;
+            margin-right: 0%;
+        }
+
+        .header .container--banner--large .banner--large .banner--legal {
+            color: #ffffff;
+            text-align: center;
+            position: initial;
+        }
+
+        /* NEW STUFF END*/
+    }
+
+    @media screen and (min-width:992px) {
+
+        .header .container--banner--large .banner--large{
+            font-size: 105%;
+        }
+    }
+
+    @media screen and (min-width:1000px) {
+
+        .header .container--banner--large .banner--large{
+            font-size: 115%;
+        }
+    }
+    @media screen and (min-width:1280px) {
+
+        .header .container--banner--large .banner--large {
+            font-size: 130%;
+        }
+    }
+    /* BANNER LARGE END */
+</style>
+<div class="DL_contentpage">
+    <!-- ====== BEGIN HEADER ====== -->
+    <div class="header">
+        <!-- <picture>
+            <source srcset="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/header-carnaval-960x250-nl@2x.jpg" media="(min-width:768px)">
+            <img srcset="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/header-carnaval-960x500-nl@2x.jpg">
+        </picture> -->
+        <div class="container--banner--large">
+
+            <!-- START - LARGE - NL - Carnaval 2021 -->
+            <div class="banner--large BP20 bpm-id-1244">
+                <a href="/e/fr/dl/deguisements" data-campaign="1" data-intpromo-name="Carnaval 2021" data-intpromo-type="cat">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/no-cta/202112_desktop_large_voorjaar-piraat_fr.jpg, /ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/no-cta/202112_desktop_large_voorjaar-piraat_fr@2x.jpg 2x">
+                    <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/no-cta/202112_mobiel_large_voorjaar-piraat_fr.jpg" srcset="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/no-cta/202112_mobiel_large_voorjaar-piraat_fr.jpg, /ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/no-cta/202112_mobiel_large_voorjaar-piraat_fr@2x.jpg 2x" alt="Tu aimes te déguiser ? Farfouille vite dans notre boutique de déguisements, trouve ta tenue préférée et prépare-toi à une fête d'enfer !" class="img-responsive">
+                  </picture>
+                  <div class="banner--buttons">
+                    <div class="banner--cta">Tout pour te déguiser</div>
+                  </div>
+                </a>
+              </div>
+            <!-- END - LARGE - NL - Carnaval 2021 -->
+            
+            
+            
+            </div>
+    </div>
+    <!-- ====== END HEADER ====== -->
+    <div class="spacer-sm"></div>
+    <!-- ====== BEGIN NAV ====== -->
+    <h2>Choisis ton déguisement</h2>
+    <div class="container-carnaval cat-nav">
+        <div><a id="baby-peuter" href="/e/fr/dl/deguisements-pour-les-tout-petits" class="button blue">Bébés et tout-petits</a></div>
+        <div><a id="kinderen" href="/e/fr/dl/deguisements-pour-enfants" class="button blue">Enfants</a></div>
+        <div><a id="volwassenen" href="/e/fr/dl/deguisements-classiques" class="button blue">Adultes</a></div>
+        <div class="button-orange"><a href="/e/fr/dl/deguisements-147590--2" class="button orange"><img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/icon-hat.png" class="ie-ico hidden-xs">Tous <br class="visible-xs">les déguisements</a></div>
+        <div class="button-orange"><a href="/e/fr/dl/deguisements-accessoires" class="button orange"><img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/icon-mask.png" class="ie-ico hidden-xs">Tous <br class="visible-xs">les accessoires</a></div>
+
+    </div>
+    <!-- ====== END NAV ====== -->
+    <div class="spacer"></div>
+    <!-- ====== BEGIN THEMAS ====== -->
+    <h2>Entre dans ton univers favori</h2>
+    <div class="container--banners--small random themas">
+        <div class="banner--small card-animate tips">
+            <a href="/e/fr/dl/héros-la-reine-des-neiges" class="img-responsive">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/thema_elsa.jpg" class="img-responsive">
+                <p class="bg-blue">La Reine des Neiges</p>
+            </a>
+        </div>
+        <div class="banner--small card-animate tips">
+            <a href="/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=spiderman&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&" class="cta-image">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/thema_spiderman.jpg" class="img-responsive">
+                <p class="bg-blue">Spider-Man</p>
+            </a>
+        </div>
+        <div class="banner--small card-animate tips">
+            <a href="/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=pirate&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&" class="cta-image">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/thema_piraat.jpg" class="img-responsive">
+                <p class="bg-blue">Pirate</p>
+            </a>
+        </div>
+    </div>
+    <!-- ====== END THEMAS ====== -->
+    <div class="spacer"></div>
+    <!-- ====== BEGIN POPULAIRE HELDEN ====== -->
+    <h2>Les héros les plus populaires</h2>
+    <div id="secondary-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/disney-princesse-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/princess.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/fortnite-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/fortnite.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/héros-la-reine-des-neiges">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/reine-de-neige.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/lol-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/lol.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/harry-potter-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/harry-potter.png">
+                    </a>
+                </li>
+               <!--  <li class="splide__slide">
+                    <a href="/e/nl/dl/k3-helden">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/k3.png">
+                    </a>
+                </li> -->
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/star-wars-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/star-wars.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/avengers-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/avengers.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/bumba-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/bumba.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/gard-de-nuit-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/guarde-de-nuit.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/peppa-pig-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/peppa.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/pat-patrouille-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/pat-patrouille.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/trolls-heros">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/trolls.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=plop&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:& <https://www.dreamland.be/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=plop&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/plop.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/deguisements-et-jeux-de-role#facet:-7000000000000001704669711610997110&productBeginIndex:0&facetLimit:&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/batman.png">
+                    </a>
+                </li>
+                <!-- <li class="splide__slide">
+                    <a href="/e/SearchDisplay?searchType=1002&advancedSearch=&pageSize=48&filterTerm=&searchTermScope=&storeId=13102&pageView=grid&manufacturer=&urlLangId=-11&sType=SimpleSearch&metaData=&catalogId=15501&searchTerm=Brandweerman+Sam&resultCatEntryType=2&showResultsPage=true&minPrice=&beginIndex=0&top_category=&maxPrice=&langId=-11&categoryFacetHierarchyPath=144065&categoryId=144065&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/brandweerman-sam.png">
+                    </a>
+                </li> -->
+                <li class="splide__slide">
+                    <a href="/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=Miraculous+Ladybug&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:& <https://www.dreamland.be/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=Miraculous+Ladybug&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/miraculous.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/fr/dl/deguisements-et-jeux-de-role#facet:-700000000000000170483112105100101114457797110&productBeginIndex:0&facetLimit:morelink_ads_f16001_ntk_cs|-700000000000000170483112105100101114457797110|ads_f16001_ntk_cs%3ASpider-Man&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/spiderman.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/SearchDisplay?searchType=1002&advancedSearch=&pageSize=48&filterTerm=&searchTermScope=&storeId=13102&pageView=grid&manufacturer=&urlLangId=-2&sType=SimpleSearch&metaData=&catalogId=15501&searchTerm=casa+de+papel&resultCatEntryType=2&showResultsPage=true&minPrice=&beginIndex=0&top_category=&maxPrice=&langId=-2&categoryFacetHierarchyPath=113100&categoryId=113100&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&">
+                        <img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/casa-de-papel.png">
+                    </a>
+                </li>
+                <li class="splide__slide">
+                    <a href="/e/SearchDisplay?categoryId=&storeId=13102&catalogId=15501&langId=-2&sType=SimpleSearch&resultCatEntryType=2&showResultsPage=true&searchSource=Q&pageView=&beginIndex=0&pageSize=48&searchTerm=mega+mindy&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&#facet:&productBeginIndex:0&facetLimit:&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&"><img style="width: 100%; box-sizing: border-box;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/logos/mega-mindy.png">
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+    <!-- ====== END POPULAIRE HELDEN ====== -->
+    <div class="spacer"></div>
+    <!-- ====== KNUTSEL TIPS ====== -->
+    <h2>Envie de bricoler&nbsp;?</h2>
+    <!--  BEGIN CARDS -->
+    <div id="tips-verkleden" class="col-md-12 container--banners--small random">
+         <!-- BEGIN CARD -->
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_papegaai">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/inspiratie-6.jpg" class="img-responsive">
+                <p class="bg-light-blue">Perroquet<br class="hidden-xs hidden-sm">&nbsp;</p>
+            </a>
+            <div class="tips_popup" id="tips_papegaai">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Rouleau de papier toilette</li>
+                        <li>Fil chenille</li>
+                        <li>7 feuilles de papier A4 de couleurs vives</li>
+                        <li>Yeux mobiles à coller</li>
+                        <li>Ciseaux</li>
+                        <li>Ruban adhésif</li>
+                        <li>Latte</li>
+                        <li>Colle</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dK7tGPE2O5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+        
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_sherif">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/inspiratie-3.jpg" class="img-responsive">
+                <p class="bg-light-blue">Étoile de shérif<br class="hidden-xs hidden-sm">&nbsp;</p>
+            </a>
+            <div class="tips_popup" id="tips_sherif">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li><a href="/ecomwcs/static/StaticWeb/DL/campaignpages/800850_carnaval/patroon_badge.pdf" style="text-decoration:underline;color:#005ba9;">Gabarit étoile shérif</a></li>
+                        <li>Papier blanc épais</li>
+                        <li>Ciseaux</li>
+                        <li>Marqueur noir</li>
+                        <li>Colle seconde</li>
+                        <li>Peinture or acrylique Marabu</li>
+                        <li>Pièces et étoiles décoratives</li>
+                        <li>Épingle à nourrice</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <div class="inspiratie-card sheriff" id="stap1">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/sherrif/sheriff_03.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>1ère étape</h2>
+                            <p>Imprime le gabarit et découpe-le.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card sheriff" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/sherrif/sheriff_05.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>2e étape</h2>
+                            <p>Pose le gabarit sur une feuille de papier épais et peins d’abord le pourtour. Puis retire le gabarit et peins l’entièreté de l’étoile avec de la peinture dorée. Laisse sécher.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card sheriff" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/sherrif/sheriff_02.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>3e étape</h2>
+                            <p>Découpe à nouveau l’étoile et fixe l’épingle à nourrice au verso.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card sheriff" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/sherrif/sheriff_07.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>4e étape</h2>
+                            <p>Décore l’insigne en y collant des étoiles et pièces dorées et argentées. Complète éventuellement avec divers éléments de déco au marqueur noir.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card sheriff" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/sherrif/sheriff_01.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>5e étape</h2>
+                            <p>Accroche l’étoile à ton déguisement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BEGIN CARD -->
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_superhelden">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/inspiratie-2.jpg" class="img-responsive">
+                <p class="bg-light-blue">Bracelet de super-héros</p>
+            </a>
+            <div class="tips_popup" id="tips_superhelden">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Rouleau de papier-toilette</li>
+                        <li>Peinture rouge, bleue et blanche</li>
+                        <li>Pinceau</li>
+                        <li>Papier blanc épais</li>
+                        <li>Ciseaux</li>
+                        <li>Colle</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <div class="inspiratie-card superhelden" id="stap1">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/armband/armband_06.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>1ère étape</h2>
+                            <p>Peins les bords du rouleau de papier-toilette en rouge, puis le milieu en bleu et ajoute encore 2 bandelettes blanches aux extrémités.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card superhelden" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/armband/armband_07.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>2e étape</h2>
+                            <p>Dessine une étoile sur du papier blanc épais, découpe-la et colle-la sur le bracelet.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card superhelden" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/armband/armband_08.jpg">
+                        </div>
+                        <div class="copy">
+                            <h2>3e étape</h2>
+                            <p>Découpe l’arrière du rouleau pour pouvoir placer le bracelet facilement sur ton poignet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+        <!-- BEGIN CARD -->
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_tiara">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/inspiratie-4.jpg" class="img-responsive">
+                <p class="bg-light-blue">Couronne La Reine des Neiges</p>
+            </a>
+            <div class="tips_popup" id="tips_tiara">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Colle à paillettes</li>
+                        <li>Vieux diadème</li>
+                        <li>Crayon à dessin</li>
+                        <li>Ciseaux</li>
+                        <li>Papier bleu</li>
+                        <li>Pinceau</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JpzskQdbFMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+         <!-- BEGIN CARD -->
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_spin">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/inspiratie-5.jpg" class="img-responsive">
+                <p class="bg-light-blue">Spider-Ami<br class="hidden-xs hidden-sm">&nbsp;</p>
+            </a>
+            <div class="tips_popup" id="tips_spin">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Rouleau de papier toilette</li>
+                        <li>Fil chenille</li>
+                        <li>Papier noir</li>
+                        <li>Yeux mobiles à coller</li>
+                        <li>Ciseaux</li>
+                        <li>Ruban adhésif</li>
+                        <li>Latte</li>
+                        <li>Balle</li>
+                        <li>Colle</li>
+                        <li>Peinture noire</li>
+                        <li>Pinceau</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/blCWoV2dzZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_unicorn">
+                <img style="width: 100%; box-sizing: border-box;border-radius: 9px 9px 0 0;" src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/inspiratie-1.jpg">
+                <p class="bg-light-blue">Licorne fabuleuse<br class="hidden-xs hidden-sm">&nbsp;</p>
+            </a>
+            <div class="tips_popup" id="tips_unicorn">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Éponge à maquillage</li>
+                        <li>Pinceau mince</li>
+                        <li>Maquillage blanc, rose et doré</li>
+                        <li>Perles à coller bleues, argentées et roses</li>
+                        <li>Maquillage paillettes</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <div class="inspiratie-card unicorn" id="stap1">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/unicorn/unicorn_01.png">
+                        </div>
+                        <div class="copy">
+                            <h2>1ère étape</h2>
+                            <p>Humidifie l’éponge et appliques-y du maquillage blanc. Forme deux petits demi-cercles au départ des sourcils jusqu’aux joues. Répète l’opération avec du maquillage rose.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/unicorn/unicorn_02.png">
+                        </div>
+                        <div class="copy">
+                            <h2>2e étape</h2>
+                            <p>Mouille ton pinceau et prends du maquillage blanc. Décore le visage avec quelques étoiles et points, puis applique du maquillage doré sur les lèvres.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/unicorn/unicorn_03.png">
+                        </div>
+                        <div class="copy">
+                            <h2>3e étape</h2>
+                            <p>Colle quelques perles bleues et argentées ici et là sur le visage.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap2">
+                        <div class="image">
+                            <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2020/images/inspiratie/unicorn/unicorn_04.png">
+                        </div>
+                        <div class="copy">
+                            <h2>4e étape</h2>
+                            <p>Rajoute des paillettes pour la touche finale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- BEGIN CARD -->
+          <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_vogel">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/knutseltip-vogel.jpg" class="img-responsive">
+                <p class="bg-light-blue">Oiseau multicolore<br class="hidden-xs hidden-sm">&nbsp;</p>
+            </a>
+            <div class="tips_popup" id="tips_vogel">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Masque vénitien</li>
+                        <li>Feutrine de couleur (rouge, vert, mauve et jaune)</li>
+                        <li>Colle</li>
+                        <li>Ciseaux</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <div class="inspiratie-card superhelden" id="stap1">
+                        <div class="copy-no-image">
+                            <h2>1ère étape</h2>
+                            <p>Demande à Maman ou Papa de dessiner 4 modèles sur une feuille de papier&nbsp;: une grande plume en forme de goutte, une petite plume en forme de goutte, une rangée de plumes et le bec. Découpe les modèles.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card superhelden" id="stap2">
+                        <div class="copy-no-image">
+                            <h2>2e étape</h2>
+                            <p>Dépose la grande plume sur la feutrine rouge et découpe tout autour. Répète cette opération une quarantaine de fois.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card superhelden" id="stap3">
+                        <div class="copy-no-image">
+                            <h2>3e étape</h2>
+                            <p>Découpe une quarantaine de petites plumes dans la feutrine verte, en procédant de la même façon.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card superhelden" id="stap4">
+                        <div class="copy-no-image">
+                            <h2>4e étape</h2>
+                            <p>Utilise la feutrine jaune pour le bec et la feutrine mauve pour la rangée de plumes, toujours avec la même technique.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card superhelden" id="stap5">
+                        <div class="copy-no-image">
+                            <h2>5e étape</h2>
+                            <p>Le découpage est terminé&nbsp;? Colle le bec au centre du masque et deux longues rangées de plumes sur le haut du masque. Colle ensuite les grandes plumes sur le reste du masque, en suivant le pourtour des yeux. Utilise les petites plumes pour les «&nbsp;sourcils&nbsp;». Et maintenant, vole petit oiseau, vole&nbsp;!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+  <!-- BEGIN CARD -->
+        <div class="col-md-3 banner--small card-animate tips">
+            <a style="position:relative" class="cta-image tips" data-target="#tips_masker">
+                <img src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/assets/knutseltip-masker.jpg" class="img-responsive">
+                <p class="bg-light-blue">Masques d’animaux géniaux</p>
+            </a>
+            <div class="tips_popup" id="tips_masker">
+                <i class="fa fa-close tips_popup_close"></i>
+                <div>
+                    <h2>Matériel nécessaire&nbsp;:</h2>
+                    <ul>
+                        <li>Masque d’animal en carton</li>
+                        <li>Fil chenille</li>
+                        <li>Pompons</li>
+                        <li>Papier de couleur</li>
+                        <li>Feutre</li>
+                        <li>Colle</li>
+                        <li>Ciseaux</li>
+                        <li>Paillettes, gemmes, perles …</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12">
+                    <div class="inspiratie-card unicorn" id="stap1">
+                        <div class="copy-no-image">
+                            <h2>1ère étape</h2>
+                            <p>Un chat, un papillon ou une girafe&nbsp;? Ou plutôt non&nbsp;: un lion&nbsp;! Ou pourquoi pas une petite coccinelle… Choisis ton masque d’animal préféré&nbsp;!</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap2">
+                        <div class="copy-no-image">
+                            <h2>2e étape</h2>
+                            <p>Dessine les taches, rayures et autres formes sur le masque à l’aide de feutres ou colle du papier de couleur. Veille à prendre des couleurs contrastées (claires et sombres).</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap3">
+                        <div class="copy-no-image">
+                            <h2>3e étape</h2>
+                            <p>Pour les oreilles et le nez, enroule du fil chenille ou colle des pompons.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap4">
+                        <div class="copy-no-image">
+                            <h2>4e étape</h2>
+                            <p>Pour les moustaches du chat et du lion, utilise du fil chenille et colle la moitié à partir du museau.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap5">
+                        <div class="copy-no-image">
+                            <h2>5e étape</h2>
+                            <p>Décore ton masque avec des paillettes, des gemmes ou perles autocollantes ou d’autres détails sympas.</p>
+                        </div>
+                    </div>
+                    <div class="inspiratie-card unicorn" id="stap6">
+                        <div class="copy-no-image">
+                            <h2>6e étape</h2>
+                            <p>Et maintenant, ronronne ou rugis de plaisir&nbsp;!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+    </div>
+    <!-- END CARDS -->
+    <div class="spacer-sm"></div>
+    <!-- ====== VIDEOS ====== -->
+    <!-- <div class="container--banners--small video" style="margin-bottom: 50px;">
+        <div class="banner--small">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/5UNxij_i-qI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="banner--small">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/RMVaNcNZVlw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="banner--small">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/T7lK_yO5m_k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div> -->
+</div>
+<div class="clearfix"></div>
+<script src="/ecomwcs/static/StaticWeb/DL/js/template2020.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script> -->
+<script src="/ecomwcs/static/StaticWeb/DL/dossiers/carnaval/2021/js/splide/css/splide.min.css"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>
+<!-- <script type="text/javascript">
+$(document).ready(function(){
+$('.helden').slick({
+autoplay:true,
+dots: false,
+infinite: true,
+speed: 800,
+slidesToShow: 6,
+slidesToScroll: 6,
+responsive: [
+{
+breakpoint: 1024,
+settings: {
+slidesToShow: 4,
+slidesToScroll: 4,
+infinite: true,
+dots: false,
+}
+},
+{
+breakpoint: 600,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2
+}
+},
+{
+breakpoint: 480,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 2
+}
+}
+// You can unslick at a given breakpoint now by adding:
+// settings: "unslick"
+// instead of a settings object
+]})
+});
+</script> -->
+<script>
+$(document).ready(function () {
+$(".tips").click(function () {
+$($(this).data("target")).bPopup({
+easing: 'easeOutBack',
+speed: 250,
+transition: 'fadeIn',
+transitionClose: 'fadeOut',
+});
+});
+$(".tips_popup_close").click(function () {
+$(this).parent().bPopup().close();
+});
+});
+</script>
+<script>
+document.addEventListener( 'DOMContentLoaded', function () {
+new Splide( '#secondary-slider', {
+pagination:false,
+autoplay: false,
+rewind:true,
+perPage: 6,
+breakpoints: {
+'640': {
+perPage: 4,
+gap    : 'O.5rem'
+},
+'480': {
+perPage: 3,
+gap    : '1rem'
+},
+}
+} ).mount();
+} );
+</script>
