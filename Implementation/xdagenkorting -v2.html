@@ -20,7 +20,10 @@ function getTimeRemaining(endtime){
 var iOSdate = convertDateForIos(deadline);
 var days = getTimeRemaining(iOSdate).days;
 
-if (days == 1){
+if (days == 0){
+	var promo = actieNaam //fallback wrong deadline
+}
+  else if (days == 1){
 	var promo = actieNaam + " <span style='font-weight: 400'>(alleen vandaag nog geldig)</span>";    // laatste dag
 } else if (days <= 5){
 	var promo = actieNaam + " <span style='font-weight: 400'>(nog " + days + " dagen geldig)</span>";  // actienaam aftel
