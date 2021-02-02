@@ -1,6 +1,7 @@
+<!-- NL versie 2.0 -->
 <script>
 const actieNaam =  "Oktoberdeals -15 % op Rubik's van Jumbo";
-const deadline = '2020-10-08 23:59:59 GMT+0200'; // DEADLINE
+const deadline = '2021-02-15 23:59:59 GMT+0200'; // DEADLINE
 
 
 function convertDateForIos(date) {
@@ -21,7 +22,7 @@ var iOSdate = convertDateForIos(deadline);
 var days = getTimeRemaining(iOSdate).days;
 
 if (days == 0){
-	var promo = actieNaam //fallback wrong deadline
+	var promo = actieNaam; //fallback wrong deadline
 }
   else if (days == 1){
 	var promo = actieNaam + " <span style='font-weight: 400'>(alleen vandaag nog geldig)</span>";    // laatste dag
@@ -29,7 +30,7 @@ if (days == 0){
 	var promo = actieNaam + " <span style='font-weight: 400'>(nog " + days + " dagen geldig)</span>";  // actienaam aftel
 }
   else {
-	var promo = actieNaam                                    // default promo text
+	var promo = actieNaam;                                    // default promo text
 };
 var poller = setInterval(function(){
   if(document.querySelector('#output_titel') !== null) {
@@ -39,3 +40,50 @@ var poller = setInterval(function(){
   }
 }, 50);
 </script>
+
+
+<!-- FR versie 2.0 -->
+<script>
+const actieNaam =  "Soldes jusqu'à -70 %";
+const deadline = '2021-02-15 23:59:59 GMT+0200'; // DEADLINE
+function convertDateForIos(date) {
+    var arr = date.split(/[- :]/);
+    date = new Date(arr[0], arr[1]-1, arr[2], arr[3], arr[4], arr[5]);
+    return date;
+};
+function getTimeRemaining(endtime){
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const days = Math.floor( total/(1000*60*60*24)+1 );
+  return {
+    days,
+  };
+};
+var iOSdate = convertDateForIos(deadline);
+var days = getTimeRemaining(iOSdate).days;
+
+
+if (days == 0){
+	var promo = actieNaam; //fallback wrong deadline
+}
+  else if (days == 1){
+  	var promo = actieNaam + " <span style='font-weight: 400'>(dernier jour pour profiter)</span>";
+
+} else if (days <= 5){
+	var promo = actieNaam + " <span style='font-weight: 400'>(plus que " + days + " jours pour profiter)</span>";  // actienaam aftel
+}
+  else {
+	var promo = actieNaam;  // default promo text
+};
+var poller = setInterval(function(){
+  if(document.querySelector('#output_titel') !== null) {
+    clearInterval(poller);
+    console.log(+1);
+    document.querySelector("#output_titel").innerText = promo;
+  }
+}, 50);
+</script>
+
+
+
+
+
