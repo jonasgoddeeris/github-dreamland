@@ -1,0 +1,51 @@
+<style>
+    .DL_usp_container {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        min-height: 40px;
+        background-color: #f78f27;
+        color: #ffffff;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .DL_usp_item_icon,
+    .DL_usp_item_txt {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.5em !important;
+        font-size: 13px;
+    }
+
+    .DL_usp_item_icon {
+        color: #005ba9;
+        margin-right: 3px;
+        font-size: 16px;
+    }
+
+    .DL_usp_item_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .DL_usp_close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
+<script>
+    if (getCookie('carnaval-top-closed') != "true") {
+        $("#page").before('<div class="DL_usp_container"><a href="/e/nl/dl/carnaval-shop"><p class="DL_usp_item_txt">Check zeker onze carnavalshoek! <i class="fas fa-arrow-circle-right"></i></p></a><div class="DL_usp_close"><i class="fas fa-times"></i></div></div>');
+    }
+    $(".DL_usp_close").click(function () {
+        $(".DL_usp_container").hide();
+        setCookie("carnaval-top-closed", "true");
+    });
+</script>
