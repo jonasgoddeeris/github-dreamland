@@ -1,0 +1,130 @@
+<!-- html after #footer -->
+<div id="action_insert_1542216615915500"><div id="actie-popup" data-intpromo-name="Straffe kortingen op Sinttoppers popup 2018"> <!-- Actieomschrijving + 'popup' + jaar -->
+    <div class="popup-banner">
+            <a class="actie-popup_close"><i class="fas fa-times-circle"></i></a>
+        <a href="/e/nl/dl/actie-welkom-sint" title="Straffe kortingen op Sinttoppers" data-linktype="image">
+            <div class="pop-up-banner-wrapper">
+                <p class="legals">Actie op 18/11/2018, exclusief op dreamland.be</p>
+                <img src="/ecomwcs/static/StaticWeb/DL/campaignpages/741531_welkom_sint/popup/popup-straffe-nl.jpg" class="hidden-xs img-responsive" alt="Straffe kortingen op Sinttoppers">
+                <img src="/ecomwcs/static/StaticWeb/DL/campaignpages/741531_welkom_sint/popup/popup-straffe-nl.jpg" class="visible-xs img-responsive" alt="Straffe kortingen op Sinttoppers">
+                    <img src="https://s.mmgo.io/t/BISC/scale_2x" alt="motionmailapp.com" class="motionmailappp">
+                    <div class="primary">Mis de boot niet!</div>
+            </div>
+        </a>
+    </div>
+</div>
+<script>
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 60 * 60 * 1000 * 24));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    $('#actie-popup').popup({
+        opacity: 0.75,
+        transition: 'all 0.3s',
+        blur: false
+    });
+    if (!getCookie("actie-welkom-sint-nl")) { // Unieke cookie naam NL
+        var loc = window.location.toString();
+        if(loc.indexOf('actie-welkom-sint') === -1) { // NL url van de actie
+            $('#actie-popup').popup('show');
+        }
+        setCookie("actie-welkom-sint-nl", "showed", 30); // Zelfde unieke cookie naam NL
+    }
+</script></div>
+
+
+
+
+<!-- Popup CSS/JS Library -->
+<style>
+.motionmailappp {
+    position: absolute;
+    right: 4%;
+    bottom: 30%;
+    max-width: 50%;
+}
+@media (max-width: 768px){
+    .motionmailappp {
+        position: absolute;
+    right: 4%;
+    bottom: 30%;
+    max-width: 50%;
+}
+}
+.actie-popup_close{
+    color:#ffffff;
+    font-size: 150%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 900;
+	width: 50px;
+    height: 50px;
+    text-align: right;
+}
+    #actie-popup img {
+        border-radius: 5px;
+        margin-bottom: 18px;
+    }
+    #actie-popup .primary {
+        background: #D90D10;
+        color: #fff;
+        border: 1px solid #D90D10;
+        padding: 10px;
+        font-family: "Chelsea Market";
+        border-radius: 5px;
+        margin: 2px;
+        position: absolute;
+    bottom: 9%;
+    right: 4%;
+    }
+    .pop-up-banner-wrapper {
+        position: relative;
+    }
+    .pop-up-banner-wrapper p.legals {
+        position: absolute;
+        color: #ffffff;
+        bottom: 5px;
+        left: 6px;
+        right: auto;
+        font-size: 12px;
+        line-height: 1.1;
+    }
+    #actie-popup {
+        transition: all 0.3s ease-out;
+        transform: translateX(0) translateY(-40%);
+    }
+    .popup_wrapper_visible #actie-popup {
+        transform: translateX(0) translateY(0);
+    }
+.pop-up-banner-wrapper p.legals {
+            display: none;
+        }
+    
+    @media(max-width: 768px) {
+        .pop-up-banner-wrapper p.legals {
+            bottom: 30px;
+            right: 12px;
+            left: auto;
+            font-size: 14px;
+        }
+    }
+</style>
+<script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
