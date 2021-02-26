@@ -1,0 +1,102 @@
+ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third
+<!-- BPOST LEVERING 
+https://www.dreamland.be/e/nl/dl/lego-star-wars-75276-stormtroper-helm-188102 
+document.querySelector("#ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third")
+
+LEV 250 DOOR TRANSPORT Colruyt
+document.querySelector("#ci_espot_4099276460824410620_DeliveryInfo_Colruyt")
+https://www.dreamland.be/e/nl/dl/bnb-wod-schommel-madagascar-commando-monkey-bar-met-blauwe-glijban-201009
+
+LEV DOOR LEV - PDF MET DETAILS :S
+GEEN ID ENKEL EEN PDF met levervoorwaarden ?? (salta trampolines)
+https://www.dreamland.be/e/nl/dl/salta-inbouwtrampoline-met-veiligheidsnet-groundlevel-royal-baseground-%C3%B8-2-51-m-873096 -->
+
+
+
+<style>
+#delivery60 {
+    display: none
+}
+#delivery250 {
+    display: none
+}
+</style>
+<script>
+var poller = setInterval(function(){
+  if(document.querySelector('#delivery60') !== null) {
+    clearInterval(poller);
+    console.log(+1)
+    const levInfo = document.getElementById("#ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third > div > a > ul");
+    const dev60 = document.getElementById("delivery60");
+
+    if (levInfo){
+    levInfo.style.display = "none";
+    dev60.style.display = "block";
+    };
+  }
+}, 50);
+</script>
+  
+<!-- depending on layout this element has different ID's
+PDP LAYOUT - SINGLE HOME - #ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third 
+PDP LAYOUT - BUNDLE COLR - ci_espot_4099276460824410620_DeliveryInfo_Colruyt
+PDP LAYOUT - SINGLE COLR - ci_espot_4099276460824409666_DeliveryInfo_Colruyt
+-->
+
+<!-- HTML IS INSERTED VIA TARGET replace editor but display none untill specific lev option is determined by our JS function -->
+
+<!-- NL -->
+  <div id="delivery60">
+   <ul class="DeliveryInfoShortText">
+    <li><span>Gratis</span> afhalen bij +400 afhaalpunten</li>
+    <li><span>Gratis</span> thuislevering vanaf €60</li>
+    <li><span>Kies zelf</span> het bezorgmoment (ook op zat.)</li>
+</ul>
+</div>
+<div id="delivery250" class="productDetail__title deliveryb25">
+    <h2 style="margin-bottom: 10px;">Levering</h2>
+    <strong>Gratis levering vanaf €250</strong>
+    <ul>
+    <li>Via onze transportdienst naar een adres in België</li>
+    <li>Onder €250 verzendkost van €30</li>
+    <li>Kies zelf de gewenste leverdatum</li>
+    <li>Levering op weekdag of zaterdag</li>
+    </ul>
+</div>
+
+<!-- FR -->
+ <div id="delivery60" class="productDetail__title deliveryb25">
+    <h2 style="margin-bottom: 10px;">Retrait et livraison</h2>
+    <strong>Retrait gratuit</strong>
+    <ul>
+    <li>+400 points de retrait (Colruyt, DreamLand, OKay)</li>
+    <li>Vous ne payez qu'au moment du retrait</li>
+    <li>Reste disponible pendant 14 jours</li>
+    </ul>
+    <br>
+    <strong>Livraison gratuite à partir de 60 €</strong>
+    <ul>
+    <li>Via bpost à une adresse en Belgique</li>
+    <li>Les frais d'envoi s'élèvent à 3,99 € pour un achat de moins de 60 €</li>
+    <li>Choisissez la date de livraison souhaitée</li>
+    <li>Livraison en semaine ou le samedi</li>
+    <li>Retours gratuits dans +400 points de retrait</li>
+    </ul>
+</div>
+<div id="delivery250" class="productDetail__title deliveryb25">
+    <h2 style="margin-bottom: 10px;">Livraison</h2>
+    <strong>Livraison gratuite à partir de 250 €</strong>
+    <ul>
+    <li>Via notre service de transport vers une adresse en Belgique</li>
+    <li>Les frais d'envoi s'élèvent à 30 € pour un achat de moins de 250 €</li>
+    <li>Choisissez la date de livraison souhaitée</li>
+    <li>Livraison en semaine ou le samedi</li>
+    </ul>
+</div>
+
+
+
+
+document.querySelector("#ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third > div > a > ul")
+
+
