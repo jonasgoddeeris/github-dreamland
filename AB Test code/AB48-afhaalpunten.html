@@ -1,4 +1,3 @@
-ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third
 <!-- BPOST LEVERING 
 https://www.dreamland.be/e/nl/dl/lego-star-wars-75276-stormtroper-helm-188102 
 document.querySelector("#ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third")
@@ -17,16 +16,13 @@ https://www.dreamland.be/e/nl/dl/salta-inbouwtrampoline-met-veiligheidsnet-groun
 #delivery60 {
     display: none
 }
-#delivery250 {
-    display: none
-}
 </style>
 <script>
 var poller = setInterval(function(){
   if(document.querySelector('#delivery60') !== null) {
     clearInterval(poller);
     console.log(+1)
-    const levInfo = document.getElementById("#ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third > div > a > ul");
+    const levInfo = document.querySelector("#ci_espot_4099276460824424108_DeliveryInfoShort_HomeAndCollection_Third > div > a > ul");
     const dev60 = document.getElementById("delivery60");
 
     if (levInfo){
@@ -53,16 +49,7 @@ PDP LAYOUT - SINGLE COLR - ci_espot_4099276460824409666_DeliveryInfo_Colruyt
     <li><span>Kies zelf</span> het bezorgmoment (ook op zat.)</li>
 </ul>
 </div>
-<div id="delivery250" class="productDetail__title deliveryb25">
-    <h2 style="margin-bottom: 10px;">Levering</h2>
-    <strong>Gratis levering vanaf €250</strong>
-    <ul>
-    <li>Via onze transportdienst naar een adres in België</li>
-    <li>Onder €250 verzendkost van €30</li>
-    <li>Kies zelf de gewenste leverdatum</li>
-    <li>Levering op weekdag of zaterdag</li>
-    </ul>
-</div>
+
 
 <!-- FR -->
  <div id="delivery60" class="productDetail__title deliveryb25">
