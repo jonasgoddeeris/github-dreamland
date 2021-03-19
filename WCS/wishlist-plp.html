@@ -10,7 +10,7 @@ SOMETHINGCORRECT;" data-tms-cartchange-method="click: button"></a></div></div></
 
 
 
-
+<style>
 .whislist {
     position: absolute;
     top: 16px;
@@ -21,10 +21,30 @@ SOMETHINGCORRECT;" data-tms-cartchange-method="click: button"></a></div></div></
 a#wishBtn:before {
     font-size: 22px;
 }
+</style>
 
 
 
-#CatalogEntryProdImg_7622021
 
+
+
+
+<!-- writing some JS to add it to page via console script -->
+// Storing HTML code block in a variable
+var codeBlock = '<div class="whislist">' +
+                    '<a id="wishBtn" class="fal fa-heart" name="cart_P4335952" href="javascript:
+xxx('7622021',1);" data-tms-cartchange-method="click: button"></a>' +
+                    '</div>' +
+                    '<style>'+ '.whislist' + '{' + 'position: absolute;' +''
+    
+    top: 16px;
+    right: 0px;
+}
+
+
+a#wishBtn:before {
+    font-size: 22px;
+}</style>';
 var productimage = document.getElementsByClassName("image");
-productimage.appendChild(wishlistHTML);
+productimage.innerHTML = productimage.innerHTML + codeblock;
+
