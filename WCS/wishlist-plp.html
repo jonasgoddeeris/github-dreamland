@@ -5,10 +5,7 @@ xxx('7622021',1);" data-tms-cartchange-method="click: button"></a></div>
 
 
 
-<div id="CatalogEntryProdImg_7622021" class="product_image"><div class="image"> <img alt="Loungeset Guava" data-dojo-type="marcellbranco.layout.element.LazyLoadImage" data-dojo-props="source: 'https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/58/21/asset-2245821.jpg'" id="marcellbranco_layout_element_LazyLoadImage_55" lang="nl" widgetid="marcellbranco_layout_element_LazyLoadImage_55" src="https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/58/21/asset-2245821.jpg" class="" style="opacity: 1;"><div class="RibbonAdDefault NFACTIE ja">ACTIE -15%</div><div class="RibbonAdDefault NFNEWFLAG ja">NIEUW</div><div class="RibbonAdDefault NFAVAILABILITYFLAG instock">in stock</div><div class="wishlist"><a id="wishBtn" name="cart_P4335952" class="button primary Small" href="javascript:
-SOMETHINGCORRECT;" data-tms-cartchange-method="click: button"></a></div></div></div>
-
-
+//CSS OF NOT SELECTED
 
 <style>
 .whislist {
@@ -25,26 +22,26 @@ a#wishBtn:before {
 
 
 
+<div id="CatalogEntryProdImg_7622021" class="product_image"><div class="image"> <img alt="Loungeset Guava" data-dojo-type="marcellbranco.layout.element.LazyLoadImage" data-dojo-props="source: 'https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/58/21/asset-2245821.jpg'" id="marcellbranco_layout_element_LazyLoadImage_55" lang="nl" widgetid="marcellbranco_layout_element_LazyLoadImage_55" src="https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/58/21/asset-2245821.jpg" class="" style="opacity: 1;"><div class="RibbonAdDefault NFACTIE ja">ACTIE -15%</div><div class="RibbonAdDefault NFNEWFLAG ja">NIEUW</div><div class="RibbonAdDefault NFAVAILABILITYFLAG instock">in stock</div><div class="wishlist"><a id="wishBtn" name="cart_P4335952" class="button primary Small" href="javascript:
+SOMETHINGCORRECT;" data-tms-cartchange-method="click: button"></a></div></div></div>
 
 
 
 
-<!-- writing some JS to add it to page via console script -->
-// Storing HTML code block in a variable
-var codeBlock = '<div class="whislist">' +
-                    '<a id="wishBtn" class="fal fa-heart" name="cart_P4335952" href="javascript:
-xxx('7622021',1);" data-tms-cartchange-method="click: button"></a>' +
-                    '</div>' +
-                    '<style>'+ '.whislist' + '{' + 'position: absolute;' +''
-    
-    top: 16px;
-    right: 0px;
-}
 
 
-a#wishBtn:before {
+
+
+//WHEN SELECTED CLASS NEEDS TO CHANGE
+
+class="fas fa-heart selected"
+
+
+//WITH this css 
+
+<style>
+a.fas.fa-heart.selected {
     font-size: 22px;
-}</style>';
-var productimage = document.getElementsByClassName("image");
-productimage.innerHTML = productimage.innerHTML + codeblock;
-
+    color: red;
+}
+</style>
