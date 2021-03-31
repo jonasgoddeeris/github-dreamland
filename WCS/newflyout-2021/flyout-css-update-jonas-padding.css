@@ -19,9 +19,9 @@
 
 
 
-/*The NAVIGATION Collapsible list of categories:  very dirty visual that does not have a bottom line an not the same broder radius, don't know why this css was added on purpose?*/
-/*It is probabily done because the flyouts do not have a fixed height, that gives flexibility what we can but in the flyouts but can cause a mismatch with this list, looks very dirty. 
-HOwever we need to fix this, introducing a constraint to the flyouts is OK, visually much more pleasing and easy to make a nice box of the list and flyout.*/
+/*The NAVIGATION Collapsible list of categories:  very dirty visual that does not have a bottom line an not the same broder radius*/
+/*It is probabily done because the flyouts do not have the same height. that gives flexibility what we can but in the flyouts but can cause a mismatch with this list, looks very dirty. 
+We need to fix this, introducing a constraint to the flyouts is OK, visually much more pleasing and easy to make a nice box of the list and flyout.*/
 
 @media (min-width: 768px)
 #page #headerWrapper #headerRow2 nav.topNav.collapse {
