@@ -23,10 +23,11 @@
 /*It is probabily done because the flyouts do not have the same height. that gives flexibility what we can but in the flyouts but can cause a mismatch with this list, looks very dirty. 
 We need to fix this, introducing a constraint to the flyouts is OK, visually much more pleasing and easy to make a nice box of the list and flyout.*/
 
-@media (min-width: 768px)
+@media (min-width: 768px){
 #page #headerWrapper #headerRow2 nav.topNav.collapse {
     /*border-radius: 3px 3px 0 0;*/
     border-radius: 3px 3px 3px 3px;
+}
 }
 
 #page #headerWrapper #headerRow2 nav.topNav.collapse {
@@ -35,10 +36,10 @@ We need to fix this, introducing a constraint to the flyouts is OK, visually muc
 
 
 /*because of the fixed height , brand logo's are still outside of parant element.*/
-#page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper {
+#page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper { /*inline css espot*/
     /* height: 494px; */
 }
-.flyout_nav_inner_wrapper.brandcarrousel {
+.flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
     margin-top: 16px;
 }
 
