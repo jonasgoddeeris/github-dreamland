@@ -1,5 +1,5 @@
 /*the brand logo's are being cutoff there is 25px cut off ? */
-#page #headerWrapper #headerRow2 nav.topNav ul li .subNav {
+#page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
 	/*height: calc(100% - 25px);*/
     /*height: 100%;*/ 
     height: 552px;  /*same height a the collapsible list navigation on homepage - looks very clean like this but need to make sure we do NOT make content in flyout bigger than this = HARD CONSTRAINT*/ 
@@ -7,13 +7,13 @@
 
 
 /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
-#page #headerWrapper #headerRow2 nav.topNav ul li .subNav {
+#page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
     /*padding: 5px 10px 20px 28px;*/
     padding: 16px 16px 16px 24px;
 }
 
 /*the brand logo's are quite big, adding a max width is also a good failsafe if wrong image size is uploaded*/
-#page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
+#page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture { /*inline css espot*/
     max-width: 100px;
 }
 
@@ -24,14 +24,15 @@
 We need to fix this, introducing a constraint to the flyouts is OK, visually much more pleasing and easy to make a nice box of the list and flyout.*/
 
 @media (min-width: 768px){
-#page #headerWrapper #headerRow2 nav.topNav.collapse {
+#page #headerWrapper #headerRow2 nav.topNav.collapse { /*dl-homepage.css*/
     /*border-radius: 3px 3px 0 0;*/
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px !important;
 }
 }
 
-#page #headerWrapper #headerRow2 nav.topNav.collapse {
+#page #headerWrapper #headerRow2 nav.topNav.collapse { /*dl-homepage.css*/
     /* border-bottom: none; */
+    border-bottom: 1px solid #ddd !important;
 }
 
 
