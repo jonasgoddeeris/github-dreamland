@@ -17,8 +17,8 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav {
         box-sizing:border-box;
         width:891px;
-        height:574px;
-        padding:16px 24px;
+        height: 552px !important;
+        padding: 16px 16px 16px 24px !important;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li *,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
@@ -39,13 +39,15 @@
         flex-direction:column;
         align-items:stretch;
         justify-content:space-between;
-        height:494px;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
         display:flex;
         flex-direction:row;
         align-items:stretch;
         justify-content:space-between;
+    }
+    .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
+    margin-top: 16px;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
         flex-grow:0;
@@ -54,6 +56,7 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
         display:block;
         padding:8px;
+        max-width: 100px;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img {
         display:block;
@@ -113,6 +116,16 @@
         font-size:18px;
         color:#005ba9;
         cursor:pointer;
+    }
+    @media (min-width: 768px){
+        #page #headerWrapper #headerRow2 nav.topNav.collapse {
+        /*border-radius: 3px 3px 0 0;*/
+        border-radius: 3px 3px 3px 3px !important;
+        }
+    }
+    #page #headerWrapper #headerRow2 nav.topNav.collapse {
+    /* border-bottom: none; */
+    border-bottom: 1px solid #ddd !important;
     }
 </style>
 
