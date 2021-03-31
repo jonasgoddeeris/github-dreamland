@@ -44,3 +44,16 @@ We need to fix this, introducing a constraint to the flyouts is OK, visually muc
     margin-top: 16px;
 }
 
+#page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
+    box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
+    -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
+}
+
+@media (min-width: 1024px){
+body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
+    box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
+    -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
+    -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
+}
+}
