@@ -32,3 +32,13 @@ We need to fix this, introducing a constraint to the flyouts is OK, visually muc
 #page #headerWrapper #headerRow2 nav.topNav.collapse {
     /* border-bottom: none; */
 }
+
+
+/*because of the fixed height , brand logo's are still outside of parant element.*/
+#page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper {
+    /* height: 494px; */
+}
+.flyout_nav_inner_wrapper.brandcarrousel {
+    margin-top: 16px;
+}
+
