@@ -25,7 +25,7 @@ var repeat = setInterval(function(){
 	if(document.querySelectorAll("div.addToCart > div") !== null) {
 		clearInterval(repeat);
 		var elems = document.querySelectorAll("div.addToCart > div");
-		console.log(element.innerText);
+		console.log(elems.innerText);
 		var elemCount = elems.length;
 			for (var i = 0; i < elemCount; i++) {
  				elems[i].innerText = "Bekijk of reserveer winkelvoorraad";
