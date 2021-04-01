@@ -1,0 +1,57 @@
+<script>
+var elems = document.querySelectorAll("div.addToCart > div");
+var elemCount = elems.length;
+
+for (var i = 0; i < elemCount; i++) {
+  elems[i].innerText = "Bekijk of reserveer winkelvoorraad";
+};
+</script>
+
+<script>
+var elems = document.querySelectorAll("div.addToCart > div");
+var elemCount = elems.length;
+
+for (var i = 0; i < elemCount; i++) {
+  elems[i].innerText = "Réservez ou vérifiez le stock en magasin";
+};
+</script>
+
+
+
+
+<script>
+var repeat = setInterval(function(){
+	console.log("ab52intervalRUN");
+	if(document.querySelectorAll("div.addToCart > div") !== null) {
+		clearInterval(repeat);
+		var elems = document.querySelectorAll("div.addToCart > div");
+		console.log(element.innerText);
+		var elemCount = elems.length;
+			for (var i = 0; i < elemCount; i++) {
+ 				elems[i].innerText = "Bekijk of reserveer winkelvoorraad";
+			};
+		console.log("ab52intervalComplete")
+	} 
+}, 10);
+</script>
+
+
+
+------
+
+<script>
+var repeat = setInterval(function(){
+	console.log("ab49intervalRUN");
+	if(document.querySelector("#minishopcart_total").getAttribute("data-tms-cart-quantity") !== null) {
+		clearInterval(repeat);
+			var numberpInCart = document.querySelector("#minishopcart_total").getAttribute("data-tms-cart-quantity");
+			if (numberpInCart > 0){
+			document.querySelector("#minishopcart_total").setAttribute('style', 'background-color: #e01011 !important');
+			console.log("numberpInCart is bigger then 0 " + numberpInCart);
+			}
+			else {
+			console.log("numberpInCart is " + numberpInCart);
+			}
+	} 
+}, 20);
+</script>

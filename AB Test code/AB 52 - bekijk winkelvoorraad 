@@ -1,9 +1,8 @@
-
-
-
+<script>
 var elems = document.querySelectorAll("div.addToCart > div");
 var elemCount = elems.length;
 
 for (var i = 0; i < elemCount; i++) {
   elems[i].innerText = "Bekijk winkelvoorraad of click & collect";
-}
+};
+</script>
