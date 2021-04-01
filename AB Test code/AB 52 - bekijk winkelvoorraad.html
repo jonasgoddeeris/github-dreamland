@@ -22,7 +22,7 @@ for (var i = 0; i < elemCount; i++) {
 <script>
 var repeat = setInterval(function(){
 	console.log("ab52intervalRUN");
-	if(document.querySelectorAll("div.addToCart > div") !== null) {
+	if(document.querySelectorAll("div.addToCart > div")[0].innerText !== undefined) {
 		clearInterval(repeat);
 		var elems = document.querySelectorAll("div.addToCart > div");
 		console.log(elems.innerText);
@@ -32,7 +32,7 @@ var repeat = setInterval(function(){
 			};
 		console.log("ab52intervalComplete")
 	} 
-}, 10);
+}, 15);
 </script>
 
 
