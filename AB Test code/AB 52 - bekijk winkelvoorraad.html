@@ -22,10 +22,11 @@ for (var i = 0; i < elemCount; i++) {
 <script>
 var repeat = setInterval(function(){
 	console.log("ab52intervalRUN");
-	if(document.querySelectorAll("div.addToCart > div")[0].innerText !== undefined) {
+	if(document.querySelectorAll("div.addToCart > div")[0].innerText == "undefined") {
 		clearInterval(repeat);
 		var elems = document.querySelectorAll("div.addToCart > div");
-		console.log(elems.innerText);
+		var elemsInner = elems[0].innerText;
+		console.log(elemsInner);
 		var elemCount = elems.length;
 			for (var i = 0; i < elemCount; i++) {
  				elems[i].innerText = "Bekijk of reserveer winkelvoorraad";
