@@ -1,19 +1,39 @@
 <style>
 
-/*afbeelding groter maken in de 3 column grid , zeker nog veel werk aan :s*/
-#CatalogEntryProdImg_7622021 > div > img {
-  /*width:100%;*/
+/*afbeelding groter maken in de 3 column grid , zeker nog veel werk aan :s  - STAAT REEDS OP ZIJN GROOTSE MAAR AFBEELDING HEBBEN GEWOON ALLEMAAL ANDERE RESOLUTIE ? PRUTSERS LOL :p */
+/*#CatalogEntryProdImg_7622021 > div > img {
+  width:100%;
   display: block;
   max-width:250px;
   max-height:85px;
   width: auto;
   height: auto;
+}*/
+
+
+#page .grid_mode li .product {
+    padding: 0px 24px!important;
+    max-width: 280px;
 }
+/*.product {
+	max-width: 280px;
+}*/
+#page .grid_mode .product>.product_info>a>.product_image {
+    height: 200px;
+}
+
+#page .grid_mode .product>.product_info>a>.product_image>.image {
+    height: 200px;
+}
+#page .grid_mode .product>.product_info>a>.product_image>.image img {
+    max-height: 200px;
+}
+
 
 
 /*3 column grid forceren ipv 4 , OK*/
 #dijit__WidgetBase_1 > li {
-    width: 33%!important;
+    width: 33.3333%!important;
 }
 
 </style>
