@@ -1,3 +1,9 @@
+colruyt digital marketign acedemy 
+--> digital marketing vanuit de experten van de group 
+
+
+
+
 <script>
 var elems = document.querySelectorAll("div.addToCart > div");
 var elemCount = elems.length;
@@ -20,27 +26,23 @@ for (var i = 0; i < elemCount; i++) {
 
 
 <script>
-function myFunction() {
-  setTimeout(function(){ 
-  	console.log("wait 50ms before start interval")
+var timeout = 2000;
+// setTimeout(function(){ 
+  	console.log("wait" + timeout + "before start interval");
 		var repeat = setInterval(function(){
 			console.log("ab52intervalRUN");
-			if(document.querySelectorAll("div.addToCart > div")[0].innerText == "undefined") {
-				clearInterval(repeat);
+			if(document.querySelectorAll("div.addToCart > div")[0].innerText !== "undefined") {
+				setTimeout(function(){ clearInterval(repeat);  }, timeout);
 				var elems = document.querySelectorAll("div.addToCart > div");
-				console.log(elems);
-				var elemsInner = elems[0].innerText;
-				console.log(elemsInner);
 				var elemCount = elems.length;
 					for (var i = 0; i < elemCount; i++) {
 		 				elems[i].innerText = "Bekijk of reserveer winkelvoorraad";
 		 				console.log("count");
 					};
-				console.log("ab52intervalComplete")
+				console.log("ab52intervalComplete");
 			} 
 		}, 15);
- }, 50);
-}
+ // }, timeout);
 </script>
 
 
