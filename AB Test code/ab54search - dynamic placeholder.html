@@ -13,7 +13,6 @@ var repeat = setInterval(function(){
 				console.log("ab52intervalComplete");
 			} 
 }, 15);
-
 function allchanges(){
     document.getElementById("searchFormLabel").innerHTML = "Ik zoek ...";
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Ik zoek ...");
@@ -53,6 +52,15 @@ function allchanges(){
 	}
 </style>
 <script>
+var repeat = setInterval(function(){
+			console.log("ab54intervalRUN");
+			if(document.querySelector("#SimpleSearchForm_SearchTerm") !== "null") {
+				clearInterval(repeat);
+				allchanges();
+				console.log("ab52intervalComplete");
+			} 
+}, 15);
+function allchanges(){
     document.getElementById("searchFormLabel").innerHTML = "Je recherche ...";
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Je recherche ...");
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("style", "display: block");
@@ -80,6 +88,7 @@ function allchanges(){
     myLoop(); //  start the loops
   };
   changeSearchTerms();
+};
 </script>
 
 
@@ -93,9 +102,19 @@ function allchanges(){
 	}
 </style>
 <script>
+var repeat = setInterval(function(){
+			console.log("ab54intervalRUN");
+			if(document.querySelector("#SimpleSearchForm_SearchTerm") !== "null") {
+				clearInterval(repeat);
+				allchanges();
+				console.log("ab52intervalComplete");
+			} 
+}, 15);
+function allchanges(){
     document.getElementById("searchFormLabel").innerHTML = "Waar ben je naar op zoek?";
     document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Waar ben je naar op zoek?");
     document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
+};
 </script>
 
 
@@ -106,11 +125,17 @@ function allchanges(){
 	}
 </style>
 <script>
+var repeat = setInterval(function(){
+			console.log("ab54intervalRUN");
+			if(document.querySelector("#SimpleSearchForm_SearchTerm") !== "null") {
+				clearInterval(repeat);
+				allchanges();
+				console.log("ab52intervalComplete");
+			} 
+}, 15);
+function allchanges(){
 	document.getElementById("searchFormLabel").innerHTML = "Que cherchez-vous ?";
     document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Que cherchez-vous ?");
     document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
+};
 </script>
-
-
-
-
