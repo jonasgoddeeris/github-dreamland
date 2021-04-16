@@ -1,16 +1,17 @@
+<!-- C VARIANT -->
 <script>
   function changeSearchTerms() {
-    var i = 0; //  set your counter to 1
+    var i = -1; //  set your counter to 10
 
     function myLoop() { //  create a loop function
       setTimeout(function () { //  call a 3s setTimeout when the loop is called
-        var searchTerms = ['...', 'flesverwarmer', 'autostoel', 'wandelwagen', 'babyfoon'];
+        var searchTerms = ['...', 'lego technic', 'pokemon', 'een trampoline', 'nerf', 'een nintendo switch', 'tuinmeubelen', 'een zwembad'];
         console.log('hello'); //  your code here
         i++; //  increment the counter
         if (i < searchTerms.length) { //  if the counter < 10, call the loop function
-          document.getElementById("searchFormLabel").innerHTML = "Ik zoek een " + searchTerms[i];
+          document.getElementById("searchFormLabel").innerHTML = "Ik zoek " + searchTerms[i];
           const SimpleSearchPlacholder = document.getElementById("SimpleSearchForm_SearchTerm");
-          SimpleSearchPlacholder.setAttribute("placeholder", "Ik zoek een " + searchTerms[i]);
+          SimpleSearchPlacholder.setAttribute("placeholder", "Ik zoek " + searchTerms[i]);
           myLoop(); //  ..  again which will trigger another 
         } 
         else if (i = searchTerms.length) { //  if the counter < 10, call the loop function
@@ -22,4 +23,50 @@
     myLoop(); //  start the loops
   };
   changeSearchTerms();
+</script>
+
+
+<script>
+  function changeSearchTerms() {
+    var i = -1; //  set your counter to 10
+
+    function myLoop() { //  create a loop function
+      setTimeout(function () { //  call a 3s setTimeout when the loop is called
+        var searchTerms = ['...', 'lego technic', 'pokemon', 'un trampoline', 'nerf', 'une nintendo switch', 'meubles de jardin', 'une piscine'];
+        console.log('hello'); //  your code here
+        i++; //  increment the counter
+        if (i < searchTerms.length) { //  if the counter < 10, call the loop function
+          document.getElementById("searchFormLabel").innerHTML = "Je recherche " + searchTerms[i];
+          const SimpleSearchPlacholder = document.getElementById("SimpleSearchForm_SearchTerm");
+          SimpleSearchPlacholder.setAttribute("placeholder", "Je recherche " + searchTerms[i]);
+          myLoop(); //  ..  again which will trigger another 
+        } 
+        else if (i = searchTerms.length) { //  if the counter < 10, call the loop function
+          i = 0;
+          myLoop(); //  ..  again which will trigger another 
+        } //  ..  setTimeout()
+      }, 2000)
+    }
+    myLoop(); //  start the loops
+  };
+  changeSearchTerms();
+</script>
+
+
+
+
+
+<!-- B VARIANT -->
+<script>
+  $(document).ready(function () {
+    $("#searchFormLabel").html("Waar ben je naar op zoek?");
+    $("#SimpleSearchForm_SearchTerm").attr("placeholder", "Waar ben je naar op zoek?");
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $("#searchFormLabel").html("Que cherchez-vous ?");
+    $("#SimpleSearchForm_SearchTerm").attr("placeholder", "Que cherchez-vous ?");
+  });
 </script>
