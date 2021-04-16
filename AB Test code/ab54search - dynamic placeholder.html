@@ -1,0 +1,25 @@
+<script>
+  function changeSearchTerms() {
+    var i = 0; //  set your counter to 1
+
+    function myLoop() { //  create a loop function
+      setTimeout(function () { //  call a 3s setTimeout when the loop is called
+        var searchTerms = ['...', 'flesverwarmer', 'autostoel', 'wandelwagen', 'babyfoon'];
+        console.log('hello'); //  your code here
+        i++; //  increment the counter
+        if (i < searchTerms.length) { //  if the counter < 10, call the loop function
+          document.getElementById("searchFormLabel").innerHTML = "Ik zoek een " + searchTerms[i];
+          const SimpleSearchPlacholder = document.getElementById("SimpleSearchForm_SearchTerm");
+          SimpleSearchPlacholder.setAttribute("placeholder", "Ik zoek een " + searchTerms[i]);
+          myLoop(); //  ..  again which will trigger another 
+        } 
+        else if (i = searchTerms.length) { //  if the counter < 10, call the loop function
+          i = 0;
+          myLoop(); //  ..  again which will trigger another 
+        } //  ..  setTimeout()
+      }, 2000)
+    }
+    myLoop(); //  start the loops
+  };
+  changeSearchTerms();
+</script>
