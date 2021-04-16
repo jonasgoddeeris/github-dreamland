@@ -1,13 +1,23 @@
 <!-- C VARIANT NL-->
 <style>
-	input#SimpleSearchForm_SearchTerm {
+	#SimpleSearchForm_SearchTerm {
 		display: none;
 	}
 </style>
 <script>
+var repeat = setInterval(function(){
+			console.log("ab54intervalRUN");
+			if(document.querySelector("#SimpleSearchForm_SearchTerm") !== "null") {
+				clearInterval(repeat);
+				allchanges();
+				console.log("ab52intervalComplete");
+			} 
+}, 15);
+
+function allchanges(){
     document.getElementById("searchFormLabel").innerHTML = "Ik zoek ...";
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Ik zoek ...");
-	document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
+	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("style", "display: block");
 
 	function changeSearchTerms() {
     	var i = 0; //  set your counter to 10
@@ -31,20 +41,21 @@
     myLoop(); //  start the loops
   };
   changeSearchTerms();
+};
 </script>
 
 
 
 <!-- C VARIANT FR-->
 <style>
-	input#SimpleSearchForm_SearchTerm {
+	#SimpleSearchForm_SearchTerm {
 		display: none;
 	}
 </style>
 <script>
     document.getElementById("searchFormLabel").innerHTML = "Je recherche ...";
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Je recherche ...");
-	document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
+	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("style", "display: block");
 
   function changeSearchTerms() {
     var i = 0; //  set your counter to 10
