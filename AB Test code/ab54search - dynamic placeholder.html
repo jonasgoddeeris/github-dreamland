@@ -1,25 +1,33 @@
 <!-- C VARIANT -->
+<style>
+	input#SimpleSearchForm_SearchTerm {
+		display: none;
+	}
+</style>
 <script>
-  function changeSearchTerms() {
-    var i = -1; //  set your counter to 10
+    document.getElementById("searchFormLabel").innerHTML = "Ik zoek ...";
+	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Ik zoek ...");
+	document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
 
-    function myLoop() { //  create a loop function
-      setTimeout(function () { //  call a 3s setTimeout when the loop is called
-        var searchTerms = ['...', 'lego technic', 'pokemon', 'een trampoline', 'nerf', 'een nintendo switch', 'tuinmeubelen', 'een zwembad'];
-        console.log('hello'); //  your code here
-        i++; //  increment the counter
-        if (i < searchTerms.length) { //  if the counter < 10, call the loop function
-          document.getElementById("searchFormLabel").innerHTML = "Ik zoek " + searchTerms[i];
-          const SimpleSearchPlacholder = document.getElementById("SimpleSearchForm_SearchTerm");
-          SimpleSearchPlacholder.setAttribute("placeholder", "Ik zoek " + searchTerms[i]);
-          myLoop(); //  ..  again which will trigger another 
-        } 
-        else if (i = searchTerms.length) { //  if the counter < 10, call the loop function
-          i = 0;
-          myLoop(); //  ..  again which will trigger another 
-        } //  ..  setTimeout()
-      }, 2000)
-    }
+	function changeSearchTerms() {
+    	var i = 0; //  set your counter to 10
+	    function myLoop() { //  create a loop function
+	      setTimeout(function () { //  call a 3s setTimeout when the loop is called
+	        var searchTerms = ['...', 'lego technic', 'pokemon', 'een trampoline', 'nerf', 'een nintendo switch', 'tuinmeubelen', 'een zwembad'];
+	        console.log('hello'); //  your code here
+	        i++; //  increment the counter
+	        if (i < searchTerms.length) { //  if the counter < 10, call the loop function
+	          document.getElementById("searchFormLabel").innerHTML = "Ik zoek " + searchTerms[i];
+	          const SimpleSearchPlacholder = document.getElementById("SimpleSearchForm_SearchTerm");
+	          SimpleSearchPlacholder.setAttribute("placeholder", "Ik zoek " + searchTerms[i]);
+	          myLoop(); //  ..  again which will trigger another 
+	        } 
+	        else if (i = searchTerms.length) { //  if the counter < 10, call the loop function
+	          i = 0;
+	          myLoop(); //  ..  again which will trigger another 
+	        } //  ..  setTimeout()
+	      }, 2000)
+	    }
     myLoop(); //  start the loops
   };
   changeSearchTerms();
@@ -50,6 +58,7 @@
     myLoop(); //  start the loops
   };
   changeSearchTerms();
+  document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
 </script>
 
 
@@ -57,16 +66,24 @@
 
 
 <!-- B VARIANT -->
+<style>
+	input#SimpleSearchForm_SearchTerm {
+		display: none;
+	}
+</style>
+
 <script>
-  $(document).ready(function () {
-    $("#searchFormLabel").html("Waar ben je naar op zoek?");
-    $("#SimpleSearchForm_SearchTerm").attr("placeholder", "Waar ben je naar op zoek?");
-  });
+    document.getElementById("searchFormLabel").innerHTML = "Waar ben je naar op zoek?";
+    document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Waar ben je naar op zoek?");
+    document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
 </script>
 
 <script>
-  $(document).ready(function () {
-    $("#searchFormLabel").html("Que cherchez-vous ?");
-    $("#SimpleSearchForm_SearchTerm").attr("placeholder", "Que cherchez-vous ?");
-  });
+	document.getElementById("searchFormLabel").innerHTML = "Que cherchez-vous ?";
+    document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Que cherchez-vous ?");
+    document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
 </script>
+
+
+
+
