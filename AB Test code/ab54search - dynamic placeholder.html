@@ -1,4 +1,4 @@
-<!-- C VARIANT -->
+<!-- C VARIANT NL-->
 <style>
 	input#SimpleSearchForm_SearchTerm {
 		display: none;
@@ -34,7 +34,18 @@
 </script>
 
 
+
+<!-- C VARIANT FR-->
+<style>
+	input#SimpleSearchForm_SearchTerm {
+		display: none;
+	}
+</style>
 <script>
+    document.getElementById("searchFormLabel").innerHTML = "Je recherche ...";
+	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Je recherche ...");
+	document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
+
   function changeSearchTerms() {
     var i = -1; //  set your counter to 10
 
@@ -58,26 +69,31 @@
     myLoop(); //  start the loops
   };
   changeSearchTerms();
-  document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
 </script>
 
 
 
 
 
-<!-- B VARIANT -->
+<!-- B VARIANT NL-->
 <style>
 	input#SimpleSearchForm_SearchTerm {
 		display: none;
 	}
 </style>
-
 <script>
     document.getElementById("searchFormLabel").innerHTML = "Waar ben je naar op zoek?";
     document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Waar ben je naar op zoek?");
     document.querySelector("#SimpleSearchForm_SearchTerm").style.display = "block";
 </script>
 
+
+<!-- B VARIANT FR-->
+<style>
+	input#SimpleSearchForm_SearchTerm {
+		display: none;
+	}
+</style>
 <script>
 	document.getElementById("searchFormLabel").innerHTML = "Que cherchez-vous ?";
     document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Que cherchez-vous ?");
