@@ -1,18 +1,18 @@
 <!-- C VARIANT NL-->
 <style>
 	#SimpleSearchForm_SearchTerm {
-		display: none;
+		display: none;  /*there is a flicker FOOC effect due to some pages loading really fast , hide the original text temporarly untill variant is loaded*/
 	}
 </style>
 <script>
-var repeat = setInterval(function(){
-			console.log("ab54intervalRUN");
+var repeat = setInterval(function(){  //the default interval function to only apply changes when the element we change is actually availble on page.
+			console.log("ab54intervalRUN"); //this gets triggered every attempt, when element is not availble it shows up in console several times
 			if(document.querySelector("#SimpleSearchForm_SearchTerm") !== "null") {
-				clearInterval(repeat);
-				allchanges();
-				console.log("ab52intervalComplete");
+				clearInterval(repeat); //stop trying when the element is available on page
+				allchanges(); //trigger a function with all the changes
+				console.log("ab52intervalComplete"); 
 			} 
-}, 15);
+}, 15); //try every 15 miliseconds
 function allchanges(){
     document.getElementById("searchFormLabel").innerHTML = "Ik zoek ...";
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Ik zoek ...");
