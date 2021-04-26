@@ -10,9 +10,11 @@ var repeat = setInterval(function(){  //the default interval function to only ap
 			if(document.querySelector("#SimpleSearchForm_SearchTerm") !== "null") {
 				clearInterval(repeat); //stop trying when the element is available on page
 				allchanges(); //trigger a function with all the changes
-				console.log("ab52intervalComplete"); 
+				console.log("ab54intervalComplete"); 
 			} 
 }, 15); //try every 15 miliseconds
+
+
 function allchanges(){
     document.getElementById("searchFormLabel").innerHTML = "Ik zoek ...";
 	document.querySelector("#SimpleSearchForm_SearchTerm").setAttribute("placeholder", "Ik zoek ...");
