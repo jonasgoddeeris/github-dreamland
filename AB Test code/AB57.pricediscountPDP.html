@@ -69,13 +69,21 @@ console.log("final korting is " + kortingFinal);
 const kortingFinalString = String(kortingFinal);
 const kortingFinalStringComma = kortingFinalString.replace(".", ",");
 console.log(kortingFinalStringComma);
-const kortingText = (" de réduction soit " + kortingFinalStringComma + " € d'économie");
+const kortingText = (" % de réduction, vous économisez  " + kortingFinalStringComma + " €");
 if (kortingAbsolute >= 1 && kortingPercentInterger >= 15){
-	document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML = kortingPercent + kortingText;
-	document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML = kortingPercent + kortingText;
+	document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML = kortingPercentInterger + kortingText;
+	document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML = kortingPercentInterger + kortingText;
 };
 };
 </script>
 
+15 % de réduction : vous économisez 10,49 €
+
+
 <!-- MINIFIED NEDERLANDS -->
 <script>var repeat57=setInterval(function(){console.log("ab57intervalRUN");if(document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage")!==null){clearInterval(repeat57);console.log("ab57intervalCleared");addPrice();console.log("ab57intervalComplete")}},20);function addPrice(){console.log("addprice start");const k=document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML;const f=k.split(" ");const e=f[2];const j=document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price > span > span").innerText;const h=parseFloat(j.replace(/,/g,"."));const i=parseFloat(e);console.log("oldpriceInterger is TYPE + aantal"+typeof h+h);console.log("kortingPercentInterger is TYPE + aantal"+typeof i+i);const c=(i/100)*h;const a=c.toFixed(2);console.log("final korting is "+a);const g=String(a);const d=g.replace(".",",");console.log(d);const b=(", je bespaart €"+d);if(c>=1&&i>=15){document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML=e+" korting"+b;document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML=e+" korting"+b}};</script>
+
+
+
+
+<script>var repeat57=setInterval(function(){console.log("ab57intervalRUN");if(document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage")!==null){clearInterval(repeat57);console.log("ab57intervalCleared");addPrice();console.log("ab57intervalComplete")}},20);function addPrice(){console.log("addprice start");const k=document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML;const f=k.split(" ");const e=f[2];const j=document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price > span > span").innerText;const h=parseFloat(j.replace(/,/g,"."));const i=parseFloat(e);console.log("oldpriceInterger is TYPE + aantal"+typeof h+h);console.log("kortingPercentInterger is TYPE + aantal"+typeof i+i);const c=(i/100)*h;const a=c.toFixed(2);console.log("final korting is "+a);const g=String(a);const d=g.replace(".",",");console.log(d);const b=(" % de réduction, vous économisez  "+d+" €");if(c>=1&&i>=15){document.querySelector("#tab2Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML=i+b;document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.price.price--red.price--percentage").innerHTML=i+b}};</script>
