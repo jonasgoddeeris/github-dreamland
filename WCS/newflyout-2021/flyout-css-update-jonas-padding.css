@@ -1,8 +1,17 @@
+<style> 
+/*UPDATE STYLING FLYOUT V2 - jonas - to be made part of -main css*/
+/*******************************/
+
+/* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
+#page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
+    display:none!important;
+}
+
 /*the brand logo's are being cutoff there is 25px cut off ? */
 #page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
 	/*height: calc(100% - 25px);*/
     /*height: 100%;*/ 
-    height: 552px;  /*same height a the collapsible list navigation on homepage - looks very clean like this but need to make sure we do NOT make content in flyout bigger than this = HARD CONSTRAINT*/ 
+    height: 574px;  /*same height a the collapsible list navigation on homepage - looks very clean like this but need to make sure we do NOT make content in flyout bigger than this = HARD CONSTRAINT*/ 
 }
 
 
@@ -18,8 +27,7 @@
 }
 
 
-
-/*The NAVIGATION Collapsible list of categories:  very dirty visual that does not have a bottom line an not the same broder radius*/
+/*The NAVIGATION Collapsible list of categories:  very dirty visual that does not have a bottom line an not the same border radius*/
 /*It is probabily done because the flyouts do not have the same height. that gives flexibility what we can but in the flyouts but can cause a mismatch with this list, looks very dirty. 
 We need to fix this, introducing a constraint to the flyouts is OK, visually much more pleasing and easy to make a nice box of the list and flyout.*/
 
@@ -35,22 +43,19 @@ We need to fix this, introducing a constraint to the flyouts is OK, visually muc
     border-bottom: 1px solid #ddd !important;
 }
 
-
 /*because of the fixed height , brand logo's are still outside of parant element.*/
 #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper { /*inline css espot*/
     /* height: 494px; */
 }
 .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
-    margin-top: 16px;
+    margin-top: 8px;
 }
-
 #page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
     box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
     -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
     -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
     clip-path: inset(-8px -8px -8px 0px); /*remove double shadow on the left*/
 }
-
 @media (min-width: 1024px){
 body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
     box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
@@ -58,3 +63,136 @@ body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
     -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
 }
 }
+@media (min-width: 768px){
+    #page #headerWrapper #headerRow2 nav.topNav.collapse {
+    /*border-radius: 3px 3px 0 0;*/
+    border-radius: 3px 3px 3px 3px !important;
+    }
+}
+#page #headerWrapper #headerRow2 nav.topNav.collapse {
+/* border-bottom: none; */
+border-bottom: 1px solid #ddd !important;
+}
+
+/****tim original****/
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    /* AANPASSING TOPNAVLIST*/
+    #page #headerWrapper #headerRow2 nav.topNav.expand {
+        min-height: 574px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li>a {
+        padding: 8px 10px;
+    }
+
+    #page #headerWrapper #headerRow2 nav.topNav ul li .subNav {
+        box-sizing:border-box;
+        width:891px;
+        height: 574px !important;
+        padding: 16px 16px 16px 24px !important;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li *,
+    #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
+    #page #headerWrapper #headerRow2 nav.topNav ul li *:after{
+        box-sizing:border-box;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li h1.flyout_nav_title {
+        font-family:'Ubuntu';
+        font-weight:500;
+        font-style:normal;
+        font-size:18px;
+        line-height:20px;
+        color:#005ba9;
+        margin-bottom:28px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper {
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        justify-content:space-between;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
+        display:flex;
+        flex-direction:row;
+        align-items:stretch;
+        justify-content:space-between;
+    }
+    .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
+    margin-top: 16px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
+        flex-grow:0;
+        flex-shrink:1;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
+        display:block;
+        padding:8px;
+        max-width: 100px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img {
+        display:block;
+        width:100%;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column.col3 {
+        width:184px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column.col4 {
+        width:228px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column h3 {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:600;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#005ba9;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:400;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#4a4a4a;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a:hover {
+        color:#005ba9;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.bold {
+        /*font-weight:600;*/
+        color:#005ba9;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:600;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#ee9e00;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo.red {
+        color:#D6380C;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyoutclose {
+        position:absolute;
+        z-index:1;
+        top:-3px;
+        right:-3px;
+        font-size:18px;
+        color:#005ba9;
+        cursor:pointer;
+    }
+</style>
+
+
+
+
+553
+
+
+
