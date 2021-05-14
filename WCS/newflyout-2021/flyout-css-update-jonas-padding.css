@@ -72,13 +72,13 @@ body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
 #page #headerWrapper #headerRow2 nav.topNav.collapse {
 /* border-bottom: none; */
 border-bottom: 1px solid #ddd !important;
-}
+};
 
 /****tim original****/
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');/*Nunito als finaal nieuw header font ipv Ubuntu.*/
     
-    /* AANPASSING TOPNAVLIST*/
+    /* AANPASSING TOPNAVLIST*/;
     #page #headerWrapper #headerRow2 nav.topNav.expand {
         min-height: 574px;
     }
@@ -99,7 +99,7 @@ border-bottom: 1px solid #ddd !important;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li h1.flyout_nav_title {
         font-family: 'Nunito', sans-serif;
-        font-weight:500;
+        font-weight:700;
         font-style:normal;
         font-size:18px;
         line-height:20px;
