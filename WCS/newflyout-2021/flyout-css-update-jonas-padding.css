@@ -10,9 +10,8 @@
     }
     /*the brand logo's are being cutoff there is 25px cut off ? */
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
-    	/*height: calc(100% - 25px);*/
-        /*height: 100%;*/ 
-        height: 574px !important;  /*same height a the collapsible list navigation on homepage - looks very clean like this but need to make sure we do NOT make content in flyout bigger than this = HARD CONSTRAINT*/ 
+    	height: calc(100% + 3px);
+        min-height: 574px !important;  /*same height a the collapsible list navigation on homepage - looks very clean like this but need to make sure we do NOT make content in flyout bigger than this = HARD CONSTRAINT*/ 
         padding: 16px 16px 16px 24px !important; /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
         box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
         -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
@@ -55,6 +54,7 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li>a {
         padding: 8px 10px;
     }
+
     #page #headerWrapper #headerRow2 nav.topNav ul li *,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:after{
@@ -83,7 +83,7 @@
         justify-content:space-between;
     }
     .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
-    margin-top: 8px;
+    margin-top: 16px;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
         flex-grow:0;
@@ -152,5 +152,16 @@
         font-size:18px;
         color:#005ba9;
         cursor:pointer;
+    }
+    /***********
+    ************
+    ************/
+    /*styling to match font types of collapse with flyout*/
+    #page #headerWrapper #headerRow2 nav.topNav .topNav__title { /*dl-homepage.css*/
+        font-family: 'Nunito',sans-serif !important;
+        font-size: 15px !important;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li { /*dl-homepage.css*/
+        font-family: 'Open Sans',sans-serif !important;
     }
 </style>
