@@ -49,7 +49,7 @@
 /*tim original*/
     /* AANPASSING TOPNAVLIST*/
     #page #headerWrapper #headerRow2 nav.topNav.expand {
-        min-height: 574px;
+        min-height: 574px !important;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li>a {
         padding: 8px 10px;
@@ -74,7 +74,7 @@
         flex-direction:column;
         align-items:stretch;
         justify-content:space-between;
-        /* height: 494px; */ /*because of the fixed height , brand logo's are still outside of parant element.*/
+         height: 494px;  /*because of the fixed height , brand logo's were outside of parent element if NO minimum height.*/
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
         display:flex;
@@ -82,8 +82,8 @@
         align-items:stretch;
         justify-content:space-between;
     }
-    .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
-    margin-top: 16px;
+    .flyout_nav_inner_wrapper.brandcarrousel { 
+    margin-top: 16px; /*min instead of flex only?*/
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
         flex-grow:0;
