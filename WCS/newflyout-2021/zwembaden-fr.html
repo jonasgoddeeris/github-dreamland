@@ -1,0 +1,240 @@
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    /* AANPASSING TOPNAVLIST*/
+    #page #headerWrapper #headerRow2 nav.topNav.expand {
+        min-height: 574px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li>a {
+        padding: 8px 10px;
+    }
+    /* NIEUWE FLYOUT */
+    /*#page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
+        display:none;
+    }*/
+    #page #headerWrapper #headerRow2 nav.topNav ul li div#submenu-1 .subNav__column.subNav__column-top {
+        display:none!important;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .subNav {
+        box-sizing:border-box;
+        width:891px;
+        height: 552px !important;
+        padding: 16px 16px 16px 24px !important;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li *,
+    #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
+    #page #headerWrapper #headerRow2 nav.topNav ul li *:after{
+        box-sizing:border-box;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li h1.flyout_nav_title {
+        font-family:'Ubuntu';
+        font-weight:500;
+        font-style:normal;
+        font-size:18px;
+        line-height:20px;
+        color:#005ba9;
+        margin-bottom:28px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper {
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        justify-content:space-between;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
+        display:flex;
+        flex-direction:row;
+        align-items:stretch;
+        justify-content:space-between;
+    }
+    .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
+    margin-top: 16px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
+        flex-grow:0;
+        flex-shrink:1;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
+        display:block;
+        padding:8px;
+        max-width: 100px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img {
+        display:block;
+        width:100%;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column.col3 {
+        width:184px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column.col4 {
+        width:228px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column h3 {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:600;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#005ba9;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:400;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#4a4a4a;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a:hover {
+        color:#005ba9;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.bold {
+        /*font-weight:600;*/
+        color:#005ba9;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:600;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#ee9e00;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo.red {
+        color:#D6380C;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyoutclose {
+        position:absolute;
+        z-index:1;
+        top:-3px;
+        right:-3px;
+        font-size:18px;
+        color:#005ba9;
+        cursor:pointer;
+    }
+    @media (min-width: 768px){
+        #page #headerWrapper #headerRow2 nav.topNav.collapse {
+        /*border-radius: 3px 3px 0 0;*/
+        border-radius: 3px 3px 3px 3px !important;
+        }
+    }
+    #page #headerWrapper #headerRow2 nav.topNav.collapse {
+    /* border-bottom: none; */
+    border-bottom: 1px solid #ddd !important;
+    }
+</style>
+
+<div class="flyoutclose">
+    <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg">
+</div>
+
+<h1 class="flyout_nav_title"><a href="/e/fr/dl/piscines-et-jeux-eau">Piscines, Spa et Jeux d'eaux</a></h1>
+
+<div class="flyout_nav_outer_wrapper">
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <h3>Piscines</h3>
+            <a href="/e/fr/dl/piscines-enfant-gonflables">Pataugeoires et Piscines pour enfant</a>
+            <a href="/e/fr/dl/piscines-autoportantes">Piscines autoportantes et tubulaires</a>
+            <a href="/e/fr/dl/toutes-les-piscines" class="bold">Toutes nos piscines</a>
+            <br>
+            <h3>Entretien  & accessoires</h3>
+            <a href="//e/fr/dl/accessoires-pour-piscines">Entretien & accessoires pour piscines</a>
+            <a href="/e/fr/dl/accessoires-pour-jacuzzis">Entretien & accessoires pour jacuzzis</a>
+            <a href="/e/fr/dl/entretien-et-acessoires-140549--2" class="bold">Tout pour l'entretien</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Jacuzzis</h3>
+            <a href="/e/fr/dl/Jacuzzis">Tous les jacuzzis</a>
+            <br>
+            <h3>Natation</h3>
+            <a href="/e/fr/dl/natation">Maillots & accessoires de bain</a>
+            <a href="/e/fr/dl/bouees-sieges-et-bouees">Sécurité</a>
+            <a href="/e/fr/dl/draps-de-plage">Draps de plage</a>
+            <a href="e/fr/dl/natation-141001--2">Tout pour nager</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Jeux d'eau</h3>
+            <a href="/e/fr/dl/jeux-aquatiques">Aquaplay & Jeux aquatiques</a>
+            <a href="/e/fr/dl/pistolets-et-fusils-a-eau">Pistolets et Fusils à eau & ballons à eau</a>
+            <a href="/e/fr/dl/matelas-gonflables">Matelas & bateaux gonflables</a>
+            <a href="/e/fr/dl/jeux-eau">Tous les jeux d'eau</a>
+            <br>
+            <h3>Conseils</h3>
+            <a href="/e/fr/dl/types-piscines">Quelle piscine choisir?</a>
+            <a href="/e/fr/dl/monter-une-piscine">Comment monter sa piscine?</a>
+            <a href="/e/fr/dl/entretenir-nettoyer-une-piscine">Comment entretetier sa piscine?</a>
+            <!--<a href="#" class="promo">Actie Barbie 20% bij aankoop vanaf 2 stuks</a>-->
+
+        </div>
+
+    </div>
+    <!--
+    <div class="flyout_nav_inner_wrapper brandcarrousel">
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/lego@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/lego@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/lego.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playmobil@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playmobil@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playmobil.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/barbie@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/barbie@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/barbie.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/babyborn@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/babyborn@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/babyborn.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/vtech@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/vtech@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/vtech.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/fisher-price@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/fisher-price@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/fisher-price.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playdoh@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playdoh@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playdoh.png">
+            </picture>
+        </a>
+    </div>
+-->
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".flyoutclose").on('click', function() {
+            var x = $(this).closest("li").attr("data-submenu-id");
+            $("li[data-submenu-id="+x+"]").toggleClass("active");
+        });  
+    });
+</script>

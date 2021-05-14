@@ -1,0 +1,258 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    /* AANPASSING TOPNAVLIST*/
+    #page #headerWrapper #headerRow2 nav.topNav.expand {
+        min-height: 574px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li>a {
+        padding: 8px 10px;
+    }
+    /* NIEUWE FLYOUT */
+    /*#page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
+        display:none;
+    }*/
+    #page #headerWrapper #headerRow2 nav.topNav ul li div#submenu-1 .subNav__column.subNav__column-top {
+        display:none!important;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .subNav {
+        box-sizing:border-box;
+        width:891px;
+        height: 552px !important;
+        padding: 16px 16px 16px 24px !important;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li *,
+    #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
+    #page #headerWrapper #headerRow2 nav.topNav ul li *:after{
+        box-sizing:border-box;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li h1.flyout_nav_title {
+        font-family:'Ubuntu';
+        font-weight:500;
+        font-style:normal;
+        font-size:18px;
+        line-height:20px;
+        color:#005ba9;
+        margin-bottom:28px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper {
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        justify-content:space-between;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
+        display:flex;
+        flex-direction:row;
+        align-items:stretch;
+        justify-content:space-between;
+    }
+    .flyout_nav_inner_wrapper.brandcarrousel { /*inline css espot*/
+    margin-top: 16px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
+        flex-grow:0;
+        flex-shrink:1;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
+        display:block;
+        padding:8px;
+        max-width: 100px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img {
+        display:block;
+        width:100%;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column.col3 {
+        width:184px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column.col4 {
+        width:228px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column h3 {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:600;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#005ba9;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:400;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#4a4a4a;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a:hover {
+        color:#005ba9;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.bold {
+        /*font-weight:600;*/
+        color:#005ba9;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo {
+        display:block;
+        font-family:'Open Sans';
+        font-weight:600;
+        font-style:normal;
+        font-size:14px;
+        line-height:16px;
+        color:#ee9e00;
+        margin-bottom:8px;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo.red {
+        color:#D6380C;
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyoutclose {
+        position:absolute;
+        z-index:1;
+        top:-3px;
+        right:-3px;
+        font-size:18px;
+        color:#005ba9;
+        cursor:pointer;
+    }
+    @media (min-width: 768px){
+        #page #headerWrapper #headerRow2 nav.topNav.collapse {
+        /*border-radius: 3px 3px 0 0;*/
+        border-radius: 3px 3px 3px 3px !important;
+        }
+    }
+    #page #headerWrapper #headerRow2 nav.topNav.collapse {
+    /* border-bottom: none; */
+    border-bottom: 1px solid #ddd !important;
+    }
+</style>
+
+<div class="flyoutclose">
+    <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg">
+</div>
+
+<h1 class="flyout_nav_title"><a href="/e/fr/dl/chambres-et-decoration">Chambres et Bureaux</a></h1>
+
+<div class="flyout_nav_outer_wrapper">
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <h3>Chambres</h3>
+            <a href="/e/fr/dl/chambres-ados-et-enfants">Chambres complètes et lits</a>
+            <a href="/e/fr/dl/lits-1-personne">Lits 1 personne</a>
+            <a href="/e/fr/dl/lits-sureleves-et-mi-hauteurs">Lits surélevés & mi-hauteur</a>
+            <a href="/e/fr/dl/lits-pour-tout-petit">Lits pour tout-petit</a>
+            <a href="/e/fr/dl/lits-superposes">Lits superposés</a>
+            <a href="/e/fr/dl/lits-1-personne?#facet:-70000000000000009501081051163210997105115111110,-70000000000000009501081051163299979897110101&productBeginIndex:0&facetLimit:morelink_ads_f12001_ntk_cs&orderBy:8&pageView:grid&minPrice:&maxPrice:&pageSize:&">Lits cabanes</a>
+            <a href="/e/fr/dl/matelas">Matelas</a>
+            <a href="/e/fr/dl/sommiers-a-lattes">Sommiers</a>
+            <a href="/e/fr/dl/chambres-et-decoration" class="bold">Toutes les chambres</a>
+            <br>
+            <h3>Bureaux & accessoires</h3>
+            <a href="/e/fr/dl/bureau">Bureaux</a>
+            <a href="/e/fr/dl/chaises-bureau">Chaises de bureau</a>
+            <a href="/e/fr/dl/armoires-de-bureau">Armoires de bureau</a>
+            <a href="/e/fr/dl/lampes-de-bureau">Lampes de bureau</a>
+            <a href="/e/fr/dl/bureaux-et-accessoires" class="bold">Tous les bureaux & accessoires</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Armoires & rangements</h3>
+            <a href="/e/fr/dl/garde-robes">Garde-robes</a>
+            <a href="/e/fr/dl/bibliotheques">Bibliothèques & étagères</a>
+            <a href="/e/fr/dl/commodes-a-tiroirs">Commodes & coiffeuses</a>
+            <a href="/e/fr/dl/jouets-coffres">Rangements pour jouets</a>
+            <a href="/e/fr/dl/tables-de-nuit">Tables de nuit</a>
+            <a href="/e/fr/dl/portemanteaux-et-penderies">Portemanteaux</a>
+            <a href="/e/fr/dl/rangement-chambres" class="bold">Toutes les armoires</a>
+            <br>
+            <h3>Petit mobilier</h3>
+            <a href="/e/fr/dl/tables-et-chaises-pour-enfant">Tables & chaises pour enfants</a>
+            <a href="/e/fr/dl/bouees-sieges-et-bouees">Coussins géants, poufs & tabourets</a>
+            <a href="/e/fr/dl/fauteuils-pour-enfant">Fauteuils pour enfants</a>
+            <a href="/e/fr/dl/soiree-pyjama">Soirée pyjama</a>
+            <a href="/e/fr/dl/tables-chaises-poufs-et-fauteuils" class="bold">Tout le petit mobilier</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Linge de lit</h3>
+            <a href="/e/fr/dl/housses-de-couettes">Housses de couette</a>
+            <a href="/e/fr/dl/couettes">Couettes</a>
+            <a href="/e/fr/dl/oreillers-classiques">Oreillers</a>
+            <a href="/e/fr/dl/protege-matelas">Protège-matelas</a>
+            <a href="/e/fr/dl/plaid">Plaids</a>
+            <a href="/e/fr/dl/pyjamas-pour-enfant">Pyjamas</a>
+            <a href="/e/fr/dl/couettes-et-oreillers" class="bold">Tout le linge de lit</a>
+            <br>
+            <h3>Décorations</h3>
+            <a href="/e/fr/dl/reveils-et-horloges-murales">Réveils</a>
+            <a href="/e/fr/dl/luminaires">Luminaires</a>
+            <a href="/e/fr/dl/coussins-decoratifs">Coussins décoratifs</a>
+            <a href="/e/fr/dl/decorations-de-chambre" class="bold">Toutes les décorations de chambres</a>
+            <!--<a href="#" class="promo">Actie Barbie 20% bij aankoop vanaf 2 stuks</a>-->
+
+        </div>
+
+    </div>
+    <!--
+    <div class="flyout_nav_inner_wrapper brandcarrousel">
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/lego@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/lego@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/lego.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playmobil@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playmobil@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playmobil.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/barbie@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/barbie@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/barbie.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/babyborn@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/babyborn@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/babyborn.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/vtech@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/vtech@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/vtech.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/fisher-price@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/fisher-price@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/fisher-price.png">
+            </picture>
+        </a>
+        <a href="#">
+            <picture>
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playdoh@3x.png" media="(min-width:1024px)">
+                <source srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playdoh@2x.png" media="(min-width:768px)">
+                <img srcset="/ecomwcs/static/StaticWeb/DL/flyout/2021/brands/playdoh.png">
+            </picture>
+        </a>
+    </div>
+-->
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".flyoutclose").on('click', function() {
+            var x = $(this).closest("li").attr("data-submenu-id");
+            $("li[data-submenu-id="+x+"]").toggleClass("active");
+        });  
+    });
+</script>
