@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V2 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
         display:none!important;
     }
-    /*the brand logo's are being cutoff there is 25px cut off ? */
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
-    	height: calc(100% + 3px) !important; /*dynamiccaly adjust height to amount of top catgeories*/
+    	height: calc(100% + 2px) !important; /*dynamiccaly adjust height to amount of top catgeories*/
         min-height: 574px !important;  /*same min height a the collapsible list navigation on homepage -*/ 
         padding: 16px 16px 16px 24px !important; /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
         box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
@@ -25,11 +24,8 @@
         max-width: 100px;
     }
     /*The NAVIGATION Collapsible list of categories:  very dirty visual that does not have a bottom line an not the same border radius*/
-    /*It is probabily done because the flyouts do not have the same height. that gives flexibility what we can but in the flyouts but can cause a mismatch with this list, looks very dirty. 
-    We need to fix this, introducing a constraint to the flyouts is OK, visually much more pleasing and easy to make a nice box of the list and flyout.*/
     @media (min-width: 768px){
         #page #headerWrapper #headerRow2 nav.topNav.collapse { /*dl-homepage.css*/
-            /*border-radius: 3px 3px 0 0;*/
             border-radius: 3px 3px 3px 3px !important;
         }
     }
@@ -40,15 +36,15 @@
 
     @media (min-width: 1024px){
     body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
-        box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
-        -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
-        -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
+        box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
+        -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
+        -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
     }
     }
     
 /*tim original*/
     /* AANPASSING TOPNAVLIST*/
-    #page #headerWrapper #headerRow2 nav.topNav.expand {
+    #page #headerWrapper #headerRow2 nav.topNav {
         min-height: 574px !important;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li>a {
