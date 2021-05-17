@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.1 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -84,6 +84,7 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
         flex-grow:0;
         flex-shrink:1;
+        margin: auto; /*align and justify logo's within brand list*/ 
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
         display:block;
