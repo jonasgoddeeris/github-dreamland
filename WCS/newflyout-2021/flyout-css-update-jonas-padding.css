@@ -11,7 +11,7 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
     	height: calc(100% + 2px) !important; /*dynamiccaly adjust height to amount of top catgeories*/
         min-height: 574px !important;  /*same min height a the collapsible list navigation on homepage -*/ 
-        padding: 16px 16px 16px 24px !important; /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
+        padding: 24px 16px 16px 24px !important; /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
         box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
         -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
         -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
