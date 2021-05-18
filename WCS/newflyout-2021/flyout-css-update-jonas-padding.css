@@ -64,6 +64,7 @@
         line-height:20px;
         color:#005ba9;
         margin-bottom:28px;
+        cursor: pointer
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_outer_wrapper {
         display:flex;
@@ -110,6 +111,7 @@
         line-height:16px;
         color:#005ba9;
         margin-bottom:8px;
+        cursor: pointer
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a {
         display:block;
@@ -120,6 +122,7 @@
         line-height:16px;
         color:#4a4a4a;
         margin-bottom:8px;
+        cursor: pointer
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a:hover {
         color:#005ba9;
@@ -137,6 +140,7 @@
         line-height:16px;
         color:#ee9e00;
         margin-bottom:8px;
+        cursor: pointer
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.promo.red {
         color:#D6380C;
@@ -151,7 +155,6 @@
         cursor:pointer;
     }
     /***********
-    ************
     ************/
     /*styling to match font types of collapse with flyout*/
     #page #headerWrapper #headerRow2 nav.topNav .topNav__title { /*dl-homepage.css*/
