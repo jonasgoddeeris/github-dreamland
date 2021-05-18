@@ -50,11 +50,11 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li *:after{
         box-sizing:border-box;
     }
-    #page #headerWrapper #headerRow2 nav.topNav ul li h1.flyout_nav_title {
+    #page #headerWrapper #headerRow2 nav.topNav ul li div.flyout_nav_title {
         font-family: 'Nunito', sans-serif;
         font-weight:700;
         font-style:normal;
-        font-size:18px;
+        font-size:20px;
         line-height:20px;
         color:#005ba9;
         margin-bottom:28px;
