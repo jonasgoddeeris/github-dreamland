@@ -41,6 +41,7 @@
     }
     body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
         border-bottom: 1px solid #ddd !important;
+        border-radius: 3px 3px 3px 3px !important;
         min-height: 574px !important; /*match height of flyout*/
         box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
         -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
