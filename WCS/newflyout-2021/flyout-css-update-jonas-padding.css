@@ -34,7 +34,6 @@
         border-bottom: 1px solid #ddd !important;
         min-height: 574px !important; /*match height of flyout*/
     }
-
     @media (min-width: 1024px){
     body.homePage #page #headerWrapper #headerRow2 nav.topNav { /*dl-homepage.css*/
         box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
@@ -42,12 +41,10 @@
         -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
     }
     }
-    
 /*tim original + AANPASSING TOPNAVLIST*/
     #page #headerWrapper #headerRow2 nav.topNav ul li>a {
         padding: 8px 10px;
     }
-
     #page #headerWrapper #headerRow2 nav.topNav ul li *,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:after{
@@ -107,6 +104,8 @@
         line-height:16px;
         color:#005ba9;
         margin-bottom:8px;
+        text-transform: none; /*overwrite for template 2020 css*/
+        letter-spacing: normal; /*overwrite for template 2020 css*/
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a {
         display:block;
@@ -147,12 +146,14 @@
         color:#005ba9;
         cursor:pointer;
     }
-    /***********
-    ************/
+    /*********************/
     /*styling to match font types of collapse with flyout*/
     #page #headerWrapper #headerRow2 nav.topNav .topNav__title { /*dl-homepage.css*/
         font-family: 'Nunito',sans-serif !important;
         font-size: 15px !important;
+        text-transform: none !important; /*overwrite for template 2020 AND category page css*/
+        letter-spacing: normal !important; /*overwrite for template 2020 AND category page css*/
+        letter-spacing: 0 !important;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li { /*dl-homepage.css*/
         font-family: 'Open Sans',sans-serif !important;
