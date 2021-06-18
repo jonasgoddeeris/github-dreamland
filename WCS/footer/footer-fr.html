@@ -1,4 +1,56 @@
 <style>
+    .DL_usp_container {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        min-height: 40px;
+        background-color: #FC8100;
+        color: #ffffff;
+        width: 100%;
+        z-index: 2;
+    }
+    .DL_usp_item_icon,
+    .DL_usp_item_txt {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.5em !important;
+        font-size: 13px;
+    }
+    .DL_usp_item_icon {
+        color: #005ba9;
+        margin-right: 3px;
+        font-size: 16px;
+    }
+    .DL_usp_item_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px;
+    }
+    .DL_usp_close {
+        position: absolute;
+        right: 5px;
+        bottom: 2px;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<!-- <script>
+    if (getCookie('melding-sluiting') != "true") {
+        $("#page").before('<div class="DL_usp_container"><p class="DL_usp_item_txt"><i class="fas fa-exclamation-circle"></i> Nos magasins sont à nouveau ouverts ! Découvrez toutes les infos <a href="/e/fr/dl/reouverture-magasins" style="text-decoration:underline">ici</a>. Notre service clientèle est difficilement joignable en ce moment. Vous pouvez suivre vous-même le <a href="/e/fr/dl/OrderHistoryDisplayView?catalogId=15501&storeId=13102&langId=-2" style="text-decoration:underline">statut de votre commande</a> via votre compte.</p><div class="DL_usp_close"><i class="fas fa-times"></i></div></div>');
+
+
+    }
+    $(".DL_usp_close").click(function () {
+        $(".DL_usp_container").hide();
+        setCookie("melding-sluiting", "true");
+    });
+</script> -->
+
+
+<style>
     #footer #footerRow1 .focusItems {
         width: 100%;
     }
@@ -159,7 +211,7 @@
             <div class="col-md-3 col-xs-6">
                 <ul class="ul_item rechts">
                     <li class="li_title">Solutions pratiques</li>
-                    <li><a href="/e/fr/dl/click-et-collect">Click & Collect</a></li>
+                    <li><a href="/e/fr/dl/click-et-collect">Commandez en ligne</a></li>
                     <li><a href="/e/fr/dl/liste-souhaits">Créez votre liste de souhaits</a></li>
                     <li><a href="/e/fr/dl/dreamland-carte-cadeau">Cartes-cadeaux numériques</a></li>
                     <li><a href="/e/fr/dl/denichez-le-cadeau-ideal">Trouvez le cadeau idéal</a></li>
@@ -173,6 +225,7 @@
                     <li><a href="/e/fr/dl/faq-qui-dreamland">Qui sommes-nous ?</a></li>
                     <li><a href="/e/fr/dl/magasins">Magasins et points d’enlèvement</a></li>
                     <li><a href="/e/fr/dl/depliants">Dépliants</a></li>
+                    <li><a href="/e/fr/dl/la-gestion-durable">DreamLand et la durabilité</a></li>
                     <li><a href="/e/fr/dl/les-marques-dreamland">Nos marques</a></li>
                     <li><a href="https://jobs.colruytgroup.com/fr/vacatures?f%5B0%5D=field_company%3A3">Offres d’emploi</a></li>
                     <li><a href="/e/fr/dl/communiques-de-presse">Communiqués de presse</a></li>
@@ -189,14 +242,17 @@
                                 aria-hidden="true"></i></a>
                                 <a href="https://www.youtube.com/channel/UCHJgNZ7Ldzs_Q0BIR70PXzQ" target="_blank"><i
                                     class="fab fa-youtube fa-2x" aria-hidden="true" style="color: #005ba9;"></i></a>
-                        <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
-                                aria-hidden="true"></i></a>
+                        <!-- <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
+                                aria-hidden="true"></i></a> -->
                         <a href="https://www.pinterest.com/dreamlandbe/" target="_blank"><i
                                 class="fab fa-pinterest-square fa-2x" aria-hidden="true"
                                 style="color: #005ba9;"></i></a></li>
-                    <li> <a href="/e/fr/dl/newsletter-subscription-form" target="_self"><u>Inscrivez-vous</u></a> à notre newsletter</li>
+                    <li> <a href="/e/fr/dl/inscription-newsletter" target="_self"><u>Inscrivez-vous</u></a> à notre newsletter</li>
                         <li><a style="display:inline-block;height:30px;margin-top:15px" href="/e/fr/dl/contact/paiement/comment-payer-en-ligne"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/bank_method.svg" class="" style="height:100%"></a></li>
-                        <li style="width: 30%;"><img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BEFR.png" class="img-responsive"></li>
+                        <li style="width:100%;">
+                            <img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BEFR.png" class="img-responsive" style="margin-right:1em;display:inline-block;max-height:100px">
+                        <img src="/ecomwcs/static/StaticWeb/DL/homepage/B2C.png" class="img-responsive" style="display:inline-block;max-height:85px;">
+                        </li>
                 </ul>
             </div>
         </div>
@@ -217,7 +273,7 @@
                     <li tabindex="2"><span class="menu2 menuitem">Solutions pratiques<i
                                 class="fas fa-chevron-right scanarrow" style="float: right;"></i></span>
                         <ul class="submenu2 submenuu">
-                            <li><a href="/e/fr/dl/click-et-collect">Click & Collect</a></li>
+                            <li><a href="/e/fr/dl/click-et-collect">Commandez en ligne</a></li>
                             <li><a href="/e/fr/dl/liste-souhaits">Créez votre liste de souhaits</a></li>
                             <li><a href="/e/fr/dl/dreamland-carte-cadeau">Cartes-cadeaux numériques</a></li>
                             <li><a href="/e/fr/dl/denichez-le-cadeau-ideal">Trouvez le cadeau idéal</a></li>
@@ -227,7 +283,7 @@
                     <li tabindex="3"><span class="menu3 menuitem">À propos de DreamLand <i
                                 class="fas fa-chevron-right scanarrow" style="float: right;"></i></span>
                         <ul class="submenu3 submenuu">
-                            <li><a href="/e/fr/dl/contact/site-web-service-clientele">Qui sommes-nous ?</a></li>
+                            <li><a href="/e/fr/dl/a-propos-de-dreamland">Qui sommes-nous ?</a></li>
                             <li><a href="/e/fr/dl/magasins">Magasins et points d’enlèvement</a></li>
                             <li><a href="/e/fr/dl/depliants">Dépliants</a></li>
                             <li><a href="/e/fr/dl/les-marques-dreamland">Nos marques</a></li>
@@ -241,7 +297,6 @@
                     <li tabindex="4"><span class="menu4 menuitem">Nos partenaires <i
                         class="fas fa-chevron-right scanarrow" style="float: right;"></i></span>
                 <ul class="submenu4 submenuu">
-                    <li><a href="https://www.collishop.be/e/fr/cs" target="_BLANK">ColliShop</a></li>
                     <li><a href="https://www.dreambaby.be/e/fr/db" target="_BLANK">Dreambaby</a></li>
                     <li><a href="https://www.colruyt.be/fr" target="_BLANK">Colruyt</a></li>
                     <li><a href="https://www.okay.be/okay/static/fr.shtml" target="_BLANK">OKay</a></li>
@@ -264,12 +319,15 @@
                         aria-hidden="true"></i></a>
                         <a href="https://www.youtube.com/channel/UCHJgNZ7Ldzs_Q0BIR70PXzQ" target="_blank"><i
                             class="fab fa-youtube fa-2x" aria-hidden="true" style="color: #005ba9;"></i></a>
-                <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
-                        aria-hidden="true"></i></a>
+                <!-- <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
+                        aria-hidden="true"></i></a> -->
                 <a href="https://www.pinterest.com/dreamlandbe/" target="_blank"><i
                         class="fab fa-pinterest-square fa-2x" aria-hidden="true" style="color: #005ba9;"></i></a><br>
-                <a href="/e/fr/dl/newsletter-subscription-form" target="self" style="display: block;"><u>Inscrivez-vous</u> à notre newsletter</a>
-                <a style="width: 30%;margin:0 auto;"><img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BEFR.png" class="img-responsive"></a>
+                <a href="/e/fr/dl/inscription-newsletter" target="self" style="display: block;"><u>Inscrivez-vous</u> à notre newsletter</a>
+                <a style="width:100%;margin:0 auto;">
+                    <img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BEFR.png" class="img-responsive" style="margin-right:1em;display:inline-block;max-height:100px">
+                        <img src="/ecomwcs/static/StaticWeb/DL/homepage/B2C.png" class="img-responsive" style="display:inline-block;max-height:85px;">
+                </a>
 
             </div>
         </div>
@@ -277,7 +335,6 @@
             <div class="col-md-12 col-xs-12">
                 <div style="text-align: center;">
                 <a style="display:inline-block;height:45px; margin-left:60px" href="https://www.colruyt.be/fr" target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-05.png" class="" style="height:100%"></a>
-                <a style="display:inline-block;height:45px;margin-left:30px;" href="https://www.collishop.be/e/fr/cs" target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-02.svg" class="" style="height:100%"></a> 
                 <a style="display:inline-block;height:45px;" href="https://www.dreambaby.be/e/fr/db/" target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-01.svg" class="" style="height:100%"></a>
                 <a style="display:inline-block;height:30px;margin-left: 45px;" href="https://www.newstory.be/" target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-03.svg" class="" style="height:100%"></a>
                 <a style="display:inline-block;height:33px;margin-left: 40px;" href="https://www.colruytgroupacademy.be/fr" target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-04.svg" class="" style="height:100%"></a>
