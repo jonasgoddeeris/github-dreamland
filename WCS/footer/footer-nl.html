@@ -1,4 +1,41 @@
-<!-- NL -->
+<style>
+    .DL_usp_container {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        min-height: 40px;
+        background-color: #FC8100;
+        color: #ffffff;
+        width: 100%;
+        z-index: 2;
+    }
+    .DL_usp_item_icon,
+    .DL_usp_item_txt {
+        display: inline-block;
+        margin: 0;
+        line-height: 1.5em !important;
+        font-size: 13px;
+    }
+    .DL_usp_item_icon {
+        color: #005ba9;
+        margin-right: 3px;
+        font-size: 16px;
+    }
+    .DL_usp_item_txt {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px;
+    }
+    .DL_usp_close {
+        position: absolute;
+        right: 5px;
+        bottom: 2px;
+        padding: 5px;
+        cursor: pointer;
+    }
+</style>
 <style>
     #footer #footerRow1 .focusItems {
         width: 100%;
@@ -171,8 +208,6 @@
         }
     }
 </style>
-
-
 <div class="campaign-espot" id="espot-dossiers">
     <div class="container DLfooter">
         <div class="row footerlinks hidden-xs">
@@ -190,7 +225,7 @@
             <div class="col-md-3 col-xs-6">
                 <ul class="ul_item rechts">
                     <li class="li_title">Handige oplossingen</li>
-                    <li><a href="/e/nl/dl/click-en-collect">Click & Collect</a></li>
+                    <li><a href="/e/nl/dl/click-en-collect">Bestel online</a></li>
                     <li><a href="/e/nl/dl/verlanglijstje">Maak jouw verlanglijstje</a></li>
                     <li><a href="/e/nl/dl/dreamland-geschenkkaart">Digitale geschenkkaarten</a></li>
                     <li><a href="/e/nl/dl/cadeaukiezer">Kies het juiste cadeau</a></li>
@@ -201,9 +236,10 @@
             <div class="col-md-3 col-xs-6">
                 <ul class="ul_item midden">
                     <li class="li_title">Over DreamLand</li>
-                    <li><a href="/e/nl/dl/faq-wie-dreamland">Wie zijn we</a></li>
+                    <li><a href="/e/nl/dl/over-dreamland">Wie zijn we</a></li>
                     <li><a href="/e/nl/dl/winkels">Onze winkels & afhaalpunten</a></li>
                     <li><a href="/e/nl/dl/folders">Folders</a></li>
+                    <li><a href="/e/nl/dl/duurzaam-ondernemen">Duurzaamheid bij DreamLand</a></li>
                     <li><a href="/e/nl/dl/dreamland-merken">Onze merken</a></li>
                     <li><a href="https://jobs.colruytgroup.com/nl/vacatures?f%5B0%5D=field_company%3A3">Jobs</a></li>
                     <li><a href="/e/nl/dl/persberichten">Persberichten</a></li>
@@ -221,18 +257,21 @@
                                 aria-hidden="true"></i></a>
                         <a href="https://www.youtube.com/channel/UCHJgNZ7Ldzs_Q0BIR70PXzQ" target="_blank"><i
                                 class="fab fa-youtube fa-2x" aria-hidden="true" style="color: #005ba9;"></i></a>
-                        <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
-                                aria-hidden="true"></i></a>
+                        <!-- <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
+                                aria-hidden="true"></i></a> -->
                         <a href="https://www.pinterest.com/dreamlandbe/" target="_blank"><i
                                 class="fab fa-pinterest-square fa-2x" aria-hidden="true"
                                 style="color: #005ba9;"></i></a></li>
-                    <li><a href="/e/nl/dl/newsletter-subscription-form" target="_self"><u>Meld je aan</u></a> voor onze
+                    <li><a href="/e/nl/dl/inschrijven-nieuwsbrief" target="_self"><u>Meld je aan</u></a> voor onze
                         nieuwsbrief</li>
                     <li><a style="display:inline-block;height:30px;margin-top: 15px;"
                             href="/e/nl/dl/contact/betalen/hoe-betaal-ik-online"><img
                                 src="/ecomwcs/static/StaticWeb/DL/footer/footer/bank_method.svg" class=""
                                 style="height:100%"></a></li>
-                    <li style="width: 30%;"><img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BENL.png" class="img-responsive"></li>
+                    <li style="width:100%;">
+                        <img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BENL.png" class="img-responsive" style="margin-right:1em;display:inline-block;max-height:100px">
+                        <a rel="nofollow noreferrer" target="_blank" href="https://www.becommerce.be/en_US/report/html/becommerce_certification.report_certificate/2037"><img src="/ecomwcs/static/StaticWeb/DL/homepage/B2C.png" class="img-responsive" style="display:inline-block;max-height:85px;"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -253,7 +292,7 @@
                     <li tabindex="2"><span class="menu2 menuitem">Handige oplossingen<i
                                 class="fas fa-chevron-right scanarrow" style="float: right;"></i></span>
                         <ul class="submenu2 submenuu">
-                            <li><a href="/e/nl/dl/click-en-collect">Click & Collect</a></li>
+                            <li><a href="/e/nl/dl/click-en-collect">Bestel online</a></li>
                             <li><a href="/e/nl/dl/verlanglijstje">Maak jouw verlanglijstje</a></li>
                             <li><a href="/e/nl/dl/dreamland-geschenkkaart">Digitale geschenkkaarten</a></li>
                             <li><a href="/e/nl/dl/cadeaukiezer">Kies het juiste cadeau</a></li>
@@ -276,18 +315,6 @@
                                     Xtra</a></li>
                         </ul>
                     </li>
-                    <li tabindex="4"><span class="menu4 menuitem">Onze Partners <i
-                                class="fas fa-chevron-right scanarrow" style="float: right;"></i></span>
-                        <ul class="submenu4 submenuu">
-                            <li><a href="https://www.collishop.be/e/nl/cs" target="_BLANK">ColliShop</a></li>
-                            <li><a href="https://www.dreambaby.be/e/nl/db" target="_BLANK">Dreambaby</a></li>
-                            <li><a href="https://www.colruyt.be/nl" target="_BLANK">Colruyt</a></li>
-                            <li><a href="https://www.okay.be/okay/static/nl.shtml" target="_BLANK">OKay</a></li>
-                            <li><a href="https://www.colruytgroupacademy.be/nl" target="_BLANK">Colruyt Group
-                                    Academy</a></li>
-                            <li><a href="https://www.newstory.be/" target="_BLANK">NewStory</a></li>
-                        </ul>
-                    </li>
                     <li tabindex="5"><span class="menu5 menuitem"><a href="javascript: return false;" class="lang"
                                 onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');"
                                 data-tms-button-name="click: language switch" data-tms-button-details1="fr"
@@ -304,39 +331,16 @@
                         aria-hidden="true"></i></a>
                 <a href="https://www.youtube.com/channel/UCHJgNZ7Ldzs_Q0BIR70PXzQ" target="_blank"><i
                         class="fab fa-youtube fa-2x" aria-hidden="true" style="color: #005ba9;"></i></a>
-                <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
-                        aria-hidden="true"></i></a>
+                <!-- <a href="https://twitter.com/DreamLandBE" target="_blank"><i class="fab fa-twitter-square fa-2x"
+                        aria-hidden="true"></i></a> -->
                 <a href="https://www.pinterest.com/dreamlandbe/" target="_blank"><i
                         class="fab fa-pinterest-square fa-2x" aria-hidden="true" style="color: #005ba9;"></i></a><br>
-                <a href="/e/nl/dl/newsletter-subscription-form" target="_self" style="display: block;"><u>Meld je aan</u> voor onze
+                <a href="/e/nl/dl/inschrijven-nieuwsbrief" target="_self" style="display: block;"><u>Meld je aan</u> voor onze
                     nieuwsbrief</a>
-                    <a style="width: 30%;margin:0 auto;"><img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BENL.png" class="img-responsive"></a>
-            </div>
-        </div>
-        <div class="row hidden-xs" style="width:100%;margin-top: 20px;">
-            <div class="col-md-12 col-xs-12">
-                <div style="text-align: center;">
-                    <a style="display:inline-block;height:45px; margin-left:60px" href="https://www.colruyt.be/nl"
-                        target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-05.png" class=""
-                            style="height:100%"></a>
-                    <a style="display:inline-block;height:45px;margin-left:30px;"
-                        href="https://www.collishop.be/e/nl/cs" target="_blank"><img
-                            src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-02.svg" class=""
-                            style="height:100%"></a>
-                    <a style="display:inline-block;height:45px;" href="https://www.dreambaby.be/e/nl/db/"
-                        target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-01.svg" class=""
-                            style="height:100%"></a>
-                    <a style="display:inline-block;height:30px;margin-left: 45px;" href="https://www.newstory.be/"
-                        target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-03.svg" class=""
-                            style="height:100%"></a>
-                    <a style="display:inline-block;height:33px;margin-left: 40px;"
-                        href="https://www.colruytgroupacademy.be/nl" target="_blank"><img
-                            src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-04.svg" class=""
-                            style="height:100%"></a>
-                    <a style="display:inline-block;height:36px;" href="https://www.okay.be/okay/static/nl.shtml"
-                        target="_blank"><img src="/ecomwcs/static/StaticWeb/DL/footer/footer/partner-06.svg" class=""
-                            style="height:100%"></a>
-                </div>
+                    <a style="width: 100%;margin:0 auto;">
+                        <img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BENL.png" class="img-responsive" style="margin-right:1em;display:inline-block;max-height:100px;">
+                        <img src="/ecomwcs/static/StaticWeb/DL/homepage/B2C.png" class="img-responsive" style="display:inline-block;max-height:85px;">
+                    </a>
             </div>
         </div>
         <div class="row footerpayments visible-xs" style="width:100%">
@@ -461,45 +465,10 @@
             </div>
         </div>
 
-
-        <!-- <div class="row footerpartners">
-            <div class="col-md-2 col-xs-2">
-                <a href=""><img
-                        src="https://nf8-wcsmgtstg.colruyt.int:8006/ecomwcs/static/StaticWeb/DL/footer/footer/partner-01.svg"
-                        class="img-responsive"></a>
-            </div>
-            <div class="col-md-2 col-xs-2">
-                <a href=""><img
-                        src="https://nf8-wcsmgtstg.colruyt.int:8006/ecomwcs/static/StaticWeb/DL/footer/footer/partner-02.svg"
-                        class="img-responsive"></a>
-            </div>
-            <div class="col-md-2 col-xs-2">
-                <a href=""><img
-                        src="https://nf8-wcsmgtstg.colruyt.int:8006/ecomwcs/static/StaticWeb/DL/footer/footer/partner-03.svg"
-                        class="img-responsive" style="margin-top: 18px;"></a>
-            </div>
-            <div class="col-md-2 col-xs-2">
-                <a href=""><img
-                        src="https://nf8-wcsmgtstg.colruyt.int:8006/ecomwcs/static/StaticWeb/DL/footer/footer/partner-04.svg"
-                        class="img-responsive" style="margin-top: 18px;"></a>
-            </div>
-            <div class="col-md-2 col-xs-2">
-                <a href=""><img
-                        src="https://nf8-wcsmgtstg.colruyt.int:8006/ecomwcs/static/StaticWeb/DL/footer/footer/partner-05.png"
-                        class="img-responsive"></a>
-            </div>
-            <div class="col-md-2 col-xs-2">
-                <a href=""><img
-                        src="https://nf8-wcsmgtstg.colruyt.int:8006/ecomwcs/static/StaticWeb/DL/footer/footer/partner-06.svg"
-                        class="img-responsive"></a>
-            </div>
-        </div> -->
     </div>
 </div>
 <script>
     $(document).ready(function () {
-
-
         $(".menu1").click(function () {
             $(".submenu1").toggle();
             $('.menuitem .fas').removeClass('iconrotate');
