@@ -1,0 +1,25 @@
+<script type="text/javascript" src="https://live.icecat.biz/js/live-current-2.js"></script>
+<script>
+    console.log('startAB53-B');
+    const ean0 = query.ean;
+    var mini = document.createElement('div');
+    mini.id = "icecat1";
+    console.log(ean0);
+    document.getElementById("attachmentPaginationContainer").prepend(mini);
+    window.addEventListener('liveload', function() {
+        console.log('liveloadStarted');
+        IcecatLive.getDatasheet(
+            {
+                'productstory':'#icecat1'
+            }, 
+            {
+            GTIN: ean0,
+            UserName: 'kathleen1976'
+        }, 'nl')               
+    });
+    console.log('end iceCat Function');
+</script>
+
+<!-- What is live load?  -->
+<!-- 
+<script id="flix-script" type="text/javascript" src="//media.flixfacts.com/js/loader.js" data-flix-distributor="13116" data-flix-language="be" data-flix-brand="lego" data-flix-mpn="" data-flix-ean="" data-flix-sku="" data-flix-inpage="flix-inpage" data-flix-button-image="" data-flix-price="" data-flix-fallback-language="nl" async></script> -->

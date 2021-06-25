@@ -1,0 +1,19 @@
+<script>
+    const ean0 = query.ean;
+    var mini = document.createElement('div');
+    mini.id = "icecat1";
+    document.getElementById("attachmentPaginationContainer").prepend(mini);
+    window.addEventListener('liveload', function() {
+        IcecatLive.getDatasheet(
+            {
+                'productstory':'#icecat1'
+            }, 
+            {
+            IcecatProductId: ean0,
+            UserName: 'kathleen1976'
+        }, 'nl')               
+    });
+</script>
+<script src="https://live.icecat.biz/js/live-current-2.js"></script>
+
+//What is live load? 
