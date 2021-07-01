@@ -1,9 +1,12 @@
+<script type="text/javascript" src="https://live.icecat.biz/js/live-current-2.js"></script>
+
 <script>
     console.log('startAB53-B');
     var ean = query.ean[0];
     var mini = document.createElement('div');
     mini.id = "icecat1";
     console.log(ean);
+    console.log(mini);
     document.getElementById("attachmentPaginationContainer").prepend(mini);
     window.addEventListener('liveload', function() {
         console.log('liveloadStarted');
@@ -19,4 +22,59 @@
         console.log('end iceCat Function');        
     });
 </script>
-<script type="text/javascript" src="https://live.icecat.biz/js/live-current-2.js"></script><script type="text/javascript" src="https://live.icecat.biz/js/live-current-2.js"></script>
+
+<script>
+// setTimeout(function(){ alert("Hello"); }, 3000);
+let myScript = document.createElement("script");
+myScript.setAttribute("src", "https://live.icecat.biz/js/live-current-2.js");
+myScript.setAttribute("defer");
+document.body.appendChild(myScript);
+   console.log('startAB53-B');
+    var ean = query.ean[0];
+    var mini = document.createElement('div');
+    mini.id = "icecat1";
+    console.log(ean);
+    console.log(mini);
+    document.getElementById("attachmentPaginationContainer").prepend(mini);
+    window.addEventListener('liveload', function() {
+        console.log('liveloadStarted');
+        console.log('ean is ' + ean);
+        IcecatLive.getDatasheet(
+            {
+                'productstory':'#icecat1'
+            }, 
+            {
+            GTIN: ean,
+            UserName: 'kathleen1976'
+        }, 'nl')
+        console.log('end iceCat Function');        
+    });
+</script>
+
+
+<script>
+let myScript = document.createElement("script");
+myScript.setAttribute("src", "https://live.icecat.biz/js/live-current-2.js");
+myScript.setAttribute("defer", "true");
+document.body.appendChild(myScript);
+   console.log('startAB53-B');
+    var ean = query.ean[0];
+    var mini = document.createElement('div');
+    mini.id = "icecat1";
+    console.log(ean);
+    console.log(mini);
+    document.getElementById("attachmentPaginationContainer").prepend(mini);
+    window.addEventListener('liveload', function() {
+        console.log('liveloadStarted');
+        console.log('ean is ' + ean);
+        IcecatLive.getDatasheet(
+            {
+                'productstory':'#icecat1'
+            }, 
+            {
+            GTIN: ean,
+            UserName: 'kathleen1976'
+        }, 'nl')
+        console.log('end iceCat Function');        
+    });
+</script>
