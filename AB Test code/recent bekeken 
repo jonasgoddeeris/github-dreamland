@@ -14,39 +14,30 @@
 
 <script>
 const pageTemplate = udata.currentPage.page_template;
-const productName = udata.currentPage.products[0].id;
+const productID = udata.currentPage.products[0].id;
+const productName = udata.currentPage.products[0].name;
+const productPrice = udata.currentPage.products[0].price;
 const productImg = document.querySelector("#WC_CachedProductOnlyDisplay_prod_images_1_1").src;
 
 
 
 
-https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/28/46/asset-2332846.jpg
 
-https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/646x1000/std.lang.all/72/82/asset-2037282.jpg
-https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/72/82/asset-2037282.jpg
+// localStorage.setItem("productID", productID);
+// localStorage.setItem("productName", productName);
+// localStorage.setItem("productPrice", productPrice);
+// localStorage.setItem("productImg", productImg);
 
-
-
-// localStorage.setItem("myocardinfarct", myocardinfarct);
-
-
-
-// localStorage.setItem('symptoms', JSON.stringify({ 
-// 	'myocardinfarct': myocardinfarct, 
-// 	'hypertensie': hypertensie,
-// 	'diuretica': diuretica,
-// 	'orthopno': orthopno,
-// 	'cardio': cardio,
-// 	"bilateraal": bilateraal,
-// 	'longcrepitaties': longcrepitaties,
-// 	'hartgeruis': hartgeruis,
-// 	'cdv': cdv,
-// 	'cordus': cordus,
-// 	'ecga': ecga,
+localStorage.setItem('productComplete', JSON.stringify({ 
+	'productID': productID, 
+	'productName': productName,
+	'productPrice': productPrice,
+	'productImg': productImg
+	}));
 
 
-// var symptoms = JSON.parse(localStorage.getItem("symptoms"));
-// console.log(symptoms);
+var symptoms = JSON.parse(localStorage.getItem("symptoms"));
+console.log(symptoms);
 
 
 
