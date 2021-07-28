@@ -20,14 +20,6 @@ const productPrice = udata.currentPage.products[0].price;
 const productImg = document.querySelector("#WC_CachedProductOnlyDisplay_prod_images_1_1").src;
 
 
-
-
-
-// localStorage.setItem("productID", productID);
-// localStorage.setItem("productName", productName);
-// localStorage.setItem("productPrice", productPrice);
-// localStorage.setItem("productImg", productImg);
-
 localStorage.setItem('productComplete', JSON.stringify({ 
 	'productID': productID, 
 	'productName': productName,
@@ -36,8 +28,9 @@ localStorage.setItem('productComplete', JSON.stringify({
 	}));
 
 
-var symptoms = JSON.parse(localStorage.getItem("symptoms"));
-console.log(symptoms);
+var product = JSON.parse(localStorage.getItem("productComplete"));
+console.log(product);
+product.productID;
 
 
 
