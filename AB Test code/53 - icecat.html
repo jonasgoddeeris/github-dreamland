@@ -1,4 +1,4 @@
-<script type="text/javascript" src="https://live.icecat.biz/js/live-current-2.js"></script>
+<!-- <script type="text/javascript" src="https://live.icecat.biz/js/live-current-2.js"></script>
 
 <script>
     console.log('startAB53-B');
@@ -50,7 +50,7 @@ document.body.appendChild(myScript);
         console.log('end iceCat Function');        
     });
 </script>
-
+ -->
 
 <script>
 let myScript = document.createElement("script");
@@ -77,4 +77,29 @@ document.body.appendChild(myScript);
         }, 'nl')
         console.log('end iceCat Function');        
     });
+</script>
+
+
+<!-- //GTM implemntation ICECAT  -->
+<script src="https://live.icecat.biz/js/live-current-2.js"></script>
+<script type="text/javascript">
+function liveCall() {
+var product_ean = document.querySelector("table tr td[datath='Barcode']").innerText.trim();
+IcecatLive.getDatasheet(
+{
+'productstory': '#IcecatLive'
+},
+{
+GTIN: product_ean,
+UserName: 'kathleen@toychamp'
+}, 'nl')
+}
+function prepare() {
+var element = document.querySelector(".product-info-description");
+var child = document.createElement("div");
+child.setAttribute("id","IcecatLive");
+element.appendChild(child);
+liveCall();
+}
+prepare();
 </script>
