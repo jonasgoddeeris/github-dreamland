@@ -1,0 +1,89 @@
+
+<html>
+
+
+
+
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+
+
+<script>
+const pageTemplate = udata.currentPage.page_template;
+const productName = udata.currentPage.products[0].id;
+const productImg = document.querySelector("#productMainImage").src;
+const productImg = const productImg = document.querySelector("#productMainImage").src;
+
+
+
+
+https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/28/46/asset-2332846.jpg
+
+https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/646x1000/std.lang.all/72/82/asset-2037282.jpg
+https://static.dreamland.be/wcsstore/ColruytB2CCAS/JPG/JPG/200x310/std.lang.all/72/82/asset-2037282.jpg
+
+
+
+// localStorage.setItem("myocardinfarct", myocardinfarct);
+
+
+
+// localStorage.setItem('symptoms', JSON.stringify({ 
+// 	'myocardinfarct': myocardinfarct, 
+// 	'hypertensie': hypertensie,
+// 	'diuretica': diuretica,
+// 	'orthopno': orthopno,
+// 	'cardio': cardio,
+// 	"bilateraal": bilateraal,
+// 	'longcrepitaties': longcrepitaties,
+// 	'hartgeruis': hartgeruis,
+// 	'cdv': cdv,
+// 	'cordus': cordus,
+// 	'ecga': ecga,
+
+
+// var symptoms = JSON.parse(localStorage.getItem("symptoms"));
+// console.log(symptoms);
+
+
+
+
+// document.getElementById("invullen").addEventListener("click", invullen);
+
+// function invullen(){
+// 	var BNPwaarde = document.getElementById("BNPwaarde").value;
+// 	if (BNPwaarde == ""){
+// 	localStorage.setItem("BNPwaarde", "empty");
+// 	console.log(BNPwaarde);
+// 	} else {
+// 	localStorage.setItem("BNPwaarde", BNPwaarde);
+// 	};
+// 	var BNPwaarde = localStorage.getItem("BNPwaarde");
+// 	checkValue(BNPwaarde);
+// };
+
+
+if (pageTemplate == "product detail"){
+	captureProduct();
+};
+
+function invullen(){
+
+
+};
+// if (pageTemplate == "product detail"){
+// 	document.getElementById("has").classList.add('hide');
+// 	document.getElementById("hasReco").classList.add('hide');
+// 	document.getElementById("hasWaarde").classList.add('hide');
+// 	document.getElementById("send").classList.add('hide');
+	
+// } else {
+// 	document.getElementById("hasNot").classList.add('hide');
+// 	document.getElementById("hasNotReco").classList.add('hide');
+// };
+</script>
+</html>
