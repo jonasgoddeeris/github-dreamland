@@ -4,10 +4,8 @@
 <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 <script src="jquery.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
-
-
 <script>
-//get all the data from the current PDP needed to make product tiles
+//get all the data from the current PDP needed to make product tiles (udata should be populated before AB test tool Adobe Target is ready)
 
 var pageTemplate = udata.currentPage.page_template;
 var link = window.location.href;
@@ -20,7 +18,7 @@ var productImg = productImgBig.replace("646x1000","200x310");
 //place in object
 const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 
-// there is recent product local storage object, check if it is exists and is empty, if not create the object and populate with current product. If it exists check if it already contains 8 products ( as this is the maximum amount of product we will show in recent products carousel, else just add the current product the the ecisting list smaller than 8)
+// there is recent product local storage object, check if it is exists and is empty, if not create the object and populate with current product. If it exists check if it already contains 8 products ( as this is the maximum amount of product we will show in recent products carousel, else check if current product isn't already in list ELSE just add the current product the the existing list smaller than 8 )
 
 var recentProducts = JSON.parse(localStorage.getItem("recent-products")); //create var out of local storage object
 console.log(recentProducts);
@@ -41,73 +39,10 @@ if (recentProducts == null || recentProducts == undefined) {
 		recentProducts.push(recentProduct);
     localStorage.setItem('recent-products', JSON.stringify(recentProducts));
  };
-   
 
 
+// INJECT HTML =  PRODUCT CAROUSEL WITH 8 most recently viewed PRODUCTS
 
-
-product.productID;
-
-product.push
-// document.getElementById("invullen").addEventListener("click", invullen);
-
-// function invullen(){
-// 	var BNPwaarde = document.getElementById("BNPwaarde").value;
-// 	if (BNPwaarde == ""){
-// 	localStorage.setItem("BNPwaarde", "empty");
-// 	console.log(BNPwaarde);
-// 	} else {
-// 	localStorage.setItem("BNPwaarde", BNPwaarde);
-// 	};
-// 	var BNPwaarde = localStorage.getItem("BNPwaarde");
-// 	checkValue(BNPwaarde);
-// };
-
-
-if (pageTemplate == "product detail"){
-	captureProduct();
-};
-
-function invullen(){
-
-
-};
-// if (pageTemplate == "product detail"){
-// 	document.getElementById("has").classList.add('hide');
-// 	document.getElementById("hasReco").classList.add('hide');
-// 	document.getElementById("hasWaarde").classList.add('hide');
-// 	document.getElementById("send").classList.add('hide');
-	
-// } else {
-// 	document.getElementById("hasNot").classList.add('hide');
-// 	document.getElementById("hasNotReco").classList.add('hide');
-// };
-
-if (!product) {
-      product.push(product);
-    }
-if (localStorage.getItem('recent-products')) {
-      localStorage.getItem('recent-products', JSON.stringify(recent-products));
-    } else {
-      localStorage.setItem('recent-products', JSON.stringify(recent-products));
-    }
-  
-
-
-outputProducts = function() {
-    var productHtml = '';
-    for (var i = sessionStorage.length-1; i >= 0; i--) {
-        var itemKey = sessionStorage.key(i);
-        if(itemKey != 'storedCount') {
-            var product = JSON.parse(sessionStorage.getItem(itemKey));
-	    var productId = product.productId;
-            var productName = product.productName;
-            // ... etc
-            productHtml += '<li><a href="/product/'+productId+'">'+productName+'</a></li>';
-        }
-    }
-    // append to the DOM using jQuery
-    $('#recent-products').append(productHtml);
-};
+ 
 </script>
 </html>
