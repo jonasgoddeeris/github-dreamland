@@ -7,28 +7,44 @@
 
 
 <script>
+//get all the data from the current PDP needed to make product tiles
+
 var pageTemplate = udata.currentPage.page_template;
 var link = window.location.href;
 var productID = udata.currentPage.products[0].id;
 var productName = udata.currentPage.products[0].name;
 var productPrice = udata.currentPage.products[0].price;
-var productImg = document.querySelector("#WC_CachedProductOnlyDisplay_prod_images_1_1").src;
+var productImgBig = document.querySelector("#productMainImage").src;
+var productImg = productImgBig.replace("646x1000","200x310");
+
+//place in object
 const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 
-localStorage.setItem('recent-products', JSON.stringify(recentProduct));
+// there is recent product local storage object, check if it is exists and is empty, if not create the object and populate with current product. If it exists check if it already contains 8 products ( as this is the maximum amount of product we will show in recent products carousel, else just add the current product the the ecisting list smaller than 8)
 
-var product = JSON.parse(localStorage.getItem("recent-products"));
-console.log(product);
+var recentProducts = JSON.parse(localStorage.getItem("recent-products")); //create var out of local storage object
+console.log(recentProducts);
+if (recentProducts) {
+var lastItem = recentProducts[recentProducts.length - 1]; //made to check if current product page isn't already in the list , else we we show same product several times in recent product list
+};
+
+if (recentProducts == null || recentProducts == undefined) {
+	  var recentProducts = [recentProduct];
+      localStorage.setItem('recent-products', JSON.stringify(recentProducts));
+    } else if (lastItem.productID == productID) {
+    	console.log("already in recent product list");
+	} else if (recentProducts.length >= 8){
+		recentProducts.shift();
+		recentProducts.push(recentProduct);
+    localStorage.setItem('recent-products', JSON.stringify(recentProducts));
+	} else {
+		recentProducts.push(recentProduct);
+    localStorage.setItem('recent-products', JSON.stringify(recentProducts));
+ };
+   
 
 
-if (!product) {
-      product.push(product);
-    }
-if (localStorage.getItem('recent-products')) {
-      localStorage.getItem('recent-products', JSON.stringify(recentProduct));
-    } else {
-      
-    }
+
 
 product.productID;
 
