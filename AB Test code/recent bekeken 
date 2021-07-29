@@ -1,41 +1,38 @@
 
 <html>
-
-
-
 <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 <script src="jquery.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
 
 
-
-
 <script>
-const pageTemplate = udata.currentPage.page_template;
-const link = window.location.href;
-const productID = udata.currentPage.products[0].id;
-const productName = udata.currentPage.products[0].name;
-const productPrice = udata.currentPage.products[0].price;
-const productImg = document.querySelector("#WC_CachedProductOnlyDisplay_prod_images_1_1").src;
+var pageTemplate = udata.currentPage.page_template;
+var link = window.location.href;
+var productID = udata.currentPage.products[0].id;
+var productName = udata.currentPage.products[0].name;
+var productPrice = udata.currentPage.products[0].price;
+var productImg = document.querySelector("#WC_CachedProductOnlyDisplay_prod_images_1_1").src;
+const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 
+localStorage.setItem('recent-products', JSON.stringify(recentProduct));
 
-localStorage.setItem('productComplete', JSON.stringify({ 
-	'productID': productID, 
-	'productName': productName,
-	'productPrice': productPrice,
-	'productImg': productImg
-	'productLink': link
-	}));
-
-
-var product = JSON.parse(localStorage.getItem("productComplete"));
+var product = JSON.parse(localStorage.getItem("recent-products"));
 console.log(product);
+
+
+if (!product) {
+      product.push(product);
+    }
+if (localStorage.getItem('recent-products')) {
+      localStorage.getItem('recent-products', JSON.stringify(recentProduct));
+    } else {
+      
+    }
+
 product.productID;
 
-
-
-
+product.push
 // document.getElementById("invullen").addEventListener("click", invullen);
 
 // function invullen(){
@@ -69,5 +66,32 @@ function invullen(){
 // 	document.getElementById("hasNot").classList.add('hide');
 // 	document.getElementById("hasNotReco").classList.add('hide');
 // };
+
+if (!product) {
+      product.push(product);
+    }
+if (localStorage.getItem('recent-products')) {
+      localStorage.getItem('recent-products', JSON.stringify(recent-products));
+    } else {
+      localStorage.setItem('recent-products', JSON.stringify(recent-products));
+    }
+  
+
+
+outputProducts = function() {
+    var productHtml = '';
+    for (var i = sessionStorage.length-1; i >= 0; i--) {
+        var itemKey = sessionStorage.key(i);
+        if(itemKey != 'storedCount') {
+            var product = JSON.parse(sessionStorage.getItem(itemKey));
+	    var productId = product.productId;
+            var productName = product.productName;
+            // ... etc
+            productHtml += '<li><a href="/product/'+productId+'">'+productName+'</a></li>';
+        }
+    }
+    // append to the DOM using jQuery
+    $('#recent-products').append(productHtml);
+};
 </script>
 </html>
