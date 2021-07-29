@@ -3,7 +3,6 @@
 
 
 
-
 <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 <script src="jquery.min.js"></script>
@@ -14,6 +13,7 @@
 
 <script>
 const pageTemplate = udata.currentPage.page_template;
+const link = window.location.href;
 const productID = udata.currentPage.products[0].id;
 const productName = udata.currentPage.products[0].name;
 const productPrice = udata.currentPage.products[0].price;
@@ -25,6 +25,7 @@ localStorage.setItem('productComplete', JSON.stringify({
 	'productName': productName,
 	'productPrice': productPrice,
 	'productImg': productImg
+	'productLink': link
 	}));
 
 
