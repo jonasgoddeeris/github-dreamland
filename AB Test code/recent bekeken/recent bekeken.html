@@ -13,7 +13,9 @@ var productName = document.getElementsByClassName("main_header")[0].innerText;
 var productPrice = udata.currentPage.products[0].price;
 var productImgBig = document.querySelector("#productMainImage").src;
 var productImg = productImgBig.replace("646x1000","200x310");
-}
+//place in object
+var recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
+};
 
 var content = document.querySelector("#contentWrapper");
 var recentblok = document.querySelector("#recentblok");
@@ -30,8 +32,6 @@ var lastItem = recentProducts[recentProducts.length - 1]; //made to check if cur
 
 if (pageTemplate == "Product" || pageTemplate == "Kit")  {
 	console.log('this is a product page check update local localStorage')
-//place in object
-const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 if (recentProducts == null || recentProducts == undefined) {
 	  var recentProducts = [recentProduct];
       localStorage.setItem('recent-products', JSON.stringify(recentProducts));
@@ -60,8 +60,8 @@ if (recentblok){
 	recentblokproducts.innerHTML = "";
  	for (let i = 0; i < recentProducts.length; i++) {
     recentblokproducts.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
-}
-}
+};
+};
 	function contentNew() {
 	if (recentProducts){
  	var node = document.createElement("div"); 
@@ -79,8 +79,8 @@ if (recentblok){
 	}
 	} else {
 		console.log("no recent products to show");
-	}
-}
+	};
+};
  </script>
 <style>
 .catnav-circles {
