@@ -2,17 +2,23 @@
 <html>
 <script>
 //get all the data from the current PDP needed to make product tiles (udata should be populated before AB test tool Adobe Target is ready)
+console.log("start recent bekeken A/B start");
+var pageTemplate = document.querySelector('meta[name="pageGroup"]').content;
 
-var pageTemplate = udata.currentPage.page_template;
+if (pageTemplate == "Product" || pageTemplate == "Kit") {
+	console.log('this is a productpage')
 var link = window.location.href;
 var productID = udata.currentPage.products[0].id;
 var productName = document.getElementsByClassName("main_header")[0].innerText;
 var productPrice = udata.currentPage.products[0].price;
 var productImgBig = document.querySelector("#productMainImage").src;
 var productImg = productImgBig.replace("646x1000","200x310");
+}
 
-//place in object
-const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
+var content = document.querySelector("#contentWrapper");
+var recentblok = document.querySelector("#recentblok");
+var recentblokproducts = document.querySelector("#recentblokproducts");
+
 
 // there is recent product local storage object, check if it is exists and is empty, if not create the object and populate with current product. If it exists check if it already contains 8 products ( as this is the maximum amount of product we will show in recent products carousel, else check if current product isn't already in list ELSE just add the current product the the existing list smaller than 8 )
 
@@ -21,6 +27,12 @@ console.log(recentProducts);
 if (recentProducts) {
 var lastItem = recentProducts[recentProducts.length - 1]; //made to check if current product page isn't already in the list , else we we show same product several times in recent product list
 };
+
+if (pageTemplate == "Product" || pageTemplate == "Kit")  {
+	console.log('this is a productpage check update local localStorage')
+//place in object
+const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
+
 
 if (recentProducts == null || recentProducts == undefined) {
 	  var recentProducts = [recentProduct];
@@ -35,34 +47,52 @@ if (recentProducts == null || recentProducts == undefined) {
 		recentProducts.push(recentProduct);
     localStorage.setItem('recent-products', JSON.stringify(recentProducts));
  };
-</script>
-<script>
-	var recentProducts = JSON.parse(localStorage.getItem("recent-products")); //create var out of local storage object
-	console.log(recentProducts);
+}
+ 	
 
- 	var content = document.querySelector("#contentWrapper");
+// bestaat de recent producten blok al op de pagina ? voeg toe ipv nieuwe blok te creëren
+if (recentblok){
+	console.log("recent products are already shown")
+	contentAdd();
+} else {
+	console.log("recent products not yet shown, lets add them to the page")
+	contentNew();
+};
+	function contentAdd() {
+	recentblokproducts.innerHTML = "";
+ 	for (let i = 0; i < recentProducts.length; i++) {
+    recentblokproducts.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
+}
+}
+	function contentNew() {
+	if (recentProducts){
  	var node = document.createElement("div"); 
  	node.classList.add("catnav-circles");
+ 	node.id = "recentblokproducts";
  	var nodeh2 = document.createElement("h2"); 
  	nodeh2.classList.add("recenth2");
+ 	nodeh2.id = "recentblok";
  	nodeh2.innerHTML = "Eerder bekeken";
  	content.appendChild(nodeh2);
 
  	for (let i = 0; i < recentProducts.length; i++) {
-    node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<img src="' + recentProducts[i].productImg + '">' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
+    node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
  	content.appendChild(node);
+	}
+	} else {
+		console.log("no recent products to show");
+	}
 }
- 	
  </script>
 <style>
 .catnav-circles {
         display: -webkit-box;
-        display: -ms-flexbox;
+        /*display: -ms-flexbox;
         display: flex !important;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
-        flex-direction: row;
+        flex-direction: row;*/
         overflow-x: auto;
         overflow-y: hidden;
         -ms-overflow-style: none;
@@ -70,29 +100,7 @@ if (recentProducts == null || recentProducts == undefined) {
         width: auto;
         min-width: 100%;
         min-height: 100%;
-        justify-content: space-between;
     }
-@media (max-width: 601px){
-	.catnav-circles {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex !important;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        width: auto;
-        min-width: 100%;
-        min-height: 100%;
-        justify-content: space-between;
-    }
-}
-    
-   
     .catnav-circles::-webkit-scrollbar {
         display: none !important;
     }
@@ -106,12 +114,17 @@ if (recentProducts == null || recentProducts == undefined) {
         flex-direction: column;
         padding: 8px;
         width:130px;
+        min-height: 200px;
 	    border-radius: 15px;
 	    border-width: thin;
-	    border-color: #cacaca;
+	    border-color: #ccc;
 	    border-style: solid;
 	    justify-content: space-around;
+	    margin-right: 12px;
     }
+    .imgrecent {
+    margin: auto;
+	}
     .catnav-circles a img {
         width: auto;
 	    height: -webkit-fill-available;
@@ -128,6 +141,9 @@ if (recentProducts == null || recentProducts == undefined) {
         -ms-hyphens: auto;
         hyphens: auto;
         font-size: 14px;
+        min-height: 42px;
+    	max-height: 42px;
+    	overflow: hidden;
     }
     .recenth2 {
 		margin-top: 32px;
@@ -138,5 +154,8 @@ if (recentProducts == null || recentProducts == undefined) {
 	    font-family: "Roboto Condensed",sans-serif;
 	    font-weight: 400;
 	}	
+	.pricerecent {
+    margin-top: 8px;
+	}
 </style>
 </html>
