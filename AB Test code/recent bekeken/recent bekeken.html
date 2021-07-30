@@ -29,11 +29,9 @@ var lastItem = recentProducts[recentProducts.length - 1]; //made to check if cur
 };
 
 if (pageTemplate == "Product" || pageTemplate == "Kit")  {
-	console.log('this is a productpage check update local localStorage')
+	console.log('this is a product page check update local localStorage')
 //place in object
 const recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
-
-
 if (recentProducts == null || recentProducts == undefined) {
 	  var recentProducts = [recentProduct];
       localStorage.setItem('recent-products', JSON.stringify(recentProducts));
@@ -47,7 +45,7 @@ if (recentProducts == null || recentProducts == undefined) {
 		recentProducts.push(recentProduct);
     localStorage.setItem('recent-products', JSON.stringify(recentProducts));
  };
-}
+};
  	
 
 // bestaat de recent producten blok al op de pagina ? voeg toe ipv nieuwe blok te creëren
