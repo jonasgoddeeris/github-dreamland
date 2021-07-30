@@ -42,7 +42,7 @@ if (recentProducts == null || recentProducts == undefined) {
  	node.classList.add("catnav-circles");
 
  	for (let i = 0; i < recentProducts.length; i++) {
-    node.innerHTML += '<a href="' + recentProducts[i].link + '">' + '<img src="' + recentProducts[i].productImg + '>' + '<p>' + recentProducts[i].productName + '</p>' + '</a>';
+    node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<img src="' + recentProducts[i].productImg + '">' + '<p>' + recentProducts[i].productName + '</p>' + '</a>';
  	content.appendChild(node);
 }
  	
@@ -90,6 +90,13 @@ if (recentProducts == null || recentProducts == undefined) {
         padding: 0 8px;
         padding-top: 8px;
         max-width:80px;
+
+    padding: 20px;
+    border-radius: 15px;
+    border-width: thin;
+    border-color: #cacaca;
+    border-style: solid;
+    margin-right: 12px;
     }
     .catnav-circles a img {
         border-radius: 20%;
@@ -105,7 +112,7 @@ if (recentProducts == null || recentProducts == undefined) {
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
         hyphens: auto;
-        font-size: 11px;
+        font-size: 14px;
     }
 </style>
 </html>
