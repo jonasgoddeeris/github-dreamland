@@ -1,6 +1,7 @@
 
 <html>
 <script>
+setTimeout(function(){ 
 //get all the data from the current PDP needed to make product tiles (udata should be populated before AB test tool Adobe Target is ready)
 console.log("start recent bekeken A/B start");
 var pageTemplate = document.querySelector('meta[name="pageGroup"]').content;
@@ -13,10 +14,9 @@ var productName = document.getElementsByClassName("main_header")[0].innerText;
 var productPrice = udata.currentPage.products[0].price;
 var productImgBig = document.querySelector("#productMainImage").src;
 var productImg = productImgBig.replace("646x1000","200x310");
-//place in object
-var recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 };
 
+var recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 var content = document.querySelector("#contentWrapper");
 var recentblok = document.querySelector("#recentblok");
 var recentblokproducts = document.querySelector("#recentblokproducts");
@@ -53,7 +53,7 @@ if (recentblok){
 	console.log("recent products are already shown")
 	contentAdd();
 } else {
-	console.log("recent products not yet shown, lets add them to the page")
+	console.log("recent products not yet shown, lets add them to the page unless empty")
 	contentNew();
 };
 	function contentAdd() {
@@ -72,7 +72,6 @@ if (recentblok){
  	nodeh2.id = "recentblok";
  	nodeh2.innerHTML = "Eerder bekeken";
  	content.appendChild(nodeh2);
-
  	for (let i = 0; i < recentProducts.length; i++) {
     node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
  	content.appendChild(node);
@@ -81,6 +80,7 @@ if (recentblok){
 		console.log("no recent products to show");
 	};
 };
+}, 1000);
  </script>
 <style>
 .catnav-circles {
@@ -147,7 +147,7 @@ if (recentblok){
 		margin-top: 32px;
 	    margin-bottom: 24px;
 	    color: #005ba9;
-	    font-size: 28px;
+	    font-size: 24px;
 	    line-height: 22px;
 	    font-family: "Roboto Condensed",sans-serif;
 	    font-weight: 400;
