@@ -6,7 +6,7 @@
 var pageTemplate = udata.currentPage.page_template;
 var link = window.location.href;
 var productID = udata.currentPage.products[0].id;
-var productName = udata.currentPage.products[0].name;
+var productName = document.getElementsByClassName("main_header")[0].innerText;
 var productPrice = udata.currentPage.products[0].price;
 var productImgBig = document.querySelector("#productMainImage").src;
 var productImg = productImgBig.replace("646x1000","200x310");
@@ -35,14 +35,18 @@ if (recentProducts == null || recentProducts == undefined) {
 		recentProducts.push(recentProduct);
     localStorage.setItem('recent-products', JSON.stringify(recentProducts));
  };
-
+</script>
+<script>
+	var recentProducts = JSON.parse(localStorage.getItem("recent-products")); //create var out of local storage object
+	console.log(recentProducts);
 
  	var content = document.querySelector("#contentWrapper");
  	var node = document.createElement("div"); 
  	node.classList.add("catnav-circles");
+ 	node.innerHTML = '<h2 class="recenth2">Eerder bekeken</h2>';
 
  	for (let i = 0; i < recentProducts.length; i++) {
-    node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<img src="' + recentProducts[i].productImg + '">' + '<p>' + recentProducts[i].productName + '</p>' + '</a>';
+    node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<img src="' + recentProducts[i].productImg + '">' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
  	content.appendChild(node);
 }
  	
@@ -113,6 +117,14 @@ if (recentProducts == null || recentProducts == undefined) {
         -ms-hyphens: auto;
         hyphens: auto;
         font-size: 14px;
-    }
+    },
+   .recenth2 {
+   	margin-top: 4px;
+   	color: #005ba9;
+    font-size: 28px;
+    line-height: 22px;
+    font-family: "Roboto Condensed",sans-serif;
+    font-weight: 400;
+	}	
 </style>
 </html>
