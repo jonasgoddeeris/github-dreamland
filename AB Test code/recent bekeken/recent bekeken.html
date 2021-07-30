@@ -55,7 +55,7 @@ if (recentProducts == null || recentProducts == undefined) {
  	
  </script>
 <style>
-    .catnav-circles {
+.catnav-circles {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex !important;
@@ -72,6 +72,27 @@ if (recentProducts == null || recentProducts == undefined) {
         min-height: 100%;
         justify-content: space-between;
     }
+@media (max-width: 601px){
+	.catnav-circles {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        width: auto;
+        min-width: 100%;
+        min-height: 100%;
+        justify-content: space-between;
+    }
+}
+    
+   
     .catnav-circles::-webkit-scrollbar {
         display: none !important;
     }
@@ -83,22 +104,20 @@ if (recentProducts == null || recentProducts == undefined) {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding: 0 8px;
-        padding-top: 8px;
-        max-width:80px;
-
-    padding: 20px;
-    border-radius: 15px;
-    border-width: thin;
-    border-color: #cacaca;
-    border-style: solid;
-    margin-right: 12px;
+        padding: 8px;
+        width:130px;
+	    border-radius: 15px;
+	    border-width: thin;
+	    border-color: #cacaca;
+	    border-style: solid;
+	    justify-content: space-around;
     }
     .catnav-circles a img {
-        border-radius: 20%;
-        width: 50%;
-        height: 50%;
-        margin: 0 auto;
+        width: auto;
+	    height: -webkit-fill-available;
+	    max-height: 100px;
+	    max-width: 80px;
+	    margin: 0 auto;
     }
     .catnav-circles a p {
         color: #005BA9;
