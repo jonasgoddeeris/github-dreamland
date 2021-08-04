@@ -64,7 +64,7 @@ if (recentblok){
 
 	function contentAdd() {
 	recentblokproducts.innerHTML = "";
- 	for (let i = 0; i < recentProducts.length; i++) {  if (recentProducts.[i].productID !== productID){
+ 	for (let i = 0; i < recentProducts.length; i++) {  if (recentProducts[i].productID !== productID){
     recentblokproducts.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>'; }
 };
 };
@@ -83,7 +83,7 @@ if (recentblok){
     var inner = document.createElement("div"); 
     inner.classList.add("inner");
     inner.id = "inner";
- 	for (let i = 0; i < recentProducts.length; i++) { if (recentProducts.[i].productID !== productID){
+ 	for (let i = 0; i < recentProducts.length; i++) { if (recentProducts[i].productID !== productID){
     inner.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
  	recentblokproducts.appendChild(inner);
     };
