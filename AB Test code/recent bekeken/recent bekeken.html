@@ -25,24 +25,30 @@ var recentblokproducts = document.querySelector("#recentblokproducts");
 var recentProducts = JSON.parse(localStorage.getItem("recent-products")); //create var out of local storage object
 console.log(recentProducts);
 if (recentProducts) {
-var lastItem = recentProducts[recentProducts.length - 1]; //made to check if current product page isn't already in the list , else we we show same product several times in recent product list
+var inList = recentProducts.every(checkID);
+    function checkID(product) {
+      return product.productID !== productID;
+    };
 };
+console.log('inlist = ' + inList);
 
 if (pageTemplate == "Product" || pageTemplate == "Kit")  {
 	console.log('this is a product page check update local localStorage')
 if (recentProducts == null || recentProducts == undefined) {
 	  var recentProducts = [recentProduct];
       localStorage.setItem('recent-products', JSON.stringify(recentProducts));
-    } else if (lastItem.productID == productID) {
-    	console.log("already in recent product list");
-	} else if (recentProducts.length >= 8){
+    } else if (inList == false) {
+        console.log('inlist = ' + inList)
+        console.log("already in recent product list");
+    } 
+    else if (recentProducts.length >= 8){
 		recentProducts.shift();
 		recentProducts.push(recentProduct);
-    localStorage.setItem('recent-products', JSON.stringify(recentProducts));
+        localStorage.setItem('recent-products', JSON.stringify(recentProducts));
 	} else {
 		recentProducts.push(recentProduct);
-    localStorage.setItem('recent-products', JSON.stringify(recentProducts));
- };
+        localStorage.setItem('recent-products', JSON.stringify(recentProducts));
+    };
 };
  	
 
@@ -62,17 +68,22 @@ if (recentblok){
 };
 	function contentNew() {
 	if (recentProducts){
+    var nodeh2 = document.createElement("h2"); 
+    nodeh2.classList.add("recenth2");
+    nodeh2.id = "recentblok";
+    nodeh2.innerHTML = "Eerder bekeken";
+    content.appendChild(nodeh2);
  	var node = document.createElement("div"); 
  	node.classList.add("catnav-circles");
  	node.id = "recentblokproducts";
- 	var nodeh2 = document.createElement("h2"); 
- 	nodeh2.classList.add("recenth2");
- 	nodeh2.id = "recentblok";
- 	nodeh2.innerHTML = "Eerder bekeken";
- 	content.appendChild(nodeh2);
+    content.appendChild(node);
+    var recentblokproducts = document.querySelector("#recentblokproducts");
+    var inner = document.createElement("div"); 
+    inner.classList.add("inner");
+    inner.id = "inner";
  	for (let i = 0; i < recentProducts.length; i++) {
-    node.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
- 	content.appendChild(node);
+    inner.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
+ 	recentblokproducts.appendChild(inner);
 	}
 	} else {
 		console.log("no recent products to show");
@@ -81,17 +92,25 @@ if (recentblok){
 }, 1000);
  </script>
 <style>
-.catnav-circles {
-        display: flex;
+    .catnav-circles {
+        /*display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
+        justify-content: flex-end;*/
         overflow-x: auto;
         overflow-y: hidden;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        /*-ms-overflow-style: none;
+        scrollbar-width: none;*/
         width: auto;
         min-width: 100%;
         min-height: 100%;
+    }
+    .inner {
+    /* width: auto; */
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     }
     .catnav-circles::-webkit-scrollbar {
         display: none !important;
@@ -116,16 +135,19 @@ if (recentblok){
     }
     .imgrecent {
     margin: auto;
+    width: 100px;
 	}
     .catnav-circles a img {
         width: auto;
-        height: 100%;
-        height: -moz-available; 
+        height: auto;
+        /*height: -moz-available; 
 	    height: -webkit-fill-available;
-        height: fill available;
+        height: fill available;*/
 	    max-height: 100px;
-	    max-width: 90%;
+	    max-width: 100px;
 	    margin: 0 auto;
+        /*display: block;*/
+        /*padding-left: 5%;*/
     }
     .catnav-circles a p {
         color: #005BA9;
