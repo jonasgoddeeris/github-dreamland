@@ -1,7 +1,3 @@
-<!-- TO DO's : 
-mobile images fixen
-array omdraaien of vanachter beginnen met for loop?  zodat je meest recent bekeken producten eerst terug ziet-->
-
 <script>
 setTimeout(function(){ 
 //get all the data from the current PDP needed to make product tiles (udata should be populated before AB test tool Adobe Target is ready)
@@ -86,13 +82,9 @@ if (recentblok){
  </script>
 <style>
 .catnav-circles {
-        display: -webkit-box;
-        /*display: -ms-flexbox;
-        display: flex !important;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;*/
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
         overflow-x: auto;
         overflow-y: hidden;
         -ms-overflow-style: none;
@@ -127,9 +119,12 @@ if (recentblok){
 	}
     .catnav-circles a img {
         width: auto;
+        height: 100%;
+        height: -moz-available; 
 	    height: -webkit-fill-available;
+        height: fill available;
 	    max-height: 100px;
-	    max-width: 80px;
+	    max-width: 90%;
 	    margin: 0 auto;
     }
     .catnav-circles a p {
