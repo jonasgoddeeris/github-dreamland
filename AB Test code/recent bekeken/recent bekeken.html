@@ -65,7 +65,7 @@ if (recentblok){
 	function contentAdd() {
 	recentblokproducts.innerHTML = "";
  	for (let i = 0; i < recentProducts.length; i++) {
-    recentblokproducts.innerHTML += '<a ' + 'id="' + productID + '" ' + 'href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
+    recentblokproducts.innerHTML += '<a ' + 'id="' + recentProducts[i].productID + '" ' + 'href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
 };
 };
 	function contentNew() {
@@ -84,13 +84,13 @@ if (recentblok){
     inner.classList.add("inner");
     inner.id = "inner";
  	for (let i = 0; i < recentProducts.length; i++) {
-    inner.innerHTML += '<a ' + 'id="' + productID + '" ' + 'href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
+    inner.innerHTML += '<a ' + 'id="' + recentProducts[i].productID + '" ' + 'href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>';
  	recentblokproducts.appendChild(inner);
 	}
 	} else {
 		console.log("no recent products to show");
 	};
-    document.getElementById(productID).style="display:none;";
+    document.getElementById(productID).style="display:none;"; //do not show product in recent products if it is the current page
 };
 }, 1000);
  </script>
