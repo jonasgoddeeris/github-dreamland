@@ -64,7 +64,7 @@ if (recentblok){
 
 	function contentAdd() {
 	recentblokproducts.innerHTML = "";
- 	for (let i = 0; i < recentProducts.length; i++) {  if (recentProducts[i].productID !== productID){
+ 	for (let i = 0; i < recentProducts.length; i++) {  if (recentProducts[i].productID !== productID){ //do not show product in recent list if it is the current product
     recentblokproducts.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>'; }
 };
 };
@@ -91,7 +91,7 @@ if (recentblok){
 	} else {
 		console.log("no recent products to show");
 	};
-    document.querySelector("#recentblokproducts").innerHTML.length == 0 ? document.querySelector("#recentblok").style="display:none;" : console.log('show H2');
+    document.querySelector("#recentblokproducts").innerHTML.length == 0 ? document.querySelector("#recentblok").style="display:none;" : console.log('show H2'); //hide recent H2 if we delete current product from the list and it is the only one.
 };
 }, 1000);
  </script>
