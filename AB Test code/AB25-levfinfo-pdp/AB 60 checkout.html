@@ -1,0 +1,47 @@
+<style>
+div#billing {
+    display: none;
+}
+.formRow.giftcard._toggleGiftcard {
+    display: none;
+}
+p#notificationMain {
+    display: none;
+}
+.billingbox {
+    padding: 10px;
+    border: #ccc;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+</style>
+<div id="outerbilling" class="billingbox">
+<input type="checkbox" checked id="myCheck" checked onclick="myFunction()">
+<label class="checklabel" for="myCheck">Factuuradres is hetzelfde als leveradres</label>
+<div>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("billing");
+  var checkBox2 = document.getElementById("outerbilling");
+  if (checkBox.checked == false){
+    text.style.display = "block";
+    checkBox2.style.display = "none";
+  } else {
+     text.style.display = "none";
+     checkBox2.style.display = "block !important";
+  }
+}
+var content = document.querySelector("#billing");
+var node = document.createElement("div"); 
+node.classList.add("catnav-circles");
+node.id = "recentblokproducts";
+content.appendChild(node);
+var recentblokproducts = document.querySelector("#recentblokproducts");
+var inner = document.createElement("div"); 
+inner.classList.add("inner");
+inner.id = "inner";
+</script>
