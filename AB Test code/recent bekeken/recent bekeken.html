@@ -6,18 +6,25 @@ var pageTemplate = document.querySelector('meta[name="pageGroup"]').content;
 
 if (pageTemplate == "Product" || pageTemplate == "Kit") {
 	console.log('this is a productpage')
-var link = window.location.href;
-var productID = udata.currentPage.products[0].id;
-var productName = document.getElementsByClassName("main_header")[0].innerText;
-var productPrice = udata.currentPage.products[0].price;
-var productImgBig = document.querySelector("#productMainImage").src;
-var productImg = productImgBig.replace("646x1000","200x310");
+    var link = window.location.href;
+    var productID = udata.currentPage.products[0].id;
+    var productName = document.getElementsByClassName("main_header")[0].innerText;
+    var productPrice = udata.currentPage.products[0].price;
+    var productImgBig = document.querySelector("#productMainImage").src;
+    var productImg = productImgBig.replace("646x1000","200x310");
 };
 
 var recentProduct = { productID: productID, productName: productName,productPrice: productPrice,productImg: productImg,productLink: link};
 var content = document.querySelector("#contentWrapper");
 var recentblok = document.querySelector("#recentblok");
 var recentblokproducts = document.querySelector("#recentblokproducts");
+var lang = html.lang;
+//language specific H2 (less code then via A/B test)
+    if (lang == "fr") {
+        var h2copy = "Derniers produits vus";
+    } else {
+        var h2copy = "Recent bekeken";
+    };
 
 
 // there is recent product local storage object, check if it is exists and is empty, if not create the object and populate with current product. If it exists check if it already contains 8 products ( as this is the maximum amount of product we will show in recent products carousel, else check if current product isn't already in list ELSE just add the current product the the existing list smaller than 8 )
@@ -25,28 +32,28 @@ var recentblokproducts = document.querySelector("#recentblokproducts");
 var recentProducts = JSON.parse(localStorage.getItem("recent-products")); //create var out of local storage object
 console.log(recentProducts);
 if (recentProducts) {
-var inList = recentProducts.every(checkID);
+var inList = recentProducts.every(checkID); //CHECK we don not want to add the product to list of it is already in local storage.
     function checkID(product) {
-      return product.productID !== productID;
+      return product.productID !== productID; // returns false if product is already in the list.
     };
 };
 console.log('inlist = ' + inList);
 
 if (pageTemplate == "Product" || pageTemplate == "Kit")  {
 	console.log('this is a product page check update local localStorage')
-if (recentProducts == null || recentProducts == undefined) {
-	  var recentProducts = [recentProduct];
+if (recentProducts == null || recentProducts == undefined) { //local storage does not exist yet, so we need to create it 
+	  var recentProducts = [recentProduct]; //add first product to local storage
       localStorage.setItem('recent-products', JSON.stringify(recentProducts));
-    } else if (inList == false) {
+    } else if (inList == false) { 
         console.log('inlist = ' + inList)
         console.log("already in recent product list");
     } 
-    else if (recentProducts.length >= 8){
-		recentProducts.shift();
-		recentProducts.push(recentProduct);
-        localStorage.setItem('recent-products', JSON.stringify(recentProducts));
+    else if (recentProducts.length >= 8){ 
+		recentProducts.shift(); //delete oldest product from local storage
+		recentProducts.push(recentProduct); //add new product PDP to var
+        localStorage.setItem('recent-products', JSON.stringify(recentProducts)); //asign var to local storage
 	} else {
-		recentProducts.push(recentProduct);
+		recentProducts.push(recentProduct); //same but no deletion
         localStorage.setItem('recent-products', JSON.stringify(recentProducts));
     };
 };
@@ -54,15 +61,14 @@ if (recentProducts == null || recentProducts == undefined) {
 
 // bestaat de recent producten blok al op de pagina ? voeg toe ipv nieuwe blok te creëren
 if (recentblok){
-	console.log("recent products are already shown")
+	console.log("recent products are already shown") 
 	contentAdd();
 } else {
 	console.log("recent products not yet shown, lets add them to the page unless empty")
 	contentNew();
 };
 
-
-	function contentAdd() {
+	function contentAdd() { //via ab test tool a page refresh is needed so this is backup so we don't show the list multiple times.
 	recentblokproducts.innerHTML = "";
  	for (let i = 0; i < recentProducts.length; i++) {  if (recentProducts[i].productID !== productID){ //do not show product in recent list if it is the current product
     recentblokproducts.innerHTML += '<a href="' + recentProducts[i].productLink + '">' + '<div class="imgrecent"><img src="' + recentProducts[i].productImg + '"></div>' + '<p>' + recentProducts[i].productName + '</p>' + '<div class="pricerecent"><span>€</span>' + recentProducts[i].productPrice + '</div>' + '</a>'; }
@@ -73,7 +79,7 @@ if (recentblok){
     var nodeh2 = document.createElement("h2"); 
     nodeh2.classList.add("recenth2");
     nodeh2.id = "recentblok";
-    nodeh2.innerHTML = "Recent bekeken";
+    nodeh2.innerHTML = h2copy;
     content.appendChild(nodeh2);
  	var node = document.createElement("div"); 
  	node.classList.add("catnav-circles");
@@ -162,6 +168,7 @@ if (recentblok){
         -ms-hyphens: auto;
         hyphens: auto;
         font-size: 14px;
+        font-family: 'Lato',sans-serif;
         min-height: 42px;
     	max-height: 42px;
     	overflow: hidden;
@@ -172,7 +179,7 @@ if (recentblok){
 	    color: #005ba9;
 	    font-size: 24px;
 	    line-height: 22px;
-	    font-family: "Roboto Condensed",sans-serif;
+	    font-family: "Ubuntu",sans-serif;
 	    font-weight: 400;
 	}	
 	.pricerecent {
