@@ -1,3 +1,23 @@
+<script>
+console.log('start A/B 60');
+var content = document.querySelector("#billing");
+var node = document.createElement("div"); 
+node.classList.add("billingbox");
+node.id = "outerbilling";
+node.innerHTML = '<input type="checkbox" checked id="myCheck" checked onclick="showAdressab60()"><label class="checklabel" for="myCheck">Factuuradres is hetzelfde als leveradres</label>';
+content.before(node);
+showAdressab60();
+function showAdressab60() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("billing");
+  var checkBox2 = document.getElementById("outerbilling");
+  if (checkBox.checked == false){
+    text.style.display = "block";
+  } else if (checkBox.checked == true){
+     text.style.display = "none";
+  }
+}
+</script>
 <style>
 div#billing {
     display: none;
@@ -16,32 +36,7 @@ p#notificationMain {
     margin-bottom: 4px;
     border-radius: 5px;
 }
-</style>
-<div id="outerbilling" class="billingbox">
-<input type="checkbox" checked id="myCheck" checked onclick="myFunction()">
-<label class="checklabel" for="myCheck">Factuuradres is hetzelfde als leveradres</label>
-<div>
-
-<script>
-function myFunction() {
-  var checkBox = document.getElementById("myCheck");
-  var text = document.getElementById("billing");
-  var checkBox2 = document.getElementById("outerbilling");
-  if (checkBox.checked == false){
-    text.style.display = "block";
-    checkBox2.style.display = "none";
-  } else {
-     text.style.display = "none";
-     checkBox2.style.display = "block !important";
-  }
+label.checklabel {
+    display: inline-block !important;
 }
-var content = document.querySelector("#billing");
-var node = document.createElement("div"); 
-node.classList.add("catnav-circles");
-node.id = "recentblokproducts";
-content.appendChild(node);
-var recentblokproducts = document.querySelector("#recentblokproducts");
-var inner = document.createElement("div"); 
-inner.classList.add("inner");
-inner.id = "inner";
-</script>
+</style>
