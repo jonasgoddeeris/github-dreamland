@@ -108,13 +108,21 @@
         width:100%;
         padding-top:20px;
     }
+    #page .campaign-espot div.DLfooter div.socialandnews {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: static;
+    width: 100%;
+    }
     #page .campaign-espot div.DLfooter div.socialicons {
         position:static;
         width:100%;
         padding:1em .5em;
         display:flex;
         flex-direction:row;
-        flex-wrap:wrap;
+        flex-wrap:nowrap;
         justify-content:center;
         align-items:center;
         align-content:center;
@@ -127,17 +135,17 @@
         display:block;
         width:100%;
     }
-    #page .campaign-espot div.DLfooter div.socialicons>p {
+    #page .campaign-espot div.DLfooter div.socialandnews>p {
         width:100%;
         text-align:center;
         font-family:'Lato', sans-serif;
         font-weight:normal;
         font-size:16px;
         line-height:1em;
-        margin-bottom:0;
-        margin-top:20px;
+        margin-bottom:16px;
+        margin-top:4px;
     }
-    #page .campaign-espot div.DLfooter div.socialicons>p>a {
+    #page .campaign-espot div.DLfooter div.socialandnews>p>a {
         color:rgba(0, 91, 169, 0.98);
         text-decoration:none;
     }
@@ -238,9 +246,13 @@
             padding:48px 0;
         }
         #page .campaign-espot div.DLfooter {
-            padding-left:10em;
-            padding-right:10em;
+            /*padding-left:10em;*/
+            padding-right:6em;
         }
+        #page .campaign-espot div.langselector {
+            padding-top:0;
+            padding-right:6em;
+        }   
     }
 </style>
 <div class="campaign-espot" id="espot-dossiers">
@@ -294,12 +306,13 @@
         <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');" class="selected" >Français</a>
     </div>
     <div class="DLfooter">
+        <div class="socialandnews">
         <div class="socialicons">
             <div id="socialicons_facebook"><a href="https://www.facebook.com/DreamLand.be/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/facebook.svg"></a></div>
             <div id="socialicons_instagram"><a href="https://www.instagram.com/dreamland_be/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/instagram.svg"></a></div>
             <div id="socialicons_twitter"><a href="https://twitter.com/dreamlandbe"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/twitter.svg"></a></div>
             <div id="socialicons_youtube"><a href="https://www.youtube.com/channel/UCHJgNZ7Ldzs_Q0BIR70PXzQ/videos"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/youtube.svg"></a></div>
-            <div id="socialicons_pintrest"><a href="https://www.pinterest.com/dreamlandbe/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/pinterest.svg"></a></div>
+            <div id="socialicons_pintrest"><a href="https://www.pinterest.com/dreamlandbe/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/pinterest.svg"></a></div></div>
             <p id="newsletter_copy"><a href="/e/fr/dl/inscription-newsletter">Inscrivez-vous</a> à notre newsletter
         </div>
         <div class="bestewinkel">
