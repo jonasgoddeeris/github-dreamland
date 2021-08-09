@@ -21,12 +21,12 @@ p#notificationMain {
 </style>
 
 <div id ="billingbox" class="billingbox">
-<input type="checkbox" id="myCheck" checked onclick="myFunction()">
+<input type="checkbox" id="myCheck" checked onclick="showBilling()">
 <label for="myCheck">Factuuradres is hetzelfde als leveradres</label> 
 </div>
 
 <script>
-function myFunction() {
+function showBilling() {
   var checkBox = document.getElementById("myCheck");
   var text = document.getElementById("billing");
   var checkBox2 = document.getElementById("billingbox");
