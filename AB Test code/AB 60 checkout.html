@@ -1,6 +1,9 @@
 <!-- delivery page NL -->
 <script>
 console.log('start A/B 60');
+document.querySelector("#unsplittedHomeDelivery_1 > h3").innerText = "Kies je gewenste leveringsdatum";
+var levdate = document.querySelector("#dateSpanSectionHome").innerHTML;
+document.querySelector("#unsplittedHomeDelivery_1 > p").innerHTML=("Levering mogelijk vanaf " + levdate);
 var content = document.querySelector("#billing");
 var node = document.createElement("div"); 
 node.classList.add("billingbox");
@@ -20,6 +23,9 @@ function showAdressab60() {
 }
 </script>
 <style>
+section.totalAmount {
+    display: none;
+}
 div#billing {
     display: none;
 }
