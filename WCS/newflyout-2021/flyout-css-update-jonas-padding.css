@@ -127,6 +127,14 @@
         color:#005ba9;
         text-decoration: underline;
     }
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a:before {
+        content: "\f672";
+        font-family: FontAwesome;
+        font-size: 22px;
+        font-weight: 400;
+        margin-right: 10px;
+}
+    }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.bold {
         color:#005ba9;
     }
