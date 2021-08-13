@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.2.5 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.2.7 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -46,9 +46,6 @@
         box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
         -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
         -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
-    }
-    #page #headerWrapper #headerRow2 nav.topNav ul li>a {
-        padding: 8px 10px;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li *,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
@@ -166,6 +163,8 @@
         text-transform: none !important; /*overwrite for template 2020 AND category page css*/
         letter-spacing: normal !important; /*overwrite for template 2020 AND category page css*/
         letter-spacing: 0 !important;
+        font-weight: 700 !important;
+
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li { /*dl-homepage.css*/
         font-family: 'Lato',sans-serif !important;
