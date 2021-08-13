@@ -107,7 +107,7 @@
         line-height:16px;
         color:#005ba9;
         margin-bottom:8px;
-        margin-top: 0px important; /*overwrite for template 2020 css*/
+        margin-top: 0px !important; /*overwrite for template 2020 css*/
         text-transform: none; /*overwrite for template 2020 css*/
         letter-spacing: normal; /*overwrite for template 2020 css*/
     }
