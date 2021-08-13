@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.2.2 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.2.3 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -47,7 +47,6 @@
         -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
         -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
     }
-/*tim original + AANPASSING TOPNAVLIST*/
     #page #headerWrapper #headerRow2 nav.topNav ul li>a {
         padding: 8px 10px;
     }
@@ -133,7 +132,6 @@
         font-size: 22px;
         font-weight: 400;
         margin-right: 10px;
-}
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.bold {
         color:#005ba9;
@@ -174,4 +172,11 @@
         font-size:15px !important;
 
     }
+    /*styling to match font types of secundary nav with flyout*/
+    #page #headerWrapper #headerRow2 nav.secondaryNav .secondaryNav__wrap>ul>li a {
+    font-family: 'Nunito',sans-serif !important;
+    text-transform: none !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
 </style>
