@@ -126,7 +126,7 @@
         color:#005ba9;
         text-decoration: underline;
     }
-    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.tips:before {
+    #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column h3.tips:before {
         content: "\f672";
         font-family: 'Font Awesome 5 Pro';
         font-size: 22px;
