@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.2.4 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.2.5 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -129,8 +129,9 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column h3.tips:before {
         content: "\f672";
         font-family: 'Font Awesome 5 Pro';
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 500;
+        margin-right: 10px;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper .flyout_nav_column a.bold {
         color:#005ba9;
