@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.2.7 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.2.8 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -17,7 +17,8 @@
         -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
         clip-path: inset(-8px -8px -8px 0px); /*remove double shadow on the left*/
         box-sizing:border-box;
-        width:891px;
+        min-width:891px;
+        width: calc(100% * 3 + 133px) !important;
     }
     /*the brand logo's are quite big, adding a max width is also a good failsafe if wrong image size is uploaded*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture { /*inline css espot*/
@@ -106,6 +107,7 @@
         line-height:16px;
         color:#005ba9;
         margin-bottom:8px;
+        margin-top: 0px important; /*overwrite for template 2020 css*/
         text-transform: none; /*overwrite for template 2020 css*/
         letter-spacing: normal; /*overwrite for template 2020 css*/
     }
