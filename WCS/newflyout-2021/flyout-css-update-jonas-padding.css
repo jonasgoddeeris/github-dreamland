@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.3.0 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.3.1 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -67,7 +67,7 @@
         flex-direction:column;
         align-items:stretch;
         justify-content:space-between;
-         height: 494px;  /*because of the fixed height , brand logo's were outside of parent element if NO minimum height.*/
+        height: 494px;  /*because of the fixed height , brand logo's were outside of parent element if NO minimum height.*/
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
         display:flex;
@@ -76,12 +76,14 @@
         justify-content:space-between;
     }
     .flyout_nav_inner_wrapper.brandcarrousel { 
-    margin-top: 16px; /*min instead of flex only?*/
+        margin-top: 16px; /*min instead of flex only?*/
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
         flex-grow:0;
         flex-shrink:1;
-        margin: auto; /*align and justify logo's within brand list*/ 
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture {
         display:block;
