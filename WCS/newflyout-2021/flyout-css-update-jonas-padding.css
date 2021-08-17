@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 /*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.3.2 - jonas - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V3.3.3 - jonas - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -17,8 +17,7 @@
         -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
         clip-path: inset(-8px -8px -8px 0px); /*remove double shadow on the left*/
         box-sizing:border-box;
-        min-width:891px;
-        width: calc(100% * 3 + 133px) !important;
+        width: calc(100% * 3 + 172px) !important; /*overwrite inline + dl.homepage.css*/ 
     }
     /*the brand logo's are quite big, adding a max width is also a good failsafe if wrong image size is uploaded*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture { /*inline css espot*/
