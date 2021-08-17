@@ -72,13 +72,11 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper {
         display:flex;
         flex-direction:row;
-        align-items:stretch;
         justify-content:space-between;
     }
     .flyout_nav_inner_wrapper.brandcarrousel { 
         margin-top: 16px; /*min instead of flex only?*/
         align-items: center;
-        align-content: center;
         flex-wrap: nowrap;
     }
     #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a {
