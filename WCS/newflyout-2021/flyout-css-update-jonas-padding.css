@@ -11,10 +11,10 @@
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav { /*dl-homepage.css*/
     	height: calc(100% + 2px) !important; /*dynamicaly adjust height to amount of top catgeories*/
         min-height: 574px !important;  /*same min height a the collapsible list navigation on homepage -*/ 
-        padding: 24px 16px 16px 24px !important; /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
-        box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
-        -webkit-box-shadow: 2px 2px 8px 0px rgb(74 74 74 / 20%);
-        -moz-box-shadow: 2px 2px 8px 0px rgba(74,74,74,0.2);
+        padding: 24px 16px 16px 32px !important; /*the title and close button does not have sufficiant margin, also cleaned up side and bottom padding*/
+        box-shadow: 1px 1px 8px 0px rgb(74 74 74 / 10%) !important;
+        -webkit-box-shadow: 1px 1px 8px 0px rgb(74 74 74 / 15%) !important;
+        -moz-box-shadow: 1px 1px 8px 0px rgba(74,74,74,0.15) !important ;
         clip-path: inset(-8px -8px -8px 0px); /*remove double shadow on the left*/
         box-sizing:border-box;
         width: calc(100% * 3 + 172px) !important; /*overwrite inline + dl.homepage.css*/ 
@@ -30,24 +30,25 @@
         }
     }
     #page #headerWrapper #headerRow2 nav.topNav.expand { /*alle pagina's behalve HP*/
-        border-bottom: 1px solid #ddd !important;
+        /*border-bottom: 1px solid #ddd !important;*/ /*SYST NEW MENU*/
         min-height: 574px !important; /*match height of flyout*/
     }
     @media (min-width: 1024px){
-    /*dl-homepage.css*/
+    /*dl-homepage.css*/ /*SYST NEW MENU*/
     /*#page #headerWrapper #headerRow2 nav.topNav.expand { 
-        box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
-        -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
-        -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
+        box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 15%);
+        -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 15%);
+        -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 15%);
     }*/
+    /*SYST NEW MENU*/
     /*dl-homepage.css*/ /*match height of flyout*/ /*SYST COMMENT ONLY - NEW MENU DESKTOP*/
         /*body.homePage #page #headerWrapper #headerRow2 nav.topNav { 
         border-bottom: 1px solid #ddd !important;
         border-radius: 3px 3px 3px 3px !important;
         min-height: 574px !important; 
-        box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
-        -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
-        -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
+        box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 15%);
+        -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 15%);
+        -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 15%);
     }*/
     #page #headerWrapper #headerRow2 nav.topNav ul li *,
     #page #headerWrapper #headerRow2 nav.topNav ul li *:before,
