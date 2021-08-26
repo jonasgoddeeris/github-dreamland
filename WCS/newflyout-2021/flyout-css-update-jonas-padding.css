@@ -34,11 +34,13 @@
         min-height: 574px !important; /*match height of flyout*/
     }
     @media (min-width: 1024px){
-    #page #headerWrapper #headerRow2 nav.topNav.expand { /*dl-homepage.css*/
+
+    /*dl-homepage.css*/
+    /*#page #headerWrapper #headerRow2 nav.topNav.expand { 
         box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
         -webkit-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
         -moz-box-shadow: -8px 8px 8px -5px rgb(74 74 74 / 20%);
-    }
+    }*/
     /*dl-homepage.css*/ /*match height of flyout*/ /*SYST COMMENT ONLY - NEW MENU DESKTOP*/
         /*body.homePage #page #headerWrapper #headerRow2 nav.topNav { 
         border-bottom: 1px solid #ddd !important;
