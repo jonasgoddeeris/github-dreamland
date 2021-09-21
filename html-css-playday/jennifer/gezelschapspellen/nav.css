@@ -1,0 +1,130 @@
+<style>
+    #footer #footerRow1:after {
+        height:0;
+    }
+    #footer #footerRow1 .focusItems {
+        width:100%;
+    }
+    #footerTopEspot:after {
+        height:0px;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title {
+        font-family:'Nunito', sans-serif;
+        font-weight:bold;
+        font-size:16px;
+        line-height:1em;
+        padding-top:15px;
+        padding-bottom:15px;
+        border-bottom:1px solid #d7d7d7;
+        margin-bottom:.5em;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title:hover {
+        cursor:pointer;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title:last-of-type {
+        margin-bottom:0;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title:after {
+        content:'\f078';
+        font-family:'fontawesome', sans-serif;
+        font-size:16px;
+        float:right;
+        margin-right:12px;
+        color:#94928A;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title.open:after {
+        content:'\f077';
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div.DLnavigation_linkcontainer {
+        display:none;
+        padding-top:1em;
+        padding-bottom:0;
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div.DLnavigation_linkcontainer.open {
+        display:block;
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div>a.DLnavigation_link {
+        display:block;
+        font-family:'Lato', sans-serif;
+        font-weight:normal;
+        font-size:16px;
+        text-decoration:none;
+        line-height:1em;
+        margin-bottom:1em;
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div>a.DLnavigation_link:last-of-type {
+        margin-bottom:0em;
+    }
+    
+    #page .campaign-espot div.langselector>a.selected {
+        text-decoration:underline;
+    }
+    #page .campaign-espot div.catlinks {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding-top:20px;
+    }
+    @media screen and (min-width:768px) {
+        #page .campaign-espot div.DLnavigation {
+            padding:24px 15px;
+            position:relative;
+        }
+        #page .campaign-espot div.DLnavigation:before {
+            content:'';
+            background:#f9f9f9;
+            position:absolute;
+            left:-999em;
+            right:-999em;
+            top:0;
+            bottom:0;
+            z-index:-1;
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title {
+            font-size:20px;
+            border-bottom:none;
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title:hover {
+            cursor:auto;
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title:after {
+            content:'';
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title.open:after {
+            content:'';
+        }
+        #page .campaign-espot div.DLnavigation div.row>div>div.DLnavigation_linkcontainer {
+            padding-top:0;
+            display:block;
+        }
+        #page .campaign-espot div.langselector {
+            padding-top:0;
+        }   
+        #footer #footerRow1 {
+            padding:0;
+            padding-bottom:20px;
+        }
+        #page .campaign-espot div.catlinks {
+            flex-direction:row;
+            justify-content:center;
+            padding-left:0em;
+            padding-right:0em;
+        }
+        #page .campaign-espot div.catlinks div.payments {
+            padding-bottom:.5em;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        #page .campaign-espot div.DLnavigation {
+            padding:48px 0;
+        }
+        #page .campaign-espot div.catlinks {
+            /*padding-left:10em;*/
+            padding-right:6em;
+        }
+        #page .campaign-espot div.langselector {
+            padding-top:0;
+            padding-right:6em;
+        }   
+    }
+</style>
