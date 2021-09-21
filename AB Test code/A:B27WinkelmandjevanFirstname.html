@@ -4,7 +4,7 @@
     background-color: #468c00;
     text-decoration: none;
     color: #fff;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 10px 0 !important;
     width: 100%;
 }
 #page .checkoutSection.shoppingCartPage>.priceInfo_submit .btnSubmit, #page .checkoutSection.shoppingCartPage>.priceInfo_submit .lnkCancel {
@@ -12,15 +12,15 @@
     max-width: 100%;
 }
 .priceInfo_submit{
-	display: block;
+	display: block !important;
     width: 100%;
 }
 }
 </style>
 <script>
 const xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
+if(xtraUser){
 const firstName = xtraUser.user.firstName;
-if(firstName){
 document.querySelector("#content > section > h2").innerText = "Winkelmandje van " + firstName;
 } else {
 document.querySelector("#content > section > h2").innerText = "Je winkelmandje";
