@@ -1,0 +1,92 @@
+<script>
+hj('trigger', 'ab_63_B');
+var specification = document.querySelector("#productsFacets");
+var firstUL = specification.getElementsByTagName('ul')[0];
+var firstFilters = firstUL.getElementsByTagName('a');
+for (let i = 0; i < firstFilters.length; i++) {
+  firstFilters[i].removeAttribute("role");
+}
+var filterDIV = document.getElementById('filters');
+filterDIV.innerHTML += firstFilters;
+</script>
+<style>
+#container_ > div.row.grdTwoLeft > div.col4.acol12.ccol3.left {
+display: none;
+}
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+div.scrollmenu a {
+    display: inline-block;
+    color: #343434;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 31px;
+    border: 1.5px solid #005ba9;
+    font-family:"Lato";
+}
+div.scrollmenu a.ab31-subnav {
+    display: inline-block;
+    background-color: #F3F7FA;
+    color: #005ba9;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1.5px solid #005ba9;
+    font-family:"Lato";
+}
+#espot-grid > div > a:nth-child(1) > div {
+	margin-bottom: 0px;
+	font-size: inherit;
+	padding-left: 28px;
+    background-image: url(/wcsstore/ColruytB2CSFAS/images/icon-filter.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+#ab31-filter {
+    background: #005ba9;
+    color: white;
+}
+.campaign-espot .show {
+    padding: 3p;
+    padding-left: 5px;
+    padding-right: 6px;
+    margin-left: 4px;
+    background: white;
+    color: #005ba9;
+    border-radius: 10px;
+}
+#ab31-filter > div > div {
+	display: inline-block!important;
+}
+.ab31-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ab31-scroll::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.ab31-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#container_ > div.row.grdTwoLeft > div.col8.acol12.ccol9.right.rightCol > div:nth-child(2) > div:nth-child(2) {
+	display: none;
+}
+</style>
+<div class="campaign-espot ab31-sticky" id="espot-grid">
+	<div id="filters" class="scrollmenu ab31-scroll">
+        <a id="ab31-filter" href="javascript:void(0);" onclick="shoppingActionsJS.showWCDialogPopup('facetNavNF');" class=""><div class="toggle" role="button" tabindex="0" aria-controls="facet_nav_collapsible_4_-1004_4099276460824417157" aria-label="Filteren" aria-describedby="facet_widget_acce_desc">Filteren <div id="facetCountforMobilePopup" class="ab31-show"></div></div></a>
+    </div>
+</div>

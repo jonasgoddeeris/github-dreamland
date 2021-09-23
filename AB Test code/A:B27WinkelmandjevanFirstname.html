@@ -18,11 +18,24 @@
 }
 </style>
 <script>
+console.log("AB62start");
+document.addEventListener("DOMContentLoaded", function(event) { 
+console.log("AB62startDOMLoadTrue");
 const xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
-if(xtraUser){
-const firstName = xtraUser.user.firstName;
-document.querySelector("#content > section > h2").innerText = "Winkelmandje van " + firstName;
-} else {
-document.querySelector("#content > section > h2").innerText = "Je winkelmandje";
-};
+function langcheck(){
+    if (html.lang == "nl" && xtraUser){
+            console.log("AB62startNL");
+            const firstName = xtraUser.user.firstName;
+            document.querySelector("#content > section > h2").innerText = "Winkelmandje van " + firstName;
+            document.title = "Winkelmandje van " + firstName + " ";
+            };
+    if (html.lang == "fr" && xtraUser){
+            console.log("AB62startFR");
+            const firstName = xtraUser.user.firstName;
+            document.querySelector("#content > section > h2").innerText = "Panier de " + firstName;
+            document.title = "Panier de " + firstName;
+            } 
+        };
+langcheck();
+});
 </script>
