@@ -1,0 +1,66 @@
+<script>
+console.log('startAB65-stickyADDTOBASKET');
+#shopCartTrigger
+</script>
+<style>
+@media only screen and (max-width: 520px) {
+#productSummaryTile.active, .productDetail__productSummaryTile.active {
+    bottom: 0px;
+    margin-bottom: 0px !important;
+}
+#productSummaryTile, .productDetail__productSummaryTile {
+    top: inherit!important;
+}
+#productSummaryTile .productDetailPage .rowContainer .row.productNavigation, .productDetail__productSummaryTile .productDetailPage .rowContainer .row.productNavigation {
+    margin: 0px;
+    display: none;
+}
+#productSummaryTile > div > div > div.productContainer > div:nth-child(2) > div.col3.acol3 {
+    display: none;
+}
+#productSummaryTile .productDetailPage .summaryContent, .productDetail__productSummaryTile .productDetailPage .summaryContent {
+    position: relative;
+    padding-right: 0px;
+    margin-bottom: 0; 
+    min-height: 54px; 
+}
+#productSummaryTile .productDetailPage .productContainer, .productDetail__productSummaryTile .productDetailPage .productContainer {
+    padding: 0px 10px 10px!important;
+        border: 0px!important;
+}
+#productSummaryTile .productDetailPage .summaryContent .rightBTN, .productDetail__productSummaryTile .productDetailPage .summaryContent .rightBTN {
+    width: 100%;
+}
+#page .productDetailPage .btn.btn--green, #productSummaryTile .productDetailPage .btn.btn--green {
+    width: 100%;
+}
+#page .productDetailPage .btn, #productSummaryTile .productDetailPage .btn {
+    font-size: 14px !important;
+    padding-left: 45px !important;
+}
+#page .productDetailPage .btn i.fa, #productSummaryTile .productDetailPage .btn i.fa {
+    left: 30% !important;
+}
+.fa-shopping-cart:before {
+content: "\f07a";
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: -15px;
+    margin-right: 10px;
+}
+#productSummaryTile > div > div > div.productContainer > div:nth-child(2) > div.col9.acol9 > div > div:nth-child(2) > div > div {
+    display:none;
+}
+#productSummaryTile > div > div > div.productContainer > div:nth-child(2) > div.col9.acol9 > div > div:nth-child(1) > div > p {
+    display:none;
+}
+#productSummaryTile .productDetailPage .rowContainer .row div[class^=acol], #productSummaryTile .productDetailPage .rowContainer .row div[class^=col], .productDetail__productSummaryTile .productDetailPage .rowContainer .row div[class^=acol], .productDetail__productSummaryTile .productDetailPage .rowContainer .row div[class^=col] {
+    width: 100%;
+}
+
+#page .productDetailPage .btn.btn--green, #productSummaryTile .productDetailPage .btn.btn--green {
+text-align: center;
+}
+}
+</style>
