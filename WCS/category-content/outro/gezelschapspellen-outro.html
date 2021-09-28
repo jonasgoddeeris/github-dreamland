@@ -1,4 +1,7 @@
 <style>
+    div.DLsublinks {
+            padding:32px 0;
+        }
     .link-container{
         display: flex;
         flex-wrap: wrap;
@@ -6,11 +9,6 @@
         justify-content: space-between;
         align-items: flex-start;
         align-content: space-around;
-    }
-    @media (min-width: 768px){
-        .links-outro {
-            width: auto;
-        }
     }
     .links-outro{
         position: relative;
@@ -20,7 +18,7 @@
         flex-basis: auto;
         margin-bottom: 2em;
     }
-    p.DLsublinks_title {
+    .DLsublinks_title {
         font-family:'Nunito', sans-serif;
         font-weight:bold;
         font-size:16px;
@@ -30,13 +28,13 @@
         padding-bottom:15px;
         margin-bottom:.5em;
     }
-    p.DLsublinks_title:hover {
+    a.DLsublinks_title:hover {
         cursor:pointer;
     }
     p.DLsublinks_title:last-of-type {
         margin-bottom:0;
     }
-    a.DLsublinks_link {
+    .DLsublinks_link {
         display:block;
         font-family:'Lato', sans-serif;
         font-weight:normal;
@@ -62,16 +60,17 @@
             bottom:0;
             z-index:-1;
         }
-        div.DLsublinks p.DLsublinks_title {
+        .DLsublinks_title {
             font-size:20px;
-            border-bottom:none;
-        }
-        div.DLsublinks p.DLsublinks_title:hover {
-            cursor:auto;
         }
         div.DLsublinks_linkcontainer {
             padding-top:0;
             display:block;
+        }
+    }
+    @media (min-width: 914px){
+        .links-outro {
+            width: auto;
         }
     }
     @media screen and (min-width:1024px) {
@@ -83,11 +82,11 @@
     <div class="DLsublinks">
         <div class="link-container">
             <div class="links-outro">
-                <p class="DLsublinks_title">Populair</p>
+                <a href="/e/nl/dl/populaire-reeksen" class="DLsublinks_title">Populair</a>
                 <div class="DLsublinks_linkcontainer">
                     <a href="/e/nl/dl/schaakborden" class="DLsublinks_link">Schaakborden</a>
-                    <a href="/e/nl/dl/contact/leveren-afhalen" class="DLsublinks_link">Levering &amp; afhalen</a>
-                    <a href="/e/nl/dl/contact/dienst-na-verkoop" class="DLsublinks_link">Retourneren</a>
+                    <a href="/e/nl/dl/harry-potter-spellen" class="DLsublinks_link">Harry Potter spellen</a>
+                    <a href="/e/nl/dl/risk-spellen" class="DLsublinks_link">Risk spellen</a>
                     <a href="/e/GenericStaticContentPageLayoutView?catalogId=15501&amp;storeId=13102&amp;langId=-11&amp;krypto=zkv8Npoay2XdmLkmFRhFU2TZzAyf0hgo7rEI9tiC7%2F16wjj43qe7TE2A6mxLn3Te2PFhBXbe07Gdbud3vEGUUUEqlH1JwPCOtbKKxCxV1p37kBigx7RDkaecvhA6kLpA%2BqyCaOlZtSeeHQau45Xkg44rjqc4Lsovznwh5R12oiY%3D&amp;ddkey=http%3Anl%2Fdl%2Ffaq-wie-dreamland#" class="DLsublinks_link">Veelgestelde vragen</a>
                     <a href="/e/nl/dl/recalls" class="DLsublinks_link">Terugroeping</a>
                 </div>
@@ -126,3 +125,12 @@
             </div>
         </div>
     </div>
+    <h2 class="DLsublinks_title">Een gezelschapspel voor iedereen</h2>
+    <p class="DLsublinks_link">
+    Een gezelschapsspelletje spelen is altijd leuk. Alleen, met vrienden of met de familie: plezier maken doe je sowieso! Ontdek dus snel al onze spelletjes.
+    <br>
+    Ga je op vakantie. Neem dan zeker een kaartspel of een van onze reisspellen mee.
+    Eén ding is zeker: bij ons vind je gegarandeerd wat je zoekt!
+    </p>
+    <h2 class="DLsublinks_title">Gezelschapspellen voor elke leeftijd</h2>
+    <p class="DLsublinks_link">Peuters en kleuters worden verwend met zowel leerrijke als gewoon toffe spelletjes. Speel je graag met je vrienden of familie? Neem dan zeker een kijkje bij onze familiespellen, partyspellen en quizspellen. Of train je brein met onze echte breinbrekers en strategiespellen.</p>
