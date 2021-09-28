@@ -1,5 +1,26 @@
 <style>
-    #page div.DLsublinks p.DLsublinks_title {
+    .link-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-around;
+    }
+    @media (min-width: 768px){
+        .links-outro {
+            width: auto;
+        }
+    }
+    .links-outro{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px; 
+        width: 40%;
+        flex-basis: auto;
+        margin-bottom: 2em;
+    }
+    p.DLsublinks_title {
         font-family:'Nunito', sans-serif;
         font-weight:bold;
         font-size:16px;
@@ -7,19 +28,15 @@
         line-height:1em;
         padding-top:15px;
         padding-bottom:15px;
-        border-bottom:1px solid #d7d7d7;
         margin-bottom:.5em;
     }
-    #page div.DLsublinks p.DLsublinks_title:hover {
+    p.DLsublinks_title:hover {
         cursor:pointer;
     }
-    #page div.DLsublinks p.DLsublinks_title:last-of-type {
+    p.DLsublinks_title:last-of-type {
         margin-bottom:0;
     }
-    #page div.DLsublinks div.row>div>div.DLsublinks_linkcontainer.open {
-        display:block;
-    }
-    #page div.DLsublinks div.row>div>div>a.DLsublinks_link {
+    a.DLsublinks_link {
         display:block;
         font-family:'Lato', sans-serif;
         font-weight:normal;
@@ -28,15 +45,15 @@
         line-height:1em;
         margin-bottom:1em;
     }
-    #page div.DLsublinks div.row>div>div>a.DLsublinks_link:last-of-type {
+    a.DLsublinks_link:last-of-type {
         margin-bottom:0em;
     }
     @media screen and (min-width:768px) {
-        #page div.DLsublinks {
+        div.DLsublinks {
             padding:24px 15px;
             position:relative;
         }
-        #page div.DLsublinks:before {
+        div.DLsublinks:before {
             content:'';
             position:absolute;
             left:-999em;
@@ -45,27 +62,27 @@
             bottom:0;
             z-index:-1;
         }
-        #page div.DLsublinks p.DLsublinks_title {
+        div.DLsublinks p.DLsublinks_title {
             font-size:20px;
             border-bottom:none;
         }
-        #page div.DLsublinks p.DLsublinks_title:hover {
+        div.DLsublinks p.DLsublinks_title:hover {
             cursor:auto;
         }
-        #page div.DLsublinks div.row>div>div.DLsublinks_linkcontainer {
+        div.DLsublinks_linkcontainer {
             padding-top:0;
             display:block;
         }
     }
     @media screen and (min-width:1024px) {
-        #page div.DLsublinks {
+        div.DLsublinks {
             padding:48px 0;
         }
     }
 </style>
     <div class="DLsublinks">
-        <div class="row">
-            <div class="col-xs-12 col-sm-3">
+        <div class="link-container">
+            <div class="links-outro">
                 <p class="DLsublinks_title">Populair</p>
                 <div class="DLsublinks_linkcontainer">
                     <a href="/e/nl/dl/schaakborden" class="DLsublinks_link">Schaakborden</a>
@@ -75,7 +92,7 @@
                     <a href="/e/nl/dl/recalls" class="DLsublinks_link">Terugroeping</a>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-3">
+            <div class="links-outro">
                 <p class="DLsublinks_title">Merken</p>
                 <div class="DLsublinks_linkcontainer">
                     <a href="/e/nl/dl/dreamland-geschenkkaart" class="DLsublinks_link">Geschenkkaart</a>
@@ -86,7 +103,7 @@
                     <a href="https://www.collishopprofessional.be/b2b/static/nl/business-aankopen.shtml" target="_blank" class="DLsublinks_link">ColliShop Professional</a>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-3">
+            <div class="links-outro">
                 <p class="DLsublinks_title">Spelers</p>
                 <div class="DLsublinks_linkcontainer">
                     <a href="/e/nl/dl/OrderHistoryDisplayView?catalogId=15501&amp;storeId=13102&amp;langId=-11" class="DLsublinks_link">Mijn bestellingen</a>
@@ -95,7 +112,7 @@
                     <a href="https://mijnxtra.be/algemene-voorwaarden/x_tc_xtra" class="DLsublinks_link">Algemene voorwaarden Xtra</a>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-3">
+            <div class="links-outro">
                 <p class="DLsublinks_title">Categorieën</p>
                 <div class="DLsublinks_linkcontainer">
                     <a href="/e/nl/dl/over-dreamland" class="DLsublinks_link">Over ons</a>
