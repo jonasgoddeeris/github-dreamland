@@ -1,61 +1,25 @@
 <style>
-    #footerCustomerServiceSection,
-    #footerCorporateInfoSection,
-    #footerExploreSection {
-        display:none;
-    }
-    #footer #footerRow1 {
-        background:#ffffff;
-    }
-    #footer #footerRow1:before,
-    #footer #footerRow1:after {
-        background:#ffffff;
-    }
-    #footer #footerRow1:after {
-        height:0;
-    }
-    #footer #footerRow1 .focusItems {
-        width:100%;
-    }
-    #footerTopEspot:after {
-        height:0px;
-    }
-    #page .campaign-espot div.DLsublinks p.DLsublinks_title {
+    #page div.DLsublinks p.DLsublinks_title {
         font-family:'Nunito', sans-serif;
         font-weight:bold;
         font-size:16px;
+        color: #005aa6;
         line-height:1em;
         padding-top:15px;
         padding-bottom:15px;
         border-bottom:1px solid #d7d7d7;
         margin-bottom:.5em;
     }
-    #page .campaign-espot div.DLsublinks p.DLsublinks_title:hover {
+    #page div.DLsublinks p.DLsublinks_title:hover {
         cursor:pointer;
     }
-    #page .campaign-espot div.DLsublinks p.DLsublinks_title:last-of-type {
+    #page div.DLsublinks p.DLsublinks_title:last-of-type {
         margin-bottom:0;
     }
-    #page .campaign-espot div.DLsublinks p.DLsublinks_title:after {
-        content:'\f078';
-        font-family:'fontawesome', sans-serif;
-        font-size:16px;
-        float:right;
-        margin-right:12px;
-        color:#94928A;
-    }
-    #page .campaign-espot div.DLsublinks p.DLsublinks_title.open:after {
-        content:'\f077';
-    }
-    #page .campaign-espot div.DLsublinks div.row>div>div.DLsublinks_linkcontainer {
-        display:none;
-        padding-top:1em;
-        padding-bottom:0;
-    }
-    #page .campaign-espot div.DLsublinks div.row>div>div.DLsublinks_linkcontainer.open {
+    #page div.DLsublinks div.row>div>div.DLsublinks_linkcontainer.open {
         display:block;
     }
-    #page .campaign-espot div.DLsublinks div.row>div>div>a.DLsublinks_link {
+    #page div.DLsublinks div.row>div>div>a.DLsublinks_link {
         display:block;
         font-family:'Lato', sans-serif;
         font-weight:normal;
@@ -64,15 +28,15 @@
         line-height:1em;
         margin-bottom:1em;
     }
-    #page .campaign-espot div.DLsublinks div.row>div>div>a.DLsublinks_link:last-of-type {
+    #page div.DLsublinks div.row>div>div>a.DLsublinks_link:last-of-type {
         margin-bottom:0em;
     }
     @media screen and (min-width:768px) {
-        #page .campaign-espot div.DLsublinks {
+        #page div.DLsublinks {
             padding:24px 15px;
             position:relative;
         }
-        #page .campaign-espot div.DLsublinks:before {
+        #page div.DLsublinks:before {
             content:'';
             position:absolute;
             left:-999em;
@@ -81,45 +45,24 @@
             bottom:0;
             z-index:-1;
         }
-        #page .campaign-espot div.DLsublinks p.DLsublinks_title {
+        #page div.DLsublinks p.DLsublinks_title {
             font-size:20px;
             border-bottom:none;
         }
-        #page .campaign-espot div.DLsublinks p.DLsublinks_title:hover {
+        #page div.DLsublinks p.DLsublinks_title:hover {
             cursor:auto;
         }
-        #page .campaign-espot div.DLsublinks p.DLsublinks_title:after {
-            content:'';
-        }
-        #page .campaign-espot div.DLsublinks p.DLsublinks_title.open:after {
-            content:'';
-        }
-        #page .campaign-espot div.DLsublinks div.row>div>div.DLsublinks_linkcontainer {
+        #page div.DLsublinks div.row>div>div.DLsublinks_linkcontainer {
             padding-top:0;
             display:block;
         }
-        #footer #footerRow1 {
-            padding:0;
-            padding-bottom:20px;
-        }
-        #page .campaign-espot div.DLfooter {
-            flex-direction:row;
-            justify-content:center;
-            padding-left:0em;
-            padding-right:0em;
-        }
     }
     @media screen and (min-width:1024px) {
-        #page .campaign-espot div.DLsublinks {
+        #page div.DLsublinks {
             padding:48px 0;
-        }
-        #page .campaign-espot div.DLfooter {
-            /*padding-left:10em;*/
-            padding-right:6em;
         }
     }
 </style>
-<div class="campaign-espot" id="espot-dossiers">
     <div class="DLsublinks">
         <div class="row">
             <div class="col-xs-12 col-sm-3">
@@ -162,10 +105,7 @@
                     <!--<a href="/e/nl/dl/dreamland-merken" class="DLsublinks_link">Merken</a>-->
                     <a href="https://jobs.colruytgroup.com/nl/vacatures?f%5B0%5D=field_company%3A3" class="DLsublinks_link">Jobs</a>
                     <a href="/e/nl/dl/persberichten" class="DLsublinks_link">Pers</a>
-                    <!--<a href="https://gdpr.colruytgroup.com/gdpr/tc/X_TC_DREAMLAND_WEB_NL.pdf" class="DLsublinks_link">Algemene voorwaarden</a>-->
                 </div>
             </div>
         </div>
     </div>
-    </div>
-</div>
