@@ -1,12 +1,24 @@
 <script>
-var price = document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price").innerText.substring(2);
-var price = price.replace(",", ".");
-parseFloat(price).toFixed(2);
+var price1 = document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price").innerText.substring(2);
+var price2 = price1.replace(",", ".");
+parseFloat(price2).toFixed(2);
 var discount = document.querySelector("#tab1Widget > div > div > div.col3.acol12.noScaling > div > div > div.RibbonAdDefault.NFACTIE.ja").innerText.substring(7);
 var discount = parseFloat(discount);
-var discountEuro = price * (discount / 100);
-
-
-
-
+var discountEuro = price2 * (discount / 100);
+if (discount == 20 || discount == 15) {
+let spanoldprice = document.createElement("span");
+spanoldprice.innerHTML="<span class='old_price'>€<span class='value'>&nbsp;" + price1 + "</span></span>";
+document.querySelector("#tab1Widget > div > div > div.col9.acol12.noScaling > div > div.repeatPrice > div > div.product_price").prepend(spanoldprice);
+var newPrice = (price2 - discountEuro).toFixed(2);;
+var newPriceSTring = newPrice.toString();
+var prices= newPriceSTring.split(".");
+var pricepart1 = parseFloat(prices[0]);
+var pricepart2 = parseFloat(prices[1]);
+document.querySelectorAll("#productOffer > span.price__main")[1].innerText=pricepart1;
+document.querySelectorAll("#productOffer > span.price__decimals")[1].innerText=pricepart2;
+document.querySelectorAll("#productOffer > span.price__main")[2].innerText=pricepart1;
+document.querySelectorAll("#productOffer > span.price__decimals")[2].innerText=pricepart2;
+document.getElementsByClassName("price mini")[1].setAttribute("class", "price mini red");
+document.getElementsByClassName("price mini")[2].setAttribute("class", "price mini red");
+}
 </script>
