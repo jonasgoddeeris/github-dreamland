@@ -1,0 +1,61 @@
+<div class="flyoutclose">
+    <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg">
+</div>
+<div class="flyout_nav_title"><a href="/e/fr/dl/shop-noel">Noël</a></div>
+<div class="flyout_nav_outer_wrapper">
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/sapins-de-noel-et-accessoires"><h3>Sapins de Noël</h3></a>
+            <a href="/e/fr/dl/sapins-de-noel-artificiels">Sapins de Noël artificiels</a>
+            <a href="/e/fr/dl/sapins-de-noel-alternatifs">Sapins en bois & alternatifs</a>
+            <a href="/e/fr/dl/decorations-pour-pieds-de-sapins-noel">Décorations pour pied de sapin</a>
+            <a href="/e/fr/dl/toebehoren-kerstbomen-fr">Autres accessoires pour sapins</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/illumination-de-noel"><h3>Guirlandes & déco lumineuses</h3></a>
+            <a href="/e/fr/dl/guirlandes-et-decorations-lumineuses-de-noel">Guirlandes lumineuses</a>
+            <a href="/e/nl/dl/kerstverlichting-decoratie-en-figuren">Déco & figurines lumineuses</a>
+            <a href="#">FR TITEL KERSTVERLICHTING BUITEN - DYN CAT NOG TE MAKEN</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/decorations-de-noel"><h3>Décorations de Noël</h3></a>
+            <a href="/e/fr/dl/boules-de-noel-et-decorations-a-suspendre">Boules de Noël</a>
+            <a href="/e/fr/dl/figurines-de-noel">Figurines de Noël</a>
+            <a href="/e/fr/dl/statues-figurines-villages-et-creches-de-noel">Maisonnettes & crèches de Noël</a>
+            <a href="/e/fr/dl/tout-pour-decorer-votre-table">Décorations de table</a>
+            <a href="/e/fr/dl/autres-decorations-de-noel">Autres décos de Noël</a>
+        </div>
+    </div>
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/textile-noel"><h3>Tenues de Noël</h3></a>
+            <a href="/e/fr/dl/pulls-de-noel">Pulls de Noël</a>
+            <a href="/e/fr/dl/deguisements-de-noel">Déguisements de Noël</a>
+            <a href="/e/fr/dl/plaids-et-coussins-de-noel">Plaids & coussins de Noël</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Plus encore</h3>
+            <a href="/e/fr/dl/calendriers-de-lavent">Calendriers de l'Avent</a>
+            <a href="/e/fr/dl/cartes-de-vœux-et-de-noel-">Cartes de vœux</a>
+            <a href="/e/fr/dl/noel-cake-design">Cake Design de Noël</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Inspiration</h3>
+            <div class="tips-flyout">
+            <a href="/e/fr/dl/noel-themes">Thèmes de Noël</a>
+            <a href="/e/fr/dl/types-sapins">Choisir son sapin ?</a>
+            <a href="/e/nl/dl/kies-de-juiste-kerstverlichting">Choisir ses guirlandes lumineuses ?</a>
+            <a href="/e/fr/dl/cadeau-de-noel">Trouvez vos cadeaux de Noël</a>
+            </div>
+        </div>
+    </div>
+    <div class="flyout_nav_inner_wrapper"></div> 
+</div>
+<script>
+    $(document).ready(function() {
+        $(".flyoutclose").on('click', function() {
+            var x = $(this).closest("li").attr("data-submenu-id");
+            $("li[data-submenu-id="+x+"]").toggleClass("active");
+        });  
+    });
+</script>

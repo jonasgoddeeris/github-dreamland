@@ -6,7 +6,7 @@ var firstFilters = firstUL.getElementsByTagName('a');
 for (let i = 0; i < firstFilters.length; i++) {
   firstFilters[i].removeAttribute("role");
 }
-var filterDIV = document.getElementById('filters');
+var filterDIV = document.querySelector("#facetnavHeaderForMobile")
 filterDIV.innerHTML += firstFilters;
 </script>
 <style>
@@ -44,7 +44,7 @@ div.scrollmenu a {
     color: white;
 }
 .campaign-espot .show {
-    padding: 3p;
+    padding: 3px;
     padding-left: 5px;
     padding-right: 6px;
     margin-left: 4px;

@@ -1,0 +1,30 @@
+<style type="text/css">
+#test202008{
+	display: none;
+}
+div#newbol {
+    margin-top: 16px;
+}
+.DL_contentpage .homepage_mobile_catnav a img {
+    width: 80px!important;
+    height: 80px!important;
+}
+.DL_contentpage .homepage_mobile_catnav a p {
+    font-size: 13px!important;
+    font-weight: 600!important;
+    font-family: 'Nunito', sans-serif !important;
+}
+</style>
+<script>
+console.log("ab67start");
+document.addEventListener("DOMContentLoaded", function(event) { 
+console.log("ab67domLoaded");
+var contentbollekes = document.querySelector("#test202008");
+var newbol = document.createElement("div");
+newbol.setAttribute('id','newbol');
+newbol.setAttribute('class','DL_contentpage');
+document.querySelector("#ci_espot_3074457345618309640_HomeCarrousel > div").append(newbol);
+document.querySelector("#newbol").innerHTML = contentbollekes.innerHTML;
+contentbollekes.remove();
+});
+</script>

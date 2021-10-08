@@ -1,0 +1,61 @@
+<div class="flyoutclose">
+    <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg">
+</div>
+<div class="flyout_nav_title"><a href="/e/nl/dl/kerst-shop">Kerst</a></div>
+<div class="flyout_nav_outer_wrapper">
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <a href="/e/nl/dl/kerstbomen-en-accessoires" ><h3>Kerstbomen</h3></a>
+            <a href="/e/nl/dl/kunstkerstbomen">Kunstkerstbomen</a>
+            <a href="/e/nl/dl/alternatieve-kerstbomen">Alternatieve & houten kerstbomen</a>
+            <a href="/e/nl/dl/decoratie-kerstboomvoet">Decoratie kerstboomvoet</a>
+            <a href="/e/nl/dl/toebehoren-kerstbomen-nl">Kerstbomen accessoires</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/nl/dl/kerstverlichting"><h3>Kerstverlichting</h3></a>
+            <a href="/e/nl/dl/lichtjesslingers-en-kerstboomverlichting">Lichtjesslingers & Kerstboomverlichting</a>
+            <a href="/e/nl/dl/kerstverlichting-decoratie-en-figuren">Kerstverlichting deco & figuren</a>
+            <a href="#">KERSTVERLICHTING BUITEN - DYN CAT NOG TE MAKEN</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/nl/dl/kerstballen-en-hangdecoratie"><h3>Kerstdecoratie</h3></a>
+            <a href="/e/nl/dl/dekbedovertrekken">Kerstballen</a>
+            <a href="/e/nl/dl/kerstbeeldjes-en-kerstfiguren">Kerstbeeldjes & Kerstfiguren</a>
+            <a href="/e/nl/dl/beelden-figuren-dorpen-en-stallen-kerst">Kerstdorpen & Kerststallen</a>
+            <a href="/e/nl/dl/tafeldecoratie-kerst">Tafeldecoratie Kerst</a>
+            <a href="/e/nl/dl/overige-kerstdecoratie">Overige Kerstdecoratie</a>
+        </div>
+    </div>
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <a href="/e/nl/dl/kersttextiel"><h3>Kerstkleding</h3></a>
+            <a href="/e/nl/dl/kersttruien">Kersttruien</a>
+            <a href="/e/nl/dl/kerstkostuums">Kerstkostuums</a>
+            <a href="/e/nl/dl/kerstplaids-en-kussens">Kerstplaids & kussens</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Overige</h3>
+            <a href="/e/nl/dl/kerst-adventkalenders">Adventskalenders</a>
+            <a href="/e/nl/dl/wens-en-kerstkarten-">Wenskaarten</a>
+            <a href="/e/nl/dl/kerst-cake-design">Kerst cake design</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Inspiratie</h3>
+            <div class="tips-flyout">
+            <a href="/e/nl/dl/kerst-themas">Kerst trends</a>
+            <a href="/e/nl/dl/soorten-kerstbomen">Kerstboom kiezen?</a>
+            <a href="/e/nl/dl/kies-de-juiste-kerstverlichting">Kerstverlichting kiezen?</a>
+            <a href="/e/nl/dl/kerstcadeau">Kerstcadeau's</a>
+            </div>
+        </div>
+    </div>
+    <div class="flyout_nav_inner_wrapper"></div> 
+</div>
+<script>
+    $(document).ready(function() {
+        $(".flyoutclose").on('click', function() {
+            var x = $(this).closest("li").attr("data-submenu-id");
+            $("li[data-submenu-id="+x+"]").toggleClass("active");
+        });  
+    });
+</script>

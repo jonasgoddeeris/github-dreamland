@@ -1,4 +1,11 @@
 <style>
+    #Generic-FooterMenuID > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    }
     /* COOKIES */
     #ot-sdk-btn.ot-sdk-show-settings, #ot-sdk-btn.optanon-show-settings {
         color: #FFF !important;
@@ -18,3 +25,16 @@
     }
     }
 </style>
+    <nav class="secondary genericESpot" id="Generic-FooterMenuID">
+      <ul>
+        <li class="disabled"><span><a href="https://www.colruytgroup.com/wps/portal/cg/nl/home" title="© Colruyt Group 2021" target="_blank">© Colruyt Group 2021</a></span></li>
+        <li><a href="http://www.simplysustainable.be/home/" target="_blank">Duurzaam ondernemen</a></li>
+        <li><privacy display="link" lang="nl" code="X_PS_XTRA">Privacyverklaring</privacy></li>
+        <li><a id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie-instellingen</a></li>
+        <li><a href="/e/nl/dl/cookiebeleid" target="_blank" title=“Cookiebeleid”>Cookiebeleid</a></li>
+        <li><a href="javascript: return false;" class="lang" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');" data-tms-button-name="click: language switch" data-tms-button-details1="fr" data-tms-button-details2="top">Site en Français</a></li>
+      </ul>
+    </nav>
+    <!-- BEGIN GDPR SCRIPT -->
+    <script type="text/javascript" src="//api.colruytgroup.com/api/static/script/gdpr.js"></script>
+    <!-- END GDPR SCRIPT -->

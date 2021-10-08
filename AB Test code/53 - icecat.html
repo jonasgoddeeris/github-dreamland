@@ -103,3 +103,35 @@ liveCall();
 }
 prepare();
 </script>
+
+
+
+
+////video implementation ICECAT SYST 05/10
+
+<script type="text/javascript">setTimeout(function()
+{
+IcecatLive.getDatasheet({'videos':'#IcecatLive'}, {
+'UserName': 'colruytdev',
+'GTIN': '4008789704115'
+}, 'NL_BE');
+}, 200);
+$(document).ready(function(){
+$('#videoButton').on("click", function(e) {
+var popup = $("#icecatPopup").data("wc-WCDialog");
+popup.open();
+window.IcecatLive.trigger('videos:play');
+});
+$('div[aria-describedby="icecatPopup"]').on("click", function(e) {
+if (e.target !== this) {
+return;
+}
+var dialogWidget = $("#icecatPopup").data("wc-WCDialog");
+window.IcecatLive.trigger('videos:stop');
+dialogWidget.close();
+});
+if (!$('#IcecatLive').is(':empty')) {
+$('#videoButton').css('display','block');
+}
+});
+</script>
