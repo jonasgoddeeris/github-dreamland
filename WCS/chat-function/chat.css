@@ -1,0 +1,5 @@
+<style>
+body > div.cx-widget.cx-window-manager.cx-theme-light > div > div > div.cx-body > div > div.cx-form-wrapper > div > div.cx-form-inputs > table > tr:nth-child(4) {
+	display: none;
+}
+</style>
