@@ -5,50 +5,21 @@ body > div.cx-widget.cx-window-manager.cx-theme-light > div > div > div.cx-body 
 </style>
 <script>
 document.querySelector("#genesys_chat_container > a:nth-child(1)").addEventListener("click", function() {
-setTimeout(() => {  
-	var xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
-	var familyName = xtraUser.user.lastName;
-	var firstName = xtraUser.user.firstName;
-	var email = xtraUser.user.email; 
+	setTimeout(() => {  
+		var xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
+		var familyName = xtraUser.user.lastName;
+		var firstName = xtraUser.user.firstName;
+		var email = xtraUser.user.email; 
 
-	if (email) {
-		document.querySelector("#cx_webchat_form_email").value = email;
-	};
-	if (firstName) {
-		document.querySelector("#cx_webchat_form_firstname").value=firstName;;
-	};
-	if (familyName) {
-		document.querySelector("#cx_webchat_form_lastname").value=familyName;
-	};
-	// if (mobileNumber) {
-	// 	document.getElementById('telefoon').value=mobileNumber;
-	// };
-
-	var autoSucces = (email) ? "filled-In":"not-filled-in";
-
-
-	// window.dataLayer = window.dataLayer || [];
-	// dataLayer.push({
-	// 	'event' : 'event', 
-	// 	'eventCategory' : 'interactions',
-	// 	'eventAction' : 'Auto fill-in',
-	// 	'eventLabel': autoSucces,
-	// 	'eventValue': 0
-	// });
-	ga('send', {
-	  hitType: 'event',
-	  eventCategory: 'chat function',
-	  eventAction: 'auto fill-in',
-	  eventLabel: autoSucces
-	});
-	console.log("executed after 100ms"); }, 100);
-});
-document.querySelector("body > div.cx-widget.cx-window-manager.cx-theme-light > div.cx-dock.cx-first.cx-dock-view.cx-docked-WebChat.cx-desktop > div > div.cx-body > div > div.cx-form-wrapper > div > div.cx-button-group.cx-buttons-binary > button.cx-submit.cx-btn.cx-btn-primary.i18n").addEventListener("click", function() {
-	ga('send', {
-	  hitType: 'event',
-	  eventCategory: 'chat function',
-	  eventAction: 'chat started',
-	  eventLabel: ''
-	});
+		if (email) {
+			document.querySelector("#cx_webchat_form_email").value = email;
+		};
+		if (firstName) {
+			document.querySelector("#cx_webchat_form_firstname").value=firstName;;
+		};
+		if (familyName) {
+			document.querySelector("#cx_webchat_form_lastname").value=familyName;
+		};
+	}, 100);
 });
 </script>
