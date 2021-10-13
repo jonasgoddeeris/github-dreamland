@@ -1,8 +1,7 @@
 <style> 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-/*nunito als finaal nieuw (tijdelijk) font*/
-/*UPDATE STYLING FLYOUT V3.3.9 - jonas 08/10/2021 - to be made part of -main css*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');*/
+/*UPDATE STYLING FLYOUT V4.0.0 - jonas 13/10/2021 - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -28,6 +27,11 @@
         #page #headerWrapper #headerRow2 nav.topNav.expand { /*dl-homepage.css*/
             border-radius: 3px 3px 3px 3px !important;
         }
+        /*********************/
+        /*MARGIN FIX FOR FROOMLE CAROUSEL - IF THERE ARE MANY TOP CATEGORIES IN DESKTOP FLY OUT NAVIGATION THEN THE FKYOUT COMES OVER THE FROOMLE CAROUSEL!!!*/
+        #FromleProductRecommDispaly > div {
+        margin-top: 5%;
+    }
     }
     #page #headerWrapper #headerRow2 nav.topNav.expand { /*alle pagina's behalve HP*/
         /*border-bottom: 1px solid #ddd !important;*/ /*SYST NEW MENU*/
