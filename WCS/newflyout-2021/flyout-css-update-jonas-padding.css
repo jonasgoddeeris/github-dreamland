@@ -1,7 +1,7 @@
 <style> 
 /*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');*/
-/*UPDATE STYLING FLYOUT V4.0.0 - jonas 13/10/2021 - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V4.0.1 - jonas 18/10/2021 - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -169,25 +169,25 @@
     }
     /*********************/
     /*styling to match font types of collapse with flyout*/
-    #page #headerWrapper #headerRow2 nav.topNav .topNav__title { /*dl-homepage.css*/
+    /*#page #headerWrapper #headerRow2 nav.topNav .topNav__title { dl-homepage.css
         font-family: 'Nunito',sans-serif !important;
         font-size: 15px !important;
-        text-transform: none !important; /*overwrite for template 2020 AND category page css*/
-        letter-spacing: normal !important; /*overwrite for template 2020 AND category page css*/
+        text-transform: none !important; overwrite for template 2020 AND category page css
+        letter-spacing: normal !important; overwrite for template 2020 AND category page css
         letter-spacing: 0 !important;
         font-weight: 700 !important;
 
-    }
+    }*/
     #page #headerWrapper #headerRow2 nav.topNav ul li { /*dl-homepage.css*/
-        font-family: 'Lato',sans-serif !important;
+        /*font-family: 'Lato',sans-serif !important;*/
         font-size:15px !important;
 
     }
     /*styling to match font types of secundary nav with flyout*/
-    #page #headerWrapper #headerRow2 nav.secondaryNav .secondaryNav__wrap>ul>li a {
+   /* #page #headerWrapper #headerRow2 nav.secondaryNav .secondaryNav__wrap>ul>li a {
     font-family: 'Nunito',sans-serif !important;
     text-transform: none !important;
     font-size: 16px !important;
     font-weight: 600 !important;
-}
+}*/
 </style>
