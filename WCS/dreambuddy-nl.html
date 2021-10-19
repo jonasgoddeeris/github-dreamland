@@ -1,0 +1,861 @@
+<!--GEBRUIK NFContentPageTypeAlgemeen als layout in WCS-->
+<link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/css/bootstrap.css">
+<link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/css/general.css">
+<link rel="stylesheet" href="/ecomwcs/static/StaticWeb/DL/css/animate.css">
+<style type="text/css">
+body {
+    background-color: #225da5;
+}
+
+#widget_breadcrumb {
+    display: none;
+}
+#dreambuddy2-bubble.svelte-ew20mv {
+    background-color:#ffffff;
+}
+
+#contentWrapper {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 130%;
+    padding-bottom: 12em;
+    background-position: right -2em bottom -3em;
+}
+
+@media screen and (max-width:900px){
+#page .animated {
+    animation-name: none; 
+}
+}
+
+/* TABLET clouds */
+@media screen and (min-width:768px){
+#contentWrapper {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 130%;
+    padding-bottom: 12em;
+    background-position: right -2em bottom -8em;
+}
+}
+
+/* DESKTOP clouds */
+@media screen and (min-width:900px){
+#contentWrapper {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 100%;
+    padding-bottom: 12em;
+    background-position: right -2em bottom -9%;
+}
+#page {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-position-y: 20%;
+    background-repeat: repeat-x;
+    background-size: 68%;
+}
+}
+/* DESKTOP clouds */
+@media screen and (min-width:1200px){
+#contentWrapper {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 100%;
+    padding-bottom: 12em;
+    background-position: right -2em bottom -9%;
+}
+#page {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-position-y: 21%;
+    background-repeat: repeat-x;
+    background-size: 1000px;
+}
+}
+
+/* --------------------------------- HEADER ---------------------------------  */
+header {
+    width: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+header .Htitel {
+    margin: 20% auto 3em auto;
+    display: inline-block;
+    text-align: center;
+}
+
+#page #contentWrapper #espot-dossiers header h1 {
+    font-family: 'lilita one',sans-serif;
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 1.3em;
+}
+#page #contentWrapper #espot-dossiers header h1 span {
+    font-size: 1.5em;
+    line-height: 1.1em;
+}
+#page #contentWrapper #espot-dossiers header button {
+    font-family: 'roboto',sans-serif;
+    background-color: #fff;
+    border:none;
+    color: #225da5;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    -webkit-transition: 150ms ease-out;
+  -moz-transition: 150ms ease-out;
+  -o-transition: 150ms ease-out;
+  transition: 150ms ease-out;
+}
+#page #contentWrapper #espot-dossiers header button:hover {
+    transform: scale(1.1);
+}
+
+
+#clouds {
+    overflow: overlay;
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 110%;
+    padding-bottom: 0;
+    text-align: left;
+}
+#clouds .cloud-fg {
+    position: absolute;
+    width: 50%;
+    bottom: -3em;
+}
+#clouds .cloud-bg {
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    right: 10%;
+    z-index: -1;
+}
+#clouds .cloud-3 {
+    position: absolute;
+    width: 30%;
+    bottom: -15%;
+    right: 20%;
+    z-index: 1;
+}
+
+#clouds .dreambuddy-intro {
+    overflow: overlay;
+    z-index: 50;
+    width: 60%;
+}
+
+/* ASSETS */
+.asset1 {
+    width: 25px;
+    position: absolute;
+    right: 1%;
+    top: 50%;   
+    z-index: -1;
+}
+.asset2A {
+    width: 20px;
+    position: absolute;
+    left: 9%;
+    top: 8%;  
+    z-index: -1;
+}
+.asset2B {
+    width: 30px;
+    position: absolute;
+    right: 3%;
+    bottom: 30%; 
+    z-index: -1;
+}
+.asset3 {
+    width: 30px;
+    position: absolute;
+    left: 3%;
+    bottom: 43%; 
+    z-index: -1;
+}
+
+/* PIJL */
+.PijlScroll-container {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    height: 10%;
+    width: 100%;
+}
+.PijlScroll-container .PijlScroll {
+    width: 20%;
+    overflow: visible;
+    position: fixed;
+    width: 20%;
+    height: 10%;
+    z-index: 100;
+    bottom: 0;
+    right: 41%;
+}
+
+/* DESKTOP */
+@media screen and (min-width:900px){
+    header .Htitel {
+        margin: 5% auto 3em auto;
+        display: inline-block;
+        text-align: center;
+    }
+    #page #contentWrapper #espot-dossiers header h1 {
+    font-family: 'lilita one',sans-serif;
+    color: #fff;
+    font-size: 3.3em;
+    text-align: center;
+    line-height: 1.3em;
+    }
+    #clouds {
+    background-image: none;
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: 70%;
+    padding-bottom: 0;
+    text-align: left;
+    }
+    #clouds .cloud-fg {width: 30%;bottom: -6em;}
+    #clouds .cloud-bg {width: 30%;bottom: 0;right: 10%;}
+    #clouds .cloud-3 {width: 30%;bottom: -15%;right: 20%;}
+    #clouds .dreambuddy-intro {
+        overflow: overlay;
+        z-index: 50;
+        width: 30%;
+        margin-left: 10%;
+    }
+    /* ASSETS */
+    .asset1 {right: 21%;top: 40%;}
+    .asset2A {left: 9%;top: 8%;}
+    .asset2B {right: 10%;bottom: 40%;}
+    .asset3 {left: 3%;bottom: 43%;}
+
+    /* PIJL */
+    .PijlScroll-container {
+    display:none;
+    }
+    .PijlScroll-container .PijlScroll {
+        display:none;
+    }
+
+}
+
+
+/* --------------------------------- TEKST ---------------------------------  */
+#page #contentWrapper #espot-dossiers h3 {
+    font-family: 'lilita one',sans-serif;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#page #contentWrapper #espot-dossiers p {
+    color: #fff;
+    text-align: left;
+}
+
+@media screen and (min-width:900px){
+    #page #contentWrapper #espot-dossiers p {
+        font-size: 1.1em;
+        color: #666666;
+    }
+    #page #contentWrapper #espot-dossiers h3 {
+        font-size: 2em;
+        color:#225da5
+    }
+}
+
+/* --------------------------------- WIE? ---------------------------------  */
+.db-presents-wrapper {
+    position: relative;
+}
+.db-presents-container {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+#page #contentWrapper #espot-dossiers .db-presents {
+    width: 70%;
+    float: right;
+    margin-right: -30px;
+}
+
+
+.present4 {
+    position: absolute;
+    width: 80px;
+    top: 3em;
+    left: 10%;
+}
+.present5 {
+    position: absolute;
+    width: 80px;
+    top: 10em;
+    left: 10%;
+}
+#page #contentWrapper #espot-dossiers .db-presents-wrapper .asset2 {
+    position: absolute;
+    width: 20px;
+    left: 2em;
+    top: 13em;
+    z-index: -1;
+}
+#page #contentWrapper #espot-dossiers .db-presents-wrapper .asset1 {
+    position: absolute;
+    width: 20px;
+    left: 12em;
+    top: 3em;
+    z-index: -1;
+}
+
+/* --------------------------------- HOE? ---------------------------------  */
+#page #contentWrapper #espot-dossiers .list-db {
+    list-style-type: none;
+}
+#page #contentWrapper #espot-dossiers .list-db li{
+    color: #fff;
+    line-height: 2em;
+}
+
+
+/* ICONS_SCROLL */
+#icons-scroll {
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    -webkit-animation-name: scroll;
+    -webkit-animation-duration: 20s;
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/icons-01.svg);
+    background-size: 200%;
+    background-repeat: repeat-x;
+    margin-bottom: 3em;
+    /* height: 300px;
+    width: 100%; */
+  }
+  @keyframes scroll {
+                0% {
+                   background-position: 0 50%;
+                }
+
+                100% {
+                  background-position: 200% 50%;
+                }
+  }
+  .scroll-img {
+    width: 40%;
+    float: left;
+  }
+
+  #page #contentWrapper #espot-dossiers .rowPad {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#page #contentWrapper #espot-dossiers .nopadding {
+    padding:0;
+}
+
+/* LIST */
+.pijl-1{
+    position: absolute;
+    width: 40%;
+    top: -4em;
+    left: 0;
+}
+.pijl-2{
+    position: absolute;
+    width: 50%;
+    top: -1em;
+    right: 0;
+}
+.li-icon {
+    height:30px;
+    margin-bottom: 0!important;
+    width:30px;
+}
+#page #contentWrapper #espot-dossiers .li-copy p {
+    text-align: left;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+@media screen and (min-width:500px){
+    .pijl-2 {
+        width: 35%;
+    top: -1.5em;
+    transform: rotate(-20deg);
+    }
+}
+
+/* DESKTOP */
+#page #contentWrapper #espot-dossiers .desk-wrapper-small {
+    text-align: center;
+    max-width: 960px;
+    margin: auto;
+}
+@media screen and (min-width:900px){
+    .pijl-2{width: 20%;top: -1.5em;transform: rotate(-19deg);}
+
+    .present4 {
+    position: absolute;
+    width: 120px;
+    top: 3em;
+    left: 10%;
+    }
+    .present5 {
+    position: absolute;
+    width: 120px;
+    top: 18em;
+    left: 10%;
+    }
+
+    #page .speech-bubble {
+	background: #ffffff;
+	border-radius: 2em;
+    padding: 0 1em 1em 2em;
+    }
+
+    .speech-bubble:after {
+	content: '';
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    width: 70px;
+    height: 30px;
+    background-color: #ffffff;
+    transform: skew(55deg);
+    transform-origin: top left;
+    border-radius: 15% 15% 15% 15% / 25%;
+    z-index: -1;
+    }
+
+    #page .speech-bubble-2 {
+	background: #ffffff;
+	border-radius: 2em;
+    animation-delay: 2s;
+    padding: 0em 1em 1em 2em;
+    }
+
+    #page .speech-bubble-2:after {
+    content: '';
+    position: absolute;
+    bottom: -39px;
+    left: 10%;
+    width: 50px;
+    height: 100px;
+    background-color: #ffffff;
+    transform: skew(52deg) rotate(59deg);
+    transform-origin: center;
+    border-radius: 10% 10% 10% 10% / 25%;
+    z-index: -1;
+    }
+    #page .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    }
+
+    #page .speech-bubble-3 {
+	background: #ffffff;
+	border-radius: 2em;
+    padding: 2em 1em 1em 2em;
+    animation-delay: 3s;
+    }
+
+    .speech-bubble-3:after {
+	content: '';
+    position: absolute;
+    top: -35px;
+    left: 5%;
+    width: 50px;
+    height: 100px;
+    background-color: #ffffff;
+    transform: skew(24deg) rotate(39deg);
+    transform-origin: bottom center;
+    border-radius: 15% 15% 15% 15% / 25%;
+    z-index: -1;
+    }
+
+    /* icons scroll desktop */
+    #page #icons-scroll-wrapper {
+        width: 200%;
+        margin-left: -50%;
+    }
+    #icons-scroll {
+    animation-name: scroll2;
+    animation-iteration-count: infinite;
+    animation-duration: 200s;
+    animation-timing-function: linear;
+    -webkit-animation-name: scroll2;
+    -webkit-animation-duration: 50s;
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/icons-01.svg);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    margin-bottom: 3em;
+    }
+    @keyframes scroll2 {
+                0% {
+                   background-position: 0 50%;
+                }
+
+                100% {
+                  background-position: 150% 50%;
+                }
+    }
+    .scroll-img {
+    width: 10%;
+    margin-left: 30%;
+    }
+    /* list desktop */
+    .pijl-1{width: 50%;top: -7em;}
+    .li-icon {height:30px;width:30px;float:none;}
+
+
+
+
+}
+
+
+/* -------------------------------- OUTRO ---------------------------------- */
+.pijl-breed-2-wrapper {
+    text-align:center;
+}
+.pijl-breed-2-wrapper .pijl-breed-2 {
+    width: 25%;
+    margin-top: 4em;
+    height: 6em;
+}
+#page #contentWrapper #espot-dossiers .button-db-wrapper {
+   text-align:center;
+   margin: 3em 0 10em 0;
+}
+#page #contentWrapper #espot-dossiers .button-db-wrapper button {
+    font-family: 'roboto',sans-serif;
+    background-color: #fff;
+    border:none;
+    color: #225da5;
+    padding: 10px 15px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    width: 70%;
+    -webkit-transition: 150ms ease-out;
+  -moz-transition: 150ms ease-out;
+  -o-transition: 150ms ease-out;
+  transition: 150ms ease-out;
+}
+@media screen and (min-width:400px){
+    #page #contentWrapper #espot-dossiers .button-db-wrapper button {
+    font-family: 'roboto',sans-serif;
+    background-color: #fff;
+    border:none;
+    color: #225da5;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    width: 70%;
+}
+}
+
+#page #contentWrapper #espot-dossiers .button-db-wrapper .dreamland-chat-button:hover {
+    transform: scale(1.1);
+}
+
+.icon4 {
+    position: absolute;
+    width: 50px;
+    left: 10%;
+    top: 2em;
+    z-index: -1;
+}
+.icon5 {
+    position: absolute;
+    width: 50px;
+    right: 15%;
+    top: -3em;
+    z-index: -1; 
+}
+/* TABLET */
+.pijl-breed-2-wrapper .pijl-breed-2 {
+    width: 25%;
+    margin-top: 0em;
+    height: 12em;
+}
+
+
+/* DESKTOP */
+@media screen and (min-width:900px){
+    .pijl-breed-2-wrapper .pijl-breed-2 {
+    width: 15%;
+    margin-top: 0;
+    height: 12em;
+}
+
+#page #contentWrapper #espot-dossiers .button-db-wrapper button {width: 30%;}
+
+.icon4 {left: 30%;top: 2em;}
+.icon5 {right: 25%;top: -3em;}
+
+.dreambuddy2-frame-in #dreambuddy2-backdrop {
+    background: rgba(0,0,0,0.6);
+    transition: background .3s ease-out;
+}
+.dreambuddy2-bubble-in #dreambuddy2-bubble.svelte-1peip37 {
+    z-index: 10000;
+}
+
+}
+
+</style>
+
+
+<!--[if IE] -->
+
+<style>
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+#contentWrapper {
+    background-image: none;
+    background-repeat: repeat-x;
+ background-position-x: center; 
+ background-position-y: bottom;
+    background-size: 130%;
+    padding-bottom: 10px;
+    background-position: right -20px bottom -30px;
+}
+
+#page {
+    background-image: url(/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-5.svg);
+    background-position-y: -35%;
+    background-repeat: repeat-x;
+    background-size: 68%;
+}
+#icons-scroll {
+    background-position-y: 50%;
+}
+}
+</style>
+<!-- [endif]-->
+
+
+
+<div class="campaign-espot" id="espot-dossiers">
+    <!--Header afbeeldingen-->
+    <header>
+        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon2.svg" class="asset1">
+        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon1.svg" class="asset2A">
+        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon1.svg" class="asset2B">
+        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon3.svg" class="asset3">
+        <div class="Htitel">
+            <h1>VIND EEN <br>DROOMCADEAU MET<br><span>DREAMBUDDY</span></h1>
+            <button class="lnkMore"  onclick="DreambuddyGo()">Let's go!</button>
+        </div>
+        <div id="clouds" class="parallax">
+            <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-1.svg" class="cloud-fg scroll-1">
+            <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-3.svg" class="cloud-bg scroll-2">
+            <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/clouds/cloud-4.svg" class="cloud-3 scroll-3">
+            <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/dreambuddy-animation.svg" class="dreambuddy-intro">
+        </div>
+        <div class="PijlScroll-container">
+    <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/pijl-breed.svg" class="PijlScroll">
+</div>
+        
+    </header>
+    <!--Menu met tabjes - optioneel-->
+
+    <div class="spacer hidden-xs"></div>
+    
+    <!--Content-->
+    
+        <div class="row desk-wrapper-small">
+            <div class="col-xs-12 col-sm-4 speech-bubble animated fadeInRight">
+                <h3>WIE?</h3>
+                <p>Hi, ik ben DreamBuddy! Met mijn hulp vind je zó een droomcadeau!</p>
+                <!-- <a href="/e/nl/dl/winkels" class="lnkMore">Vind je DreamLand-winkel</a> -->
+            </div>
+            <div class="col-xs-12 col-sm-8 db-presents-container">
+                <div class="db-presents-wrapper parallax">
+                        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/dreambuddy-presents-01.svg" class="db-presents">
+                        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/present4.svg" class="present4 scroll-1">
+                        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/present5.svg" class="present5 scroll-2">
+                        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon1.svg" class="asset1">
+                        <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon2.svg" class="asset2">
+                </div>
+            </div>
+        </div>
+
+        <div class="row desk-wrapper-small">
+            <div class="col-xs-12 hoe-wrapper speech-bubble-2  animated fadeInUp">
+                    <!-- <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/pijl-2.svg" class="pijl-2"> -->
+                <h3>HOE?</h3>
+                <p>Voor ik aan de slag ga, heb ik wel een paar weetjes van je nodig:</p>
+                <ul class="list-db">
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-1 nopadding">
+                                    <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/party-icon.svg" class="li-icon">
+                            </div>
+                            <div class="col-xs-10 col-sm-11 li-copy nopadding">
+                                    <p>&nbsp;Wat valt er te vieren?</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-1 nopadding">
+                                    <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/cupcake-icon.svg" class="li-icon">
+                            </div>
+                            <div class="col-xs-10 col-sm-11 li-copy nopadding">
+                                    <p>&nbsp;Hoe oud is de gelukkige?</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-1 nopadding">
+                                    <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/budget-icon.svg" class="li-icon">
+                            </div>
+                            <div class="col-xs-10 col-sm-11 li-copy nopadding">
+                                    <p>&nbsp;Hoeveel mag dat kosten?</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1 nopadding">
+                            <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/heart-icon.svg" class="li-icon">
+                        </div>
+                            <div class="col-xs-10 col-sm-11 li-copy nopadding">
+                                 <p>&nbsp;Wat vindt het feestvarken leuk?</p>
+                            </div>
+                        </div>
+                    </li>
+
+               
+                   
+                </ul>
+                <div class="row rowPad">
+                    <div class="col-xs-3 col-sm-2 col-md-3" style="position:relative;">
+                            <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/pijl-2.svg" class="pijl-2">
+                    </div>
+                    <div class="col-xs-9 col-sm-10 col-md-9">
+                        <p>In een vingerknip stel ik je enkele topcadeautjes voor. Wil je nóg meer geschenktips? Klik dan gewoon op <strong>"Meer"</strong> of <strong>"Meer zoals dit"</strong>!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer hidden-xs"></div>
+        <div class="spacer visible-sm"></div>
+
+        <div class="row" id="icons-scroll-wrapper">
+            <div class="col-xs-12" id="icons-scroll">
+                <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/dreambuddy-search.svg" class="scroll-img">
+            </div>
+        </div>
+
+
+        <div class="row desk-wrapper-small">
+            <div class="col-xs-9 col-sm-10 speech-bubble-3 animated fadeInDown">
+                <p>Is mijn cadeautip een schot in de roos? Voeg het meteen toe aan je winkelwagen en verras de gelukkige met een topcadeau!</p>
+            </div>
+            <div class="col-xs-3 col-sm-2" style="position:relative;">
+                <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/pijl-1.svg" class="pijl-1">
+                <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/winkelwagen.svg" class="cart img-repsonsive">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 pijl-breed-2-wrapper">
+                <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/pijl-breed-2.svg" class="pijl-breed-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 button-db-wrapper">
+                    <button class="lnkMore dreamland-chat-button" onclick="DreambuddyGo()">Vind een droomcadeau</button>
+                    <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon4.svg" class="icon4">
+                    <img src="/ecomwcs/static/StaticWeb/DL/infopages/Dreambuddy/assets/icon5.svg" class="icon5">
+            </div>
+        </div>
+</div>
+
+<script>
+//       function onDreambuddyReady () {
+//     setTimeout(Dreambuddy.showBubble, 10 * 1000);
+//   }
+//   function DreambuddyTADA () {
+//     setTimeout(Dreambuddy.showBubble, 10 * 1000);
+//     var element = document.getElementByClass("dreambuddy2-scale");
+//   element.classList.add("dreambuddy2-tada");
+//   }
+
+// document.querySelector('.dreamland-chat-button').addEventListener('click', onChatButtonClick);
+
+// function onChatButtonClick() {
+//     Dreambuddy.showFrame();
+// }
+
+function DreambuddyGo () {
+    Dreambuddy.showFrame()
+  }
+
+
+// function overlaydb () {
+//     if ($('#dreambuddy2-frame').css('opacity','1')) {
+//         $('#dreambuddy2-backdrop').css('background', 'rgba(0,0,0,0.5)');
+//     }
+//     else {
+//     $('#dreambuddy2-backdrop').css('background', 'transparent'); 
+//     }
+// }
+
+
+$(window).bind('scroll', function() {
+     if ($(window).scrollTop() > 200) {
+         $('.PijlScroll').hide();
+     }
+     else {
+         $('.PijlScroll').show();
+     }
+});
+
+</script>
+
+<script>
+        $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop();
+                var imgPos = scrollTop / -10 + 'px';
+                $('.parallax').find('.scroll-1').css('transform', 'translateY(' + imgPos + ')');
+            });
+        
+            $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop();
+                var imgPos = scrollTop / -15 + 'px';
+                $('.parallax').find('.scroll-2').css('transform', 'translateY(' + imgPos + ')');
+            });
+
+            $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop();
+                var imgPos = scrollTop / -5 + 'px';
+                $('.parallax').find('.scroll-3').css('transform', 'translateY(' + imgPos + ')');
+            });
+            
+        </script>
+
+
