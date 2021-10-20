@@ -22,6 +22,23 @@ document.querySelector("#genesys_chat_container > a:nth-child(1)").addEventListe
 		// if (email && familyName && firstName ) {
 		// 	CXBus.command('WebChat.open');
 		// };
+		var autoSucces = (email) ? "filled-In":"not-filled-in";
+		ga('send', {
+		  hitType: 'event',
+		  eventCategory: 'chat function',
+		  eventAction: 'auto fill-in',
+		  eventLabel: autoSucces
+		});
+		document.querySelector("body > div.cx-widget.cx-window-manager.cx-theme-light > div.cx-dock.cx-first.cx-dock-view.cx-docked-WebChat.cx-desktop > div > div.cx-body > div > div.cx-form-wrapper > div > div.cx-button-group.cx-buttons-binary > button.cx-submit.cx-btn.cx-btn-primary.i18n").addEventListener("click", function() {
+			ga('send', {
+			  hitType: 'event',
+			  eventCategory: 'chat function',
+			  eventAction: 'chat started',
+			  eventLabel: ''
+			});
+		});
+		console.log("executed after 100ms");
 	}, 100);
 });
 </script>
+

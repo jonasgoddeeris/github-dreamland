@@ -1,7 +1,7 @@
 <style>
 /*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');*/
-/*UPDATE STYLING FLYOUT V4.0.2 - jonas 18/10/2021 - to be made part of -main css*/
+/*UPDATE STYLING FLYOUT V4.0.3 - jonas 20/10/2021 - to be made part of -main css*/
 /*******************************/
 /* NIEUWE FLYOUT verberg oude top balk met naam categorie en button alles van {categorie}*/
     #page #headerWrapper #headerRow2 nav.topNav ul li .subNav__column.subNav__column-top {
@@ -30,7 +30,7 @@
         /*********************/
         /*MARGIN FIX FOR FROOMLE CAROUSEL - IF THERE ARE MANY TOP CATEGORIES IN DESKTOP FLY OUT NAVIGATION THEN THE FLYOUT COMES OVER THE FROOMLE CAROUSEL!!!*/
         #FromleProductRecommDispaly > div {
-        margin-top: 5%;
+        margin-top: 5.5%;
     }
     }
     #page #headerWrapper #headerRow2 nav.topNav.expand { /*alle pagina's behalve HP*/
