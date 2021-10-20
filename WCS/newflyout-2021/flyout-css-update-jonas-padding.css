@@ -81,7 +81,7 @@
             padding:8px;
             max-width: 100px;
         }
-        #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img {
+        #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img loading="lazy" {
             display:block;
             width:100%;
         }
