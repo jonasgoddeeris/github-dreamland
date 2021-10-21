@@ -81,7 +81,7 @@
             padding:8px;
             max-width: 100px;
         }
-        #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img loading="lazy" {
+        #page #headerWrapper #headerRow2 nav.topNav ul li .flyout_nav_inner_wrapper.brandcarrousel a picture img {
             display:block;
             width:100%;
         }
@@ -152,7 +152,6 @@
             cursor:pointer;
         }
         #page #headerWrapper #headerRow2 nav.topNav ul li { /*dl-homepage.css*/
-            /*font-family: 'Lato',sans-serif !important;*/
             font-size:15px !important;
 
         }
