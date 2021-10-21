@@ -30,7 +30,7 @@
         /*********************/
         /*MARGIN FIX FOR FROOMLE CAROUSEL - IF THERE ARE MANY TOP CATEGORIES IN DESKTOP FLY OUT NAVIGATION THEN THE FLYOUT COMES OVER THE FROOMLE CAROUSEL!!!*/
         #FromleProductRecommDispaly > div {
-        margin-top: 5.5%;
+        margin-top: 9%;
     }
     }
     #page #headerWrapper #headerRow2 nav.topNav.expand { /*alle pagina's behalve HP*/
@@ -47,7 +47,7 @@
             box-sizing:border-box;
         }
         #page #headerWrapper #headerRow2 nav.topNav ul li div.flyout_nav_title {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Nunito', sans-serif !important;
             font-weight:700;
             font-style:normal;
             font-size:20px;
