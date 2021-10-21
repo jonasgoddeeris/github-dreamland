@@ -47,7 +47,7 @@
             box-sizing:border-box;
         }
         #page #headerWrapper #headerRow2 nav.topNav ul li div.flyout_nav_title {
-            font-family: 'Nunito', sans-serif !important;
+            font-family: 'Nunito', sans-serif;
             font-weight:700;
             font-style:normal;
             font-size:20px;
@@ -160,4 +160,27 @@
     body.homePage #page #headerWrapper #headerRow2 nav.topNav .topNav__title:after {
     display: none!important;
     }
+        /*********************/
+    /*styling to match font types of collapse with flyout*/
+    #page #headerWrapper #headerRow2 nav.topNav .topNav__title { /*dl-homepage.css*/
+        font-family: 'Nunito',sans-serif !important;
+        font-size: 15px !important;
+        text-transform: none !important; /*overwrite for template 2020 AND category page css*/
+        letter-spacing: normal !important; /*overwrite for template 2020 AND category page css*/
+        letter-spacing: 0 !important;
+        font-weight: 700 !important;
+
+    }
+    #page #headerWrapper #headerRow2 nav.topNav ul li { /*dl-homepage.css*/
+        font-family: 'Lato',sans-serif !important;
+        font-size:15px !important;
+
+    }
+    /*styling to match font types of secundary nav with flyout*/
+    #page #headerWrapper #headerRow2 nav.secondaryNav .secondaryNav__wrap>ul>li a {
+    font-family: 'Nunito',sans-serif !important;
+    text-transform: none !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
 </style>
