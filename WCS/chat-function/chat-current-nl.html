@@ -1,7 +1,14 @@
-<style>
+
+
+	<!-- Document Title
+	============================================= -->
+
+
+    <style>
 #dreambuddy2-bubble {
     display:none;
 }
+
 
 body .cx-widget {
     right: 10px!important;
@@ -13,13 +20,6 @@ body .cx-widget {
 .chat-application {display:none !important;}
 #chat-application {display:none !important;}
 .cx-side-button  {display:none !important;}
-
-/**
-*   CSS code om overbodige optioneel veld te verbergen
-**/
-body > div.cx-widget.cx-window-manager.cx-theme-light > div > div > div.cx-body > div > div.cx-form-wrapper > div > div.cx-form-inputs > table > tr:nth-child(4) {
-display: none;
-}
 
 /**
 *   CSS code om custom button te tonen
@@ -103,6 +103,7 @@ display: none;
 .cx-webchat.cx-theme-light .cx-message.cx-them .cx-bubble-arrow svg * {
     fill: #cfe393;
 }
+
 .cx-widget.cx-theme-light {
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -323,12 +324,14 @@ display: none;
 [data-icon]::before {
     display:none;
 }
-</style>
+    </style>
 
 <!-- javascript code met effectieve link van Genesys/pureconnect -->
 <!-- <script src="https://apps.mypurecloud.com/pureconnect-widgets" pureconnect-widgets-data="eyJpZCI6IlVKOVpfVUFUX0Y1X0hUVFBTIiwiaWNTZXJ2ZXJzIjpbImNpYy1zeXN0LmNvbHJ1eXQuaW50Il0sInJldmVyc2VQcm94eVVybCI6Imh0dHBzOi8vcHVyZWNvbm5lY3R3ZWJ0b29scy5zeXN0LmNvbHJ1eXRncm91cC5jb20vYXBpIiwidXNlQ2FhUyI6ZmFsc2UsImNhYXNVcmwiOm51bGwsInVzZUh0dHBzIjp0cnVlfQ=="></script> -->
 <!-- <script src="https://apps.mypurecloud.com/pureconnect-widgets" pureconnect-widgets-data="eyJpZCI6IlUzOUNfRHJlYW1sYW5kQ2hhdCIsImljU2VydmVycyI6WyJjaWMtc3lzdC5jb2xydXl0LmludCJdLCJyZXZlcnNlUHJveHlVcmwiOiJodHRwczovL3B1cmVjb25uZWN0d2VidG9vbHMuc3lzdC5jb2xydXl0Z3JvdXAuY29tL2FwaSIsInVzZUNhYVMiOmZhbHNlLCJjYWFzVXJsIjpudWxsLCJ1c2VIdHRwcyI6dHJ1ZX0="></script> -->
 <script src="https://apps.mypurecloud.com/pureconnect-widgets" pureconnect-widgets-data="eyJpZCI6IlUzOUNfRHJlYW1sYW5kQ2hhdCIsImljU2VydmVycyI6WyJjaWMtcHJvZC5jb2xydXl0LmludCJdLCJyZXZlcnNlUHJveHlVcmwiOiJodHRwczovL3B1cmVjb25uZWN0d2VidG9vbHMuY29scnV5dGdyb3VwLmNvbS9hcGkiLCJ1c2VDYWFTIjpmYWxzZSwiY2Fhc1VybCI6bnVsbCwidXNlSHR0cHMiOnRydWV9"></script>
+
+
 
 
 <!-- HTML code met effectieve button, via javascript in href kan je chat openen: -->
@@ -338,129 +341,96 @@ display: none;
             <a onclick="closechat();" class="genesys_close">x</a>
         </div>
     </div>
+        
+   
+
+
 
 <!-- Javascript code om chat te tonen tijdens kantooruren, nadien naar contactformulier -->
-<script>
-function isIE()
-{
-  var rv = -1;
-  if (navigator.appName == 'Microsoft Internet Explorer')
-  {
-    var ua = navigator.userAgent;
-    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-    if (re.exec(ua) != null)
-      rv = parseFloat( RegExp.$1 );
-  }
-  else if (navigator.appName == 'Netscape')
-  {
-    var ua = navigator.userAgent;
-    var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
-    if (re.exec(ua) != null)
-      rv = parseFloat( RegExp.$1 );
-  }
-  return rv == -1 ? false: true;
-}
-document.getElementById('dreamland_ie_chat').style.display = "block";
-document.getElementById('dreamland_no_chat').style.display = "none";
-
-function closechat() {
-   document.getElementById('dreamland_ie_chat').style.display = "none";
-   document.getElementById('dreamland_no_chat').style.display = "none";
-}
-
-setTimeout(function(){ 
-/*show_chat() */
-}, 2000);
-
-
-function show_chat() {
-if (checktime()) { 
-/* true = we tonen het contactformulier */
-  document.getElementById('dreamland_ie_chat').style.display = "block";
-  document.getElementById('dreamland_no_chat').style.display = "none";
-} else {
-/* false = we tonen de chat */
-  document.getElementById('dreamland_ie_chat').style.display = "block";
-  document.getElementById('dreamland_no_chat').style.display = "none";
-}
-
-if (isIE()) { 
-/*   document.getElementById('dreamland_ie_chat').style.display = "none"; */
-} 
-}
-
-function checktime() {
-      var now = moment();
-      var showchat = false; /* standaard tonen we de chat */
-     
-      var datum = new Date();
-      var dag = datum.getDay();
-     
+        <script>
+        function isIE()
+        {
+          var rv = -1;
+          if (navigator.appName == 'Microsoft Internet Explorer')
+          {
+            var ua = navigator.userAgent;
+            var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(ua) != null)
+              rv = parseFloat( RegExp.$1 );
+          }
+          else if (navigator.appName == 'Netscape')
+          {
+            var ua = navigator.userAgent;
+            var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(ua) != null)
+              rv = parseFloat( RegExp.$1 );
+          }
+          return rv == -1 ? false: true;
+        }
+        document.getElementById('dreamland_ie_chat').style.display = "block";
+        document.getElementById('dreamland_no_chat').style.display = "none";
         
-      var beforeToCheck = (now.day() !== 0)?10:00; /* startuur chat als het een weekdag is, bijvoorbeeld 6:30 --> 6 */
-      var startToCheck = now.hour(beforeToCheck).minute(00); /* startminuten chat weekdag bijvoorbeeld 6:30 --> 30 */
-      beforechat = moment().isBefore(startToCheck);
-    
-      var afterToCheck = (now.day() !== 0)?20:00; /* einduur chat weekdag, bijvoorbeeld 17:30 --> 17 */
-      var endToCheck = now.hour(afterToCheck).minute(30); /* eindminuut chat weekdag 17:30 --> 30 */
-      endchat = moment().isAfter(endToCheck);
-    
-      var afterToCheckWeekend = (now.day() !== 0)?13:00; /* einduur chat zaterdag, bijvoorbeeld 13:00 --> 13*/
-      var endToCheckWeekend = now.hour(afterToCheckWeekend).minute(00); /* eindminuut chat zaterdag, bijvoorbeeld 13:00 --> 00 */
-      endchatWeekend = moment().isAfter(endToCheckWeekend);
-      
-      if (beforechat || endchat) { showchat = false; } /* voor en na de openingsuren tonen we het contactformulier */
-      if (dag == 0) { showchat = true; } /* op zondag tonen we het contactformulier */
-      if (dag == 6) {
-          /* op zaterdag voor en na de openingsuren tonen we het contactformulier, anders tonen we de default */
-        if (beforechat || endchatWeekend) { showchat = false; } 
-      }
-      
-      return showchat;
-    }
-</script>
-
-<!-- script om velden te prefillen en analytics hit -->
-<script>
-document.querySelector("#genesys_chat_container > a:nth-child(1)").addEventListener("click", function() {
-  setTimeout(() => {  
-    var xtraUser = JSON.parse(localStorage.getItem('XTRA.session'));
-    var familyName = xtraUser.user.lastName;
-    var firstName = xtraUser.user.firstName;
-    var email = xtraUser.user.email; 
-    if (email) {
-      document.querySelector("#cx_webchat_form_email").value = email;
-    };
-    if (firstName) {
-      document.querySelector("#cx_webchat_form_firstname").value=firstName;;
-    };
-    if (familyName) {
-      document.querySelector("#cx_webchat_form_lastname").value=familyName;
-    };
-    // if (email && familyName && firstName ) {
-    //  CXBus.command('WebChat.open');
-    // };
-    var autoSucces = (email) ? "filled-In":"not-filled-in";
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'chat function',
-      eventAction: 'auto fill-in',
-      eventLabel: autoSucces
-    });
-    document.querySelector("body > div.cx-widget.cx-window-manager.cx-theme-light > div.cx-dock.cx-first.cx-dock-view.cx-docked-WebChat.cx-desktop > div > div.cx-body > div > div.cx-form-wrapper > div > div.cx-button-group.cx-buttons-binary > button.cx-submit.cx-btn.cx-btn-primary.i18n").addEventListener("click", function() {
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'chat function',
-        eventAction: 'chat started',
-        eventLabel: ''
-      });
-    });
-    console.log("executed after 100ms");
-  }, 100);
-});
-</script>
-
-
+        function closechat() {
+           document.getElementById('dreamland_ie_chat').style.display = "none";
+           document.getElementById('dreamland_no_chat').style.display = "none";
+        }
+        
+        setTimeout(function(){ 
+ /*       show_chat() */
+        }, 2000);
+        
+        
+        function show_chat() {
+        
+        if (checktime()) { 
+        /* true = we tonen het contactformulier */
+          document.getElementById('dreamland_ie_chat').style.display = "block";
+          document.getElementById('dreamland_no_chat').style.display = "none";
+        } else {
+        /* false = we tonen de chat */
+          document.getElementById('dreamland_ie_chat').style.display = "block";
+          document.getElementById('dreamland_no_chat').style.display = "none";
+        }
+        
+        if (isIE()) { 
+        /*   document.getElementById('dreamland_ie_chat').style.display = "none"; */
+        } 
+        
+        }
+        
+        function checktime() {
+              var now = moment();
+              var showchat = false; /* standaard tonen we de chat */
+             
+              var datum = new Date();
+              var dag = datum.getDay();
+             
+                
+              var beforeToCheck = (now.day() !== 0)?10:00; /* startuur chat als het een weekdag is, bijvoorbeeld 6:30 --> 6 */
+              var startToCheck = now.hour(beforeToCheck).minute(00); /* startminuten chat weekdag bijvoorbeeld 6:30 --> 30 */
+              beforechat = moment().isBefore(startToCheck);
+            
+              var afterToCheck = (now.day() !== 0)?20:00; /* einduur chat weekdag, bijvoorbeeld 17:30 --> 17 */
+              var endToCheck = now.hour(afterToCheck).minute(30); /* eindminuut chat weekdag 17:30 --> 30 */
+              endchat = moment().isAfter(endToCheck);
+            
+              var afterToCheckWeekend = (now.day() !== 0)?13:00; /* einduur chat zaterdag, bijvoorbeeld 13:00 --> 13*/
+              var endToCheckWeekend = now.hour(afterToCheckWeekend).minute(00); /* eindminuut chat zaterdag, bijvoorbeeld 13:00 --> 00 */
+              endchatWeekend = moment().isAfter(endToCheckWeekend);
+              
+              if (beforechat || endchat) { showchat = false; } /* voor en na de openingsuren tonen we het contactformulier */
+              if (dag == 0) { showchat = true; } /* op zondag tonen we het contactformulier */
+              if (dag == 6) {
+                  /* op zaterdag voor en na de openingsuren tonen we het contactformulier, anders tonen we de default */
+                if (beforechat || endchatWeekend) { showchat = false; } 
+              }
+              
+              return showchat;
+            }
+         
+        </script>
+        
+        
 
 
 
