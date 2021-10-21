@@ -178,9 +178,9 @@
     }
     /*styling to match font types of secundary nav with flyout*/
     #page #headerWrapper #headerRow2 nav.secondaryNav .secondaryNav__wrap>ul>li a {
-    font-family: 'Nunito',sans-serif !important;
+    font-family: 'Lato',sans-serif !important;
     text-transform: none !important;
     font-size: 16px !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
 }
 </style>
