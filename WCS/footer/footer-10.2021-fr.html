@@ -1,0 +1,354 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    #footerCustomerServiceSection,
+    #footerCorporateInfoSection,
+    #footerExploreSection {
+        display:none;
+    }
+    #footer #footerRow1 {
+        background:#ffffff;
+    }
+    #footer #footerRow1:before,
+    #footer #footerRow1:after {
+        background:#ffffff;
+    }
+    #footer #footerRow1:after {
+        height:0;
+    }
+    #footer #footerRow1 .focusItems {
+        width:100%;
+    }
+    #footerTopEspot:after {
+        height:0px;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1em;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-top: 1.2em;;
+    padding-bottom: 1.2em;;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 0em;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title:hover {
+        cursor:pointer;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title:after {
+        content:'\f078';
+        font-family:'fontawesome', sans-serif;
+        font-size:16px;
+        float:right;
+        margin-right:12px;
+        color:#94928A;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title.open:after {
+        content:'\f077';
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div.DLnavigation_linkcontainer {
+        display:none;
+        padding-top: .5em;
+        padding-bottom: 1.5em;
+        border-bottom: 1px solid #d7d7d7;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 0px;
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div.DLnavigation_linkcontainer.open {
+        display:block;
+    }
+    #page .campaign-espot div.DLnavigation p.DLnavigation_title.open {
+    border-bottom: none;
+    }
+    #espot-dossiers > div.DLnavigation > div > div:nth-child(4) > div {
+        border-bottom: 1px solid #ffffff!important;
+    }
+    #espot-dossiers > div.DLnavigation > div > div:nth-child(4) > p {
+        border-bottom: 1px solid #ffffff!important;
+    }
+    #page .campaign-espot div.DLnavigation div.row>div>div>a.DLnavigation_link {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1em;
+    margin-bottom: 1em;
+    }
+    #page .campaign-espot div.langselector {
+        background:#f9f9f9;
+        padding:36px 0;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        position:relative;
+    }
+    #page .campaign-espot div.langselector:before {
+        content:'';
+        background:#f9f9f9;
+        position:absolute;
+        left:-999em;
+        right:-999em;
+        top:0;
+        bottom:0;
+        z-index:-1;
+    }
+    #page .campaign-espot div.langselector>a {
+        display:block;
+        font-family:'Lato', sans-serif;
+        font-weight:bold;
+        font-weight:600;
+        font-size:16px;
+        text-decoration:none;
+        line-height:1em;
+        margin-bottom:0;
+        padding:0 15px;
+        color:rgba(0, 91, 169, 0.98);
+    }
+    #page .campaign-espot div.langselector>a.selected {
+    text-decoration: underline 2px;
+    margin-bottom: -2px;
+    text-underline-offset: 4px;
+    }
+    #page .campaign-espot div.DLfooter {
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding-top:20px;
+    }
+    #page .campaign-espot div.DLfooter div.socialandnews {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: static;
+    width: 100%;
+    }
+    #page .campaign-espot div.DLfooter div.socialicons {
+        position:static;
+        width:100%;
+        padding:1em .5em;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+    }
+    #page .campaign-espot div.DLfooter div.socialicons>div {
+        width:24px;
+        margin:0 16px;
+    }
+    #page .campaign-espot div.DLfooter div.socialicons>div>a>img {
+        display:block;
+        width:100%;
+    }
+    #page .campaign-espot div.DLfooter div.socialandnews>p {
+        width:100%;
+        text-align:center;
+        font-family:'Lato', sans-serif;
+        font-weight:normal;
+        font-size:16px;
+        line-height:1em;
+        margin-bottom:16px;
+        margin-top:4px;
+    }
+    #page .campaign-espot div.DLfooter div.socialandnews>p>a {
+        color:rgba(0, 91, 169, 0.98);
+        text-decoration:none;
+    }
+    #page .campaign-espot div.DLfooter div.bestewinkel {
+        position:static;
+        width:100%;
+        padding:1em .5em;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+    }
+    #page .campaign-espot div.DLfooter div.bestewinkel>div {
+        margin:0 6px;
+    }
+    #page .campaign-espot div.DLfooter div.bestewinkel>div>a>img,
+    #page .campaign-espot div.DLfooter div.bestewinkel>div>img {
+        display:block;
+        height:90px;
+    }
+    #page .campaign-espot div.DLfooter div.bestewinkel>div#bestewinkel_becommerce>a>img {
+        padding-top:8px;
+    }
+    #page .campaign-espot div.DLfooter div.payments {
+        position:static;
+        width:100%;
+        padding:1em .5em;
+        padding-bottom:0;
+    }
+    #page .campaign-espot div.DLfooter div.payments>a {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        align-content:center;
+        height:100%;
+    }
+    #page .campaign-espot div.DLfooter div.payments>a>div {
+        margin:0 6px;
+    }
+    #page .campaign-espot div.DLfooter div.payments>a>div>img {
+        display:block;
+        width:36px;
+        border-radius:0;
+    }
+    @media screen and (min-width:768px) {
+        #page .campaign-espot div.DLnavigation {
+            padding:24px 15px;
+            position:relative;
+        }
+        #page .campaign-espot div.DLnavigation:before {
+            content:'';
+            background:#f9f9f9;
+            position:absolute;
+            left:-999em;
+            right:-999em;
+            top:0;
+            bottom:0;
+            z-index:-1;
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title {
+            font-size:20px;
+            border-bottom:none;
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title:hover {
+            cursor:auto;
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title:after {
+            content:'';
+        }
+        #page .campaign-espot div.DLnavigation p.DLnavigation_title.open:after {
+            content:'';
+        }
+        #page .campaign-espot div.DLnavigation div.row>div>div.DLnavigation_linkcontainer {
+            padding-top:0;
+            display:block;
+            border-bottom: none;
+        }
+        #page .campaign-espot div.langselector {
+            padding-top:0;
+        }   
+        #footer #footerRow1 {
+            padding:0;
+            padding-bottom:20px;
+        }
+        #page .campaign-espot div.DLfooter {
+            flex-direction:row;
+            justify-content:center;
+            padding-left:0em;
+            padding-right:0em;
+        }
+        #page .campaign-espot div.DLfooter div.payments {
+            padding-bottom:.5em;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        #page .campaign-espot div.DLnavigation {
+            padding:48px 0;
+        }
+        #page .campaign-espot div.DLfooter {
+            /*padding-left:10em;*/
+            padding-right:6em;
+        }
+        #page .campaign-espot div.langselector {
+            padding-top:0;
+            padding-right:6em;
+        }   
+    }
+</style>
+<div class="campaign-espot" id="espot-dossiers">
+    <div class="DLnavigation">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <p class="DLnavigation_title">Service clientèle</p>
+                <div class="DLnavigation_linkcontainer">
+                    <a href="/e/fr/dl/contact" class="DLnavigation_link">Nous contacter</a>
+                    <a href="/e/fr/dl/contact/livraison-enlevement" class="DLnavigation_link">Livraison & enlèvement</a>
+                    <a href="/e/fr/dl/contact/chercher?search=retourner" class="DLnavigation_link">Retourner un article</a>
+                    <a href="/e/GenericStaticContentPageLayoutView?catalogId=15501&storeId=13102&langId=-2&krypto=HiCkMt2pA0VPvrbfUTff95yWS1DlggsxpuufknM2ps4CaibAfUI%2F2ZtcvCffmZ7hlWym13le51TmxPZ1tAXnL0d4Nl2epThSPWB3u4qPEAVfS%2Bw6IcipmSJQdJqoZybuJINlaLv%2F0YeQ4Aa7Ez%2F4hBnhgN%2FqfmuWFEKyI4Ld7RY%3D&ddkey=http%3Afr%2Fdl%2Ffaq-questions-frequentes" class="DLnavigation_link">Questions fréquentes</a>
+                    <a href="/e/fr/dl/rappels" class="DLnavigation_link">Rappels d’article</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <p class="DLnavigation_title">Acheter chez nous</p>
+                <div class="DLnavigation_linkcontainer">
+                    <a href="/e/fr/dl/dreamland-carte-cadeau" class="DLnavigation_link">Cartes-cadeaux numériques</a>
+                    <a href="/e/fr/dl/denichez-le-cadeau-ideal" class="DLnavigation_link">Trouvez le cadeau idéal</a>
+                    <a href="/e/fr/dl/anniversaire" class="DLnavigation_link">Un anniversaire bient&ocirc;t&nbsp;?</a>
+                    <a href="/e/fr/dl/click-et-collect" class="DLnavigation_link">Click & Collect</a>
+                    <a href="/e/fr/dl/magasins" class="DLnavigation_link">Magasins et points d’enlèvement</a>
+                    <a href="https://www.collishopprofessional.be/b2b/static/fr/achats-professionels.shtml" target="_blank" class="DLnavigation_link">ColliShop Professional</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <p class="DLnavigation_title">Votre compte Xtra</p>
+                <div class="DLnavigation_linkcontainer">
+                    <a href="/e/fr/dl/OrderHistoryDisplayView?catalogId=15501&storeId=13102&langId=-2" class="DLnavigation_link">Mes commandes</a>
+                    <a href="/e/fr/dl/RoxorWishListDisplayView?catalogId=15501&storeId=13102&langId=-2" class="DLnavigation_link">Créez votre liste de souhaits</a>
+                    <a href="/e/fr/dl/mon-xtra" class="DLnavigation_link">Xtra, c’est quoi ?</a>
+                    <a href="https://gdpr.colruytgroup.com/gdpr/tc/X_TC_XTRA_FR.pdf" class="DLnavigation_link">Conditions générales Xtra</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <p class="DLnavigation_title">À propos de DreamLand</p>
+                <div class="DLnavigation_linkcontainer">
+                    <a href="/e/fr/dl/a-propos-de-dreamland" class="DLnavigation_link">Qui sommes-nous&nbsp;?</a>
+                    <a href="/e/fr/dl/depliants" class="DLnavigation_link">Dépliants</a>
+                    <a href="/e/fr/dl/nouveautes" class="DLnavigation_link">Nouveautés</a>
+                    <a href="http://www.simplysustainable.be/home/" class="DLnavigation_link">DreamLand et la durabilité</a>
+                    <a href="https://jobs.colruytgroup.com/fr/" class="DLnavigation_link">Offres d’emploi</a>
+                    <a href="/e/fr/dl/communiques-de-presse" class="DLnavigation_link">Communiqués de presse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="langselector">
+        <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-11');">Nederlands</a>
+        <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');" class="selected" >Français</a>
+    </div>
+    <div class="DLfooter">
+        <div class="socialandnews">
+        <div class="socialicons">
+            <div id="socialicons_facebook"><a href="https://www.facebook.com/DreamLand.be/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/facebook.svg"></a></div>
+            <div id="socialicons_instagram"><a href="https://www.instagram.com/dreamland_be/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/instagram.svg"></a></div>
+            <div id="socialicons_twitter"><a href="https://twitter.com/dreamlandbe"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/twitter.svg"></a></div>
+            <div id="socialicons_youtube"><a href="https://www.youtube.com/channel/UCHJgNZ7Ldzs_Q0BIR70PXzQ/videos"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/youtube.svg"></a></div>
+            <div id="socialicons_pintrest"><a href="https://www.pinterest.com/dreamlandbe/"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/pinterest.svg"></a></div></div>
+            <p id="newsletter_copy"><a href="/e/fr/dl/inscription-newsletter">Inscrivez-vous</a> à notre newsletter
+        </div>
+        <div class="bestewinkel">
+            <!-- <div id="bestewinkel_bw"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/bw-befr.png"></div> -->
+            <!-- <div id="bestewebshop_bw"><img src="/ecomwcs/static/StaticWeb/DL/homepage/WA-BEFR-2021.png"></div> -->
+            <div id="bestewinkel_bw"><img src="/ecomwcs/static/StaticWeb/DL/homepage/BW-BEFR-2021.png"></div>
+            <div id="bestewinkel_becommerce"><a rel="nofollow noreferrer" target="_blank" href="https://www.becommerce.be/en_US/report/html/becommerce_certification.report_certificate/2037"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/becommerce.png"></a></div>
+        </div>
+        <div class="payments">
+            <a href="/e/fr/dl/contact/betalen/comment-payer-en-ligne">
+                <div id="payments_bancontact"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/bancontact.svg"></div>
+                <div id="payments_visa"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/visa.svg"></div>
+                <div id="payments_mastercard"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/mastercard.svg"></div>
+                <div id="payments_maestro"><img src="/ecomwcs/static/StaticWeb/DL/homepage/footer2021/maestro.svg"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    $(".DLnavigation_title").on('click',function(){
+        $(".DLnavigation_title").not(this).removeClass("open");
+        $(".DLnavigation_linkcontainer").not($(this).next()).removeClass("open");
+        $(this).toggleClass("open");
+        $(this).next(".DLnavigation_linkcontainer").toggleClass("open");
+    });
+</script>
