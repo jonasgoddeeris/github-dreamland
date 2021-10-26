@@ -352,6 +352,7 @@ document.querySelector("#genesys_chat_container > a:nth-child(1)").addEventListe
     //  CXBus.command('WebChat.open');
     // };
     var autoSucces = (email) ? "filled-In":"not-filled-in";
+    ga('create', 'UA-41703062-1', 'auto');
     ga('send', {
       hitType: 'event',
       eventCategory: 'chat function',
