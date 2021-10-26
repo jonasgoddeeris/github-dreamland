@@ -1,0 +1,50 @@
+<style>
+.dropbtn {
+  background-color: #fff;
+  color: #4a4a4a;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn:after {
+    content: "\f106";
+}
+.dropdown-content {
+  font-family: Lato,sans-serif;
+  color: #4a4a4a;
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn:after {
+  rotate: 180%;
+}
+</style>
+<div class="dropdown">
+  <button class="dropbtn">Taal</button>
+  <div class="dropdown-content">
+    <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-11');" class="selected">NL</a>
+    <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');">FR</a>
+  </div>
+</div>
