@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     }
     /* COOKIES */
@@ -17,11 +17,30 @@
     #ot-sdk-btn.ot-sdk-show-settings:hover, #ot-sdk-btn.optanon-show-settings:hover {
         background-color: transparent !important;
     }
-    @media (min-width: 850px) {
+    #footer #footerRow2 {
+    min-height: 40px;
+    }
+    #footer #footerRow2>.secondary ul li {
+    margin-left: 8px;
+    margin-right: 4px;
+    }
+    p.legal-seller{
+        color: #fff;
+        font-size: .88em;
+        padding: 8px;
+    }
+    @media (min-width: 850px){
     #footer #footerRow2>.secondary {
-    position: absolute;
+    position: initial;
+    right: none;
+    top: none;
+    }
+    }
+    @media (min-width: 1200px) {
+    #footer #footerRow2>.secondary {
+    position: initial;
     right: 20px;
-    top: 12px!important;
+    top: 8px!important;
     }
     }
 </style>
@@ -33,8 +52,9 @@
         <li><a href="https://monxtra.be/declaration-de-confidentialite" target="_blank" class="gdpr_link_privacy">Déclaration de confidentialité Xtra</a></li>
         <li><a id="ot-sdk-btn" class="ot-sdk-show-settings">Paramètres des cookies</a></li>
         <li><a href="/e/fr/dl/politique-en-matiere-de-cookies" target="_blank" title=“Politique en matière de cookies”>Politique en matière de cookies</a></li>
-        <li><a href="javascript: return false;" class="lang" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-11');" data-tms-button-name="click: language switch" data-tms-button-details1="nl" data-tms-button-details2="top">Site in Nederlands</a></li>
+       <!--  <li><a href="javascript: return false;" class="lang" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-11');" data-tms-button-name="click: language switch" data-tms-button-details1="nl" data-tms-button-details2="top">Site in Nederlands</a></li> -->
       </ul>
     </nav>
+    <p class="legal-seller">DreamLand (Établissements Franz Colruyt S.A.) - B-1500 HAL, Edingensesteenweg 196 - TVA BE 0400.378.485</p>
     <!-- 
     <script type="text/javascript" src="//api.colruytgroup.com/api/static/script/gdpr.js"></script> SCRIPT -->

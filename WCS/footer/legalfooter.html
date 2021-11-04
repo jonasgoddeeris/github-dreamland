@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     }
     /* COOKIES */
@@ -17,16 +17,31 @@
     #ot-sdk-btn.ot-sdk-show-settings:hover, #ot-sdk-btn.optanon-show-settings:hover {
         background-color: transparent !important;
     }
-    @media (min-width: 850px) {
-    #footer #footerRow2>.secondary {
-    position: absolute;
-    right: 20px;
-    top: 12px!important;
+    #footer #footerRow2 {
+    min-height: 40px;
     }
+    #footer #footerRow2>.secondary ul li {
+    margin-left: 8px;
+    margin-right: 4px;
     }
     p.legal-seller{
         color: #fff;
         font-size: .88em;
+        padding: 8px;
+    }
+    @media (min-width: 850px){
+    #footer #footerRow2>.secondary {
+    position: initial;
+    right: none;
+    top: none;
+    }
+    }
+    @media (min-width: 1200px) {
+    #footer #footerRow2>.secondary {
+    position: initial;
+    right: 20px;
+    top: 8px!important;
+    }
     }
 </style>
     <nav class="secondary genericESpot" id="Generic-FooterMenuID">
@@ -38,7 +53,7 @@
         <a href="https://mijnxtra.be/privacyverklaring" target="_blank" class="gdpr_link_privacy">Privacyverklaring Xtra</a></li>
         <li><a id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie-instellingen</a></li>
         <li><a href="/e/nl/dl/cookiebeleid" target="_blank" title=“Cookiebeleid”>Cookiebeleid</a></li>
-        <li><a href="javascript: return false;" class="lang" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');" data-tms-button-name="click: language switch" data-tms-button-details1="fr" data-tms-button-details2="top">Site en Français</a></li>
+        <!-- <li><a href="javascript: return false;" class="lang" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');" data-tms-button-name="click: language switch" data-tms-button-details1="fr" data-tms-button-details2="top">Site en Français</a></li> -->
       </ul>
     </nav>
     <p class="legal-seller">DreamLand (Etablissementen Franz Colruyt nv) - B-1500 HALLE, Edingensesteenweg 196 - BE-0400.378.485</p>
