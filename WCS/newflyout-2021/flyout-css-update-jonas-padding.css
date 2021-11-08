@@ -30,7 +30,7 @@
         /*********************/
         /*MARGIN FIX FOR FLYOUT - IF THERE ARE MANY TOP CATEGORIES IN DESKTOP FLY OUT NAVIGATION THEN THE FLYOUT COMES OVER THE FROOMLE CAROUSEL!!!*/
         .row.topRow.twoCol {
-            margin-bottom: 9%;
+            margin-bottom: 8%;
         }
     }
     #page #headerWrapper #headerRow2 nav.topNav.expand { /*alle pagina's behalve HP*/
