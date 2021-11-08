@@ -28,10 +28,10 @@
             border-radius: 3px 3px 3px 3px !important;
         }
         /*********************/
-        /*MARGIN FIX FOR FROOMLE CAROUSEL - IF THERE ARE MANY TOP CATEGORIES IN DESKTOP FLY OUT NAVIGATION THEN THE FLYOUT COMES OVER THE FROOMLE CAROUSEL!!!*/
-        #FromleProductRecommDispaly > div {
-        margin-top: 9%;
-    }
+        /*MARGIN FIX FOR FLYOUT - IF THERE ARE MANY TOP CATEGORIES IN DESKTOP FLY OUT NAVIGATION THEN THE FLYOUT COMES OVER THE FROOMLE CAROUSEL!!!*/
+        .row.topRow.twoCol {
+            margin-bottom: 9%;
+        }
     }
     #page #headerWrapper #headerRow2 nav.topNav.expand { /*alle pagina's behalve HP*/
         /*border-bottom: 1px solid #ddd !important;*/ /*SYST NEW MENU*/
