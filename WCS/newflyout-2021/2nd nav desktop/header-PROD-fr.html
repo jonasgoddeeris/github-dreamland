@@ -24,8 +24,65 @@
     .stock-menu-item{
         color:#FD7F36;
     }
+        .dropbtn {
+  background: #f3f7fa;;
+  /*color: #4a4a4a;
+  padding: 12px;*/
+  font-size: 16px;
+  border: none;
+  padding: 0 15px;
+  line-height: 40px;
+  color: #4a4a4a;
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn:after {
+    position: relative;
+    content: "\f107";
+    font-size: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 400;
+    line-height: 14px;
+    color: #4a4a4a;
+    margin-left: 10px;
+    margin-top: 12px;
+    top: 2px;
+}
+.dropdown-content {
+  /*font-family: Lato,sans-serif;
+  color: #4a4a4a;
+  font-size: 14px;*/
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  /*color: #4a4a4a;*/
+  padding: 12px 12px;
+  /*text-decoration: none;*/
+  display: block;
+  border-radius: 8px;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn:after {
+  transform: rotate(180deg);
+}
   </style>
-    
     <div id="this_is_the_espot_wrapper">
         <nav class="secondaryNav">
             <div class="secondaryNav__wrap">
@@ -33,6 +90,14 @@
                     <!--<li class="solden-menu-item">
                         <a href="/e/fr/dl/soldes-reductions">Soldes</a>
                     </li>-->
+                    <li><div class="dropdown">
+                      <button class="dropbtn">FR</button>
+                      <div class="dropdown-content">
+                        <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-2');">FR</a>
+                        <a href="javascript: return false;" onclick="javascript:shoppingActionsJS.changeLanguageSEO('-11');" class="selected">NL</a>
+                      </div>
+                    </div>
+                </li> 
                     <li>
                         <a href="/e/fr/dl/contact">Service client</a>
                     </li>
