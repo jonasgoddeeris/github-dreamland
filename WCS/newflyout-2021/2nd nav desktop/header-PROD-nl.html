@@ -18,13 +18,13 @@
             display:none!important;
         }
     }
-    .solden-menu-item{
-        color:#EC321D;
-    }
-    .stock-menu-item{
-        color:#FD7F36;
-    }
-    .dropbtn {
+.solden-menu-item{
+    color:#EC321D;
+}
+.stock-menu-item{
+    color:#FD7F36;
+}
+.dropbtn {
   background: #f3f7fa;;
   /*color: #4a4a4a;
   padding: 12px;*/
@@ -81,6 +81,11 @@
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn:after {
   transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+    nav.secondaryNav > div > ul > li > div.dropdown {
+        display: none;
+    }
 }
   </style>
   <div id="this_is_the_espot_wrapper">
