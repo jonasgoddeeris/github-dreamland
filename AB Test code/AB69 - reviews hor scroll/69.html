@@ -14,24 +14,32 @@
   display: none;
 }
 .pr-review-display .p-w-r .pr-review-display .pr-review {
-    /* border-bottom: 1px dotted #ccc; */
     padding-bottom: 20px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #999;
     border-radius: 10px;
-    min-width: 226px;
+    min-width: 285px;
     margin-right: 20px;
     height: inherit;
     min-height: flex;
 }
-}
-.pr-review-display .p-w-r .pr-review-display .pr-rd-main-header {
+header#pr-rd-main-header {
     display: none;
 }
-footer.pr-rd-main-footer.pr-rd-main-footer-vertical-pagination {
+p.pr-rd-description-text {
+    text-overflow: ellipsis;
+    max-height: calc(22px * 8);
+    overflow: hidden;
+    display: inline-block;
+}
+.pr-rd-details.pr-rd-reviewed-at {
+    display: none!important;
+}
+.pr-rd-helpful-action-btn-group {
+    display: contents;
+}
+p.pr-rd-review-product.pr-rd-bold {
     display: none;
 }
 </style>
-<section class="pr-review-display"><footer class="pr-rd-main-footer pr-rd-main-footer-vertical-pagination"><div class="pr-rd-content-block"><aside class="pr-rd-pagination"><button type="button" class="pr-rd-show-more pr-btn pr-btn-default" aria-label="Toon meer recensies"><span class="pr-cross-icon"><svg viewBox="9.5 9.5 21 21" focusable="false"><g class="pr-cross-icon__group"><line class="pr-cross-icon__line" x1="15" y1="15" x2="25" y2="25" stroke="#333" stroke-width="3"></line><line class="pr-cross-icon__line" x1="25" y1="15" x2="15" y2="25" stroke="#333" stroke-width="3"></line></g></svg></span>Toon meer recensies</button></aside></div></footer></section>
-
