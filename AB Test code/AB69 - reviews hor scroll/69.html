@@ -5,7 +5,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    align-items: flex-start;
+    align-items: stretch;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.pr-review-display .p-w-r .pr-review-display::-webkit-scrollbar {
+  display: none;
 }
 .pr-review-display .p-w-r .pr-review-display .pr-review {
     /* border-bottom: 1px dotted #ccc; */
@@ -19,7 +25,13 @@
     height: inherit;
     min-height: flex;
 }
+}
 .pr-review-display .p-w-r .pr-review-display .pr-rd-main-header {
     display: none;
 }
+footer.pr-rd-main-footer.pr-rd-main-footer-vertical-pagination {
+    display: none;
+}
 </style>
+<section class="pr-review-display"><footer class="pr-rd-main-footer pr-rd-main-footer-vertical-pagination"><div class="pr-rd-content-block"><aside class="pr-rd-pagination"><button type="button" class="pr-rd-show-more pr-btn pr-btn-default" aria-label="Toon meer recensies"><span class="pr-cross-icon"><svg viewBox="9.5 9.5 21 21" focusable="false"><g class="pr-cross-icon__group"><line class="pr-cross-icon__line" x1="15" y1="15" x2="25" y2="25" stroke="#333" stroke-width="3"></line><line class="pr-cross-icon__line" x1="25" y1="15" x2="15" y2="25" stroke="#333" stroke-width="3"></line></g></svg></span>Toon meer recensies</button></aside></div></footer></section>
+
